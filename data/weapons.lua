@@ -1876,5 +1876,12 @@ return {
 			label = 'EMP round',
 			weight = 400,
 		},
+
+		['WEAPON_RADAR'] = {
+			label = 'Police Radar',
+			weight = 250,
+			durability = 0.1,
+		},
+
 	}
 }
