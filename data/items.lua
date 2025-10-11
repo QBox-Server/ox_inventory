@@ -1150,4 +1150,191 @@ return {
         },
     },
 
+    ['casino_beer'] = {
+        label = 'Casino Beer',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_burger'] = {
+        label = 'casino burger',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_chips'] = {
+        label = 'casino chips',
+        weight = 0,
+        close = true,
+        consume = 0,
+        stack = true,
+    },
+
+    ['casino_coffee'] = {
+        label = 'casino coffee',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_coke'] = {
+        label = 'casino coke',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_donut'] = {
+        label = 'casino donut',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_ego_chaser'] = {
+        label = 'casino ego chaser',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_luckypotion'] = {
+        label = 'casino luckypotion',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_psqs'] = {
+        label = 'Casino Ps & Qs',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_sandwitch'] = {
+        label = 'casino sandwitch',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ['casino_sprite'] = {
+        label = 'casino sprite',
+        weight = 0,
+        close = true,
+        consume = 0,
+    },
+
+    ["x_coffeemaker"] = {
+    label = "Coffee Maker",
+    weight = 500,
+    stack = true,
+    close = false,
+    description = "To make that perfect cup of Joe!",
+    client = {
+        image = "x_coffeemaker.png"
+    }
+    },
+
+    ["x_artpiece"] = {
+    label = "Art Piece",
+    weight = 500,
+    stack = true,
+    close = false,
+    description = "A unique piece of art!",
+    client = {
+        image = "x_artpiece.png"
+    }
+    },
+
+    ["x_guitar"] = {
+    label = "Guitar",
+    weight = 300,
+    stack = true,
+    close = false,
+    description = "A guitar!",
+    client = {
+        image = "x_guitar.png"
+    }
+    },
+
+    ["x_microwave"] = {
+    label = "Microwave",
+    weight = 800,
+    stack = true,
+    close = false,
+    description = "A microwave - for heating things up!",
+    client = {
+        image = "x_microwave.png"
+    }
+    },
+
+    ["x_musicequipment"] = {
+    label = "Coffee Maker",
+    weight = 500,
+    stack = true,
+    close = false,
+    description = "The keys to success.. As some Dj's would say",
+    client = {
+        image = "x_musicequipment.png"
+    }
+    },
+
+    ["x_painting"] = {
+    label = "Painting",
+    weight = 200,
+    stack = true,
+    close = false,
+    description = "A modern work of art!",
+    client = {
+        image = "x_painting.png"
+    }
+    },
+
+    ["x_painting2"] = {
+    label = "Painting",
+    weight = 200,
+    stack = true,
+    close = false,
+    description = "A modern work of art!",
+    client = {
+        image = "x_painting2.png"
+    }
+    },
+
+    ["x_pcequipment"] = {
+    label = "PC",
+    weight = 600,
+    stack = true,
+    close = false,
+    description = "A PC, for gaming?! Well of course it is!",
+    client = {
+        image = "x_pcequipment.png"
+    }
+    },
+
+    ["x_suitcase"] = {
+    label = "Suit Case",
+    weight = 200,
+    stack = true,
+    close = false,
+    description = "A leather suitcase, what the hell is inside of this?",
+    client = {
+        image = "x_suitcase.png"
+    }
+    },
+        ["advancedlockpick"] = {
+    label = "Advanced Lockpick",
+    weight = 500,
+    stack = true,
+    close = true,
+    description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+    client = {
+    image = "advancedlockpick.png",
+    }
+    },
+
 }
