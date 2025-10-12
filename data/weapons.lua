@@ -1883,5 +1883,11 @@ return {
 			durability = 0.1,
 		},
 
+		['WEAPON_FLAMETHROWER'] = {
+			label = 'Flamethrower',
+			weight = 10000,
+			durability = 1.0,
+		},
+
 	}
 }
