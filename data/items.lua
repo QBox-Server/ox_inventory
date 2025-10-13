@@ -2142,4 +2142,752 @@ return {
         description = 'Sets a nearby vehicle on fire',
     },
 
+    ['ammonia'] = {
+        label = 'Ammonia',
+        weight = 500,
+        stack = true,
+    },
+
+    ['sodium_benzoate'] = {
+        label = 'Sodium benzoate',
+        weight = 750,
+        stack = true,
+    },
+
+    ['meth_tray'] = {
+        label = 'Meth tray',
+        weight = 1000,
+        stack = true,
+    },
+
+    ['meth'] = {
+        label = 'Meth',
+        weight = 1,
+        stack = true,
+    },
+
+    ['meth_bag'] = {
+        label = 'Meth bag',
+        weight = 50,
+        stack = true,
+    },
+
+    ['plastic_bag'] = {
+        label = 'Plastic bag',
+        weight = 40,
+        stack = true,
+    },
+
+    ['meth_syringe'] = {
+        label = 'Meth syringe',
+        weight = 75,
+        stack = true,
+    },
+
+    -- Cocaine related items
+    ['coke_seed'] = {
+        label = 'Cocaine seed',
+        weight = 10,
+        stack = true,
+    },
+
+    ['coke_leaf'] = {
+        label = 'Cocaine leaf',
+        weight = 50,
+        stack = true,
+    },
+
+    ['coke_paste'] = {
+        label = 'Cocaine paste',
+        weight = 150,
+        stack = true,
+    },
+
+    ['coke'] = {
+        label = 'Cocaine',
+        weight = 1,
+        stack = true,
+    },
+
+    ['coke_bag'] = {
+        label = 'Cocaine bag',
+        weight = 50,
+        stack = true,
+    },
+
+    ['coke_brick'] = {
+        label = 'Cocaine brick',
+        weight = 200,
+        stack = true,
+    },
+
+    ['coke_doll'] = {
+        label = 'Cocaine doll',
+        weight = 500,
+        stack = true,
+    },
+
+    -- Weed related items
+    ['weed_seed'] = {
+        label = 'Weed seed',
+        weight = 5,
+        stack = true,
+    },
+
+    ['weed_pot'] = {
+        label = 'Flower Pot',
+        weight = 500,
+        stack = true,
+    },
+
+    ['trowel'] = {
+        label = 'Trowel',
+        weight = 150,
+        stack = true,
+    },
+
+    ['weed_bud'] = {
+        label = 'Weed bud',
+        weight = 25,
+        stack = true,
+    },
+
+    ['clean_weed_bud'] = {
+        label = 'Clean weed bud',
+        weight = 20,
+        stack = true,
+    },
+
+    ['cookie_dough'] = {
+        label = 'Cookie dough',
+        weight = 200,
+        stack = true
+    },
+
+    ['weed_cookie'] = {
+        label = 'Weed cookie',
+        weight = 50,
+        stack = true
+    },
+
+    ['weed_bag'] = {
+        label = 'Weed bag',
+        weight = 50,
+        stack = true,
+    },
+
+    ['weed_joint'] = {
+        label = 'Weed joint',
+        weight = 15,
+        stack = true,
+    },
+
+    ['weed_papers'] = {
+        label = 'Weed papers',
+        weight = 5,
+        stack = true,
+    },
+
+    -- Heroin related items
+    ['poppy_seeds'] = {
+        label = 'Poppy seeds',
+        weight = 5,
+        stack = true,
+    },
+
+    ['poppy_plant'] = {
+        label = 'Poppy plant',
+        weight = 100,
+        stack = true,
+    },
+
+    ['opium'] = {
+        label = 'Opium',
+        weight = 1,
+        stack = true,
+    },
+
+    ['heroin'] = {
+        label = 'Heroin',
+        weight = 1,
+        stack = true,
+    },
+
+    ['heroin_bag'] = {
+        label = 'Heroin bag',
+        weight = 50,
+        stack = true,
+    },
+
+    ['heroin_syringe'] = {
+        label = 'Heroin syringe',
+        weight = 75,
+        stack = true,
+    },
+
+    ['syringe'] = {
+        label = 'Syringe',
+        weight = 25,
+        stack = true,
+    },
+
+    -- LSD related items
+    ['ergot_fungus'] = {
+        label = 'Ergot fungus',
+        weight = 50,
+        stack = true,
+    },
+
+    ['generic_leaf'] = {
+        label = 'Leaf',
+        weight = 20,
+        stack = true,
+    },
+
+    ['lsd_liquid'] = {
+        label = 'LSD liquid',
+        weight = 25,
+        stack = true,
+    },
+
+    ['lsd'] = {
+        label = 'LSD',
+        weight = 1,
+        stack = true,
+    },
+
+    ['art_papers'] = {
+        label = 'Art papers',
+        weight = 5,
+        stack = true,
+    },
+
+    -- Ecstasy related items
+    ['safrole_oil'] = {
+        label = 'Safrole oil',
+        weight = 300,
+        stack = true,
+    },
+
+    ['ecstasy_crystals'] = {
+        label = 'Ecstasy crystals',
+        weight = 1,
+        stack = true,
+    },
+
+    ['ecstasy_pill'] = {
+        label = 'Ecstasy pill',
+        weight = 15,
+        stack = true,
+    },
+
+    -- Mushroom related items
+    ['mushrooms'] = {
+        label = 'Mushrooms',
+        weight = 1,
+        stack = true,
+    },
+
+    ['mushroom_powder'] = {
+        label = 'Mushroom powder',
+        weight = 1,
+        stack = true,
+    },
+
+    ['chocolate_chips'] = {
+        label = 'Chocolate chips',
+        weight = 30,
+        stack = true,
+    },
+
+    ['mushroom_chocolate'] = {
+        label = 'Mushroom chocolate',
+        weight = 45,
+        stack = true,
+    },
+
+    -- Ketamine related items
+    ['anesthetic'] = {
+        label = 'anesthetic',
+        weight = 200,
+        stack = true,
+    },
+
+    ['ketamine'] = {
+        label = 'Ketamine',
+        weight = 1,
+        stack = true,
+    },
+
+    ['ketamine_bag'] = {
+        label = 'Ketamine bag',
+        weight = 50,
+        stack = true,
+    },
+
+    -- Crack related items
+    ['baking_soda'] = {
+        label = 'Baking soda',
+        weight = 100,
+        stack = true,
+    },
+
+    ['crack'] = {
+        label = 'Crack',
+        weight = 1,
+        stack = true,
+    },
+
+    ['crack_bag'] = {
+        label = 'Crack bag',
+        weight = 50,
+        stack = true,
+    },
+
+    ['crack_pipe'] = {
+        label = 'Crack pipe',
+        weight = 150,
+        stack = true,
+    },
+
+    ['crack_syringe'] = {
+        label = 'Crack syringe',
+        weight = 75,
+        stack = true,
+    },
+
+    ['pipe'] = {
+        label = 'Pipe',
+        weight = 100,
+        stack = true,
+    },
+
+    -- Fentanyl related items
+    ['npp_chemical'] = {
+        label = 'NPP chemical',
+        weight = 300,
+        stack = true,
+    },
+
+    ['aniline_solution'] = {
+        label = 'Aniline solution',
+        weight = 250,
+        stack = true,
+    },
+
+    ['fentanyl'] = {
+        label = 'Fentanyl',
+        weight = 1,
+        stack = true,
+    },
+
+    ['fentanyl_bag'] = {
+        label = 'Fentanyl bag',
+        weight = 25,
+        stack = true,
+    },
+
+    ['meth_table'] = {
+        label = 'Meth table',
+        weight = 2250,
+        stack = false
+    },
+
+    ['coke_table'] = {
+        label = 'Coke table',
+        weight = 2250,
+        stack = false
+    },
+
+    ['weed_table'] = {
+        label = 'Weed table',
+        weight = 2250,
+        stack = false
+    },
+
+    ['chem_table'] = {
+        label = 'Chemistry table',
+        weight = 2250,
+        stack = false
+    },
+
+    ['burner_phone'] = {
+        label = 'Burner phone',
+        weight = 200,
+        stack = true
+    },
+
+    ['light1'] = {
+        label = 'Portable Lamp',
+        weight = 2000,
+        stack = true
+    },
+
+    ['light2'] = {
+        label = 'Portable Lamp',
+        weight = 2000,
+        stack = true
+    },
+
+    ['fertilizer'] = {
+        label = 'Fertilizer',
+        weight = 250,
+        stack = true
+    },
+
+    ['water_can'] = {
+        label = 'Watering can',
+        weight = 250,
+        stack = true
+    },
+
+    -- Pug Robbery Creator
+    ["gasmask"] = {
+        label = "Gas Mask",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "Useful to avoid dying in gas",
+        client = {
+            image = "gas_mask.png",
+        }
+    },
+    ["ropehook"] = {
+        label = "Rope Hook",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A long rope with a hook on it.",
+        client = {
+            image = "rope-hook.png",
+        }
+    },
+    ["paintingart"] = {
+        label = "Art Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A stunning piece of modern art.",
+        client = {
+            image = "painting-art.png",
+        }
+    },
+    ["paintingcity"] = {
+        label = "City Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A depiction of a bustling city square.",
+        client = {
+            image = "painting-city.png",
+        }
+    },
+    ["paintingclown"] = {
+        label = "Clown Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A colorful and eerie clown portrait.",
+        client = {
+            image = "painting-clown.png",
+        }
+    },
+    ["paintingfamily"] = {
+        label = "Family Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A nostalgic painting of a family gathering.",
+        client = {
+            image = "painting-family.png",
+        }
+    },
+    ["paintingguys"] = {
+        label = "Guys Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A painting of two gentlemen in conversation.",
+        client = {
+            image = "painting-guys.png",
+        }
+    },
+    ["paintinglady"] = {
+        label = "Lady Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "An elegant portrait of a lady.",
+        client = {
+            image = "painting-lady.png",
+        }
+    },
+    ["paintingnative"] = {
+        label = "Native Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A painting of a native figure holding a mask.",
+        client = {
+            image = "painting-native.png",
+        }
+    },
+    ["paintingpaddle"] = {
+        label = "Paddle Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "A playful painting featuring balloons and paddles.",
+        client = {
+            image = "painting-paddle.png",
+        }
+    },
+    ["paintingpig"] = {
+        label = "Pig Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "Looks like an expensive pig?",
+        client = {
+            image = "painting-pig.png",
+        }
+    },
+    ["paintingrocket"] = {
+        label = "Rocket Painting",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "An abstract painting of a rocket.",
+        client = {
+            image = "painting-rocket.png",
+        }
+    },
+    ["diamondnecklace"] = {
+        label = "Diamond Necklace",
+        weight = 50,
+        stack = true,
+        close = true,
+        description = "A beautiful diamond necklace",
+        client = {
+            image = "diamondnecklace.png",
+        }
+    },
+    ["diamondring"] = {
+        label = "Diamond Ring",
+        weight = 20,
+        stack = true,
+        close = true,
+        description = "A shiny diamond ring",
+        client = {
+            image = "diamondring.png",
+        }
+    },
+    ["goldbarstack"] = {
+        label = "Gold Bar Stack",
+        weight = 200,
+        stack = true,
+        close = true,
+        description = "A stack of gold bars",
+        client = {
+            image = "goldbarstack.png",
+        }
+    },
+    ["goldbracelet"] = {
+        label = "Gold Bracelet",
+        weight = 30,
+        stack = true,
+        close = true,
+        description = "A heavy gold bracelet",
+        client = {
+            image = "goldbracelet.png",
+        }
+    },
+    ["goldwatch"] = {
+        label = "Gold Watch",
+        weight = 40,
+        stack = true,
+        close = true,
+        description = "An expensive gold watch",
+        client = {
+            image = "goldwatch.png",
+        }
+    },
+    ["purpleusb"] = {
+        label = "Purple USB",
+        weight = 10,
+        stack = true,
+        close = true,
+        description = "A mysterious purple USB drive",
+        client = {
+            image = "purpleusb.png",
+        }
+    },
+    ["salvagedlockpick"] = {
+        label = "Salvaged Lockpick",
+        weight = 5,
+        stack = true,
+        close = true,
+        description = "A worn-out salvaged lockpick",
+        client = {
+            image = "salvagedlockpick.png",
+        }
+    },
+    ["silverring"] = {
+        label = "Silver Ring",
+        weight = 15,
+        stack = true,
+        close = true,
+        description = "A delicate silver ring",
+        client = {
+            image = "silverring.png",
+        }
+    },
+    ["unmarkedsimcard"] = {
+        label = "Unmarked SIM Card",
+        weight = 5,
+        stack = true,
+        close = true,
+        description = "An unmarked SIM card, could be useful for something",
+        client = {
+            image = "unmarkedsimcard.png",
+        }
+    },
+    ["bandsofnotes"] = { 
+        label = "Bands of Notes", 
+        weight = 10, 
+        stack = true, 
+        close = true, 
+        description = "A bundle of high-value notes, could be valuable.", 
+        client = { image = "bandsofnotes.png" } 
+    }, 
+    ["bankcard"] = { 
+        label = "Bank Card", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "A standard bank card for transactions.", 
+        client = { image = "bankcard.png" } 
+    }, 
+    ["group6card"] = { 
+        label = "Group 6 Security Card", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "A Group 6 security card granting access to restricted areas.", 
+        client = { image = "group6card.png" } 
+    }, 
+    ["humaneco2"] = { 
+        label = "Compound X2", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "A Compound X2, potentially useful for specific tasks.", 
+        client = { image = "humaneco2.png" } 
+    }, 
+    ["paletobankcard"] = { 
+        label = "Paleto Bank Card", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "An ID card for Paleto Bank employees.", 
+        client = { image = "paletobankcard.png" } 
+    }, 
+    ["rubynecklace"] = { 
+        label = "Ruby Necklace", 
+        weight = 3, 
+        stack = true, 
+        close = true, 
+        description = "A valuable ruby necklace.", 
+        client = { image = "rubynecklace.png" } 
+    }, 
+    ["stacksofcash"] = { 
+        label = "Stacks of Cash", 
+        weight = 15, 
+        stack = true, 
+        close = true, 
+        description = "A large stack of cash.", 
+        client = { image = "stacksofcash.png" } 
+    }, 
+    ["thermite"] = { 
+        label = "Thermite", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "An explosive thermite device, useful for breaking through strong barriers.", 
+        client = { image = "thermite.png" } 
+    },
+    ["handsaw"] = { 
+        label = "Hand Saw", 
+        weight = 3, 
+        stack = true, 
+        close = true, 
+        description = "A basic hand saw, useful for cutting wood and other materials.", 
+        client = { image = "handsaw.png" } 
+    },
+    ["harddrive"] = { 
+        label = "Hard Drive", 
+        weight = 1, 
+        stack = true, 
+        close = false, 
+        description = "An internal hard drive, useful for storing data.", 
+        client = { image = "harddrive.png" } 
+    },
+    ["silverbar"] = { 
+        label = "Silver Bar", 
+        weight = 5, 
+        stack = true, 
+        close = false, 
+        description = "A bar of pure silver, valuable for trading and crafting.", 
+        client = { image = "silverbar.png" } 
+    },
+    ["wirecutters"] = { 
+        label = "Wire Cutters", 
+        weight = 2, 
+        stack = true, 
+        close = true, 
+        description = "A tool for cutting wires, essential for various tasks.", 
+        client = { image = "wirecutters.png" } 
+    },
+    ["pincracker"] = { 
+        label = "Pin Cracker", 
+        weight = 1, 
+        stack = true, 
+        close = true, 
+        description = "A tool used for cracking pin-based locks, essential for skilled lockpickers.", 
+        client = { image = "pincracker.png" } 
+    },
+    ["bigbankcard"] = { 
+        label = "Big Bank Card", 
+        weight = 5, 
+        stack = true, 
+        close = true, 
+        description = "A bank card that provides access to bank services.", 
+        client = { image = "bigbankcard.png" } 
+    },
+
+    ["c4"] = { 
+        label = "C4 Explosive", 
+        weight = 10, 
+        stack = true, 
+        close = true, 
+        description = "A powerful explosive device, useful for breaching strong barriers.", 
+        client = { image = "c4.png" } 
+    },
+    ["humaneusb"] = { 
+        label = "Humane Labs USB", 
+        weight = 1, 
+        stack = true, 
+        close = true, 
+        description = "A USB stick containing sensitive data, property of Humane Labs.", 
+        client = { image = "humaneusb.png" } 
+    },
+    ["bankidcard"] = { 
+        label = "Bank ID Card", 
+        weight = 1, 
+        stack = true, 
+        close = true, 
+        description = "An ID card for bank employees, granting access to certain areas.", 
+        client = { image = "bankidcard.png" } 
+    },
+
 }
