@@ -1889,5 +1889,10 @@ return {
 			durability = 1.0,
 		},
 
+		['WEAPON_HACKINGDEVICE'] = {
+			label = 'Plant Scanner',
+			weight = 1200,
+		},
+
 	}
 }
