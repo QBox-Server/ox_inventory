@@ -1894,5 +1894,71 @@ return {
 			weight = 1200,
 		},
 
+		['WEAPON_HOBO_TOILET'] = {
+			label = 'Toilet Seat',
+			weight = 1000,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_STICK'] = {
+			label = 'Hobo Stick',
+			weight = 800,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_MOP'] = {
+			label = 'Mop',
+			weight = 900,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_SHARD'] = {
+			label = 'Broken Glass',
+			weight = 400,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_REBAR'] = {
+			label = 'Rebar',
+			weight = 1200,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_PLANK'] = {
+			label = 'Wooden Plank',
+			weight = 1000,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_OLDMACHETE'] = {
+			label = 'Old Machete',
+			weight = 1100,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_DUSTERS'] = {
+			label = 'Bolt Knuckles',
+			weight = 500,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_RATSTICK'] = {
+			label = 'Rat Stick',
+			weight = 700,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_PIPE'] = {
+			label = 'Pipe',
+			weight = 1100,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_DIRTYNEEDLE'] = {
+			label = 'Dirty Needle',
+			weight = 200,
+			durability = 0.1,
+		},
+
 	}
 }
