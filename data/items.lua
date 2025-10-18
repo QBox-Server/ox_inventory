@@ -2905,6 +2905,7 @@ return {
         stack = true,
         close = true,
         description = "Delicious pigeon meat for your culinary adventures.",
+        client = { image = "pigeonmeat.png" }         
     },
     ["pigeonfeather"] = {
         label = "Pigeon Feather",
@@ -2912,6 +2913,7 @@ return {
         stack = true,
         close = true,
         description = "A soft and lightweight feather from a pigeon.",
+        client = { image = "pigeonfeather.png" }         
     },
     ["crowmeat"] = {
         label = "Crow Meat",
@@ -2919,6 +2921,7 @@ return {
         stack = true,
         close = true,
         description = "Tasty crow meat, perfect for daring gourmets.",
+        client = { image = "crowmeat.png" }         
     },
     ["crowfeather"] = {
         label = "Crow Feather",
@@ -2926,6 +2929,7 @@ return {
         stack = true,
         close = true,
         description = "A sleek and dark feather from a crow.",
+        client = { image = "crowfeather.png" }         
     },
     ["seagullmeat"] = {
         label = "Seagull Meat",
@@ -2933,6 +2937,7 @@ return {
         stack = true,
         close = true,
         description = "Savory seagull meat, a delicacy among fishermen.",
+        client = { image = "seagullmeat.png" }         
     },
     ["seagullfeather"] = {
         label = "Seagull Feather",
@@ -2940,6 +2945,7 @@ return {
         stack = true,
         close = true,
         description = "A graceful and light feather from a seagull.",
+        client = { image = "seagullfeather.png" }         
     },
     ["cormorantmeat"] = {
         label = "Cormorant Meat",
@@ -2947,6 +2953,7 @@ return {
         stack = true,
         close = true,
         description = "Meaty cormorant meat, a rare find for adventurous eaters.",
+        client = { image = "cormorantmeat.png" }         
     },
     ["cormorantbeak"] = {
         label = "Cormorant Beak",
@@ -2954,6 +2961,7 @@ return {
         stack = true,
         close = true,
         description = "A sturdy and pointed beak from a cormorant.",
+        client = { image = "cormorantbeak.png" }         
     },
     ["deermeat"] = {
         label = "Deer Meat",
@@ -2961,6 +2969,7 @@ return {
         stack = true,
         close = true,
         description = "Succulent deer meat, a favorite among hunters.",
+        client = { image = "deermeat.png" }         
     },
     ["deerhorn"] = {
         label = "Deer Horn",
@@ -2968,6 +2977,7 @@ return {
         stack = true,
         close = true,
         description = "A majestic horn from a deer, prized for its beauty.",
+        client = { image = "deerhorn.png" }         
     },
     ["rabbitmeat"] = {
         label = "Rabbit Meat",
@@ -2975,6 +2985,7 @@ return {
         stack = true,
         close = true,
         description = "Tender rabbit meat, perfect for stews and roasts.",
+        client = { image = "rabbitmeat.png" }         
     },
     ["rabbitskin"] = {
         label = "Rabbit Skin",
@@ -2982,6 +2993,7 @@ return {
         stack = true,
         close = true,
         description = "A soft and supple skin from a rabbit, ideal for crafting.",
+        client = { image = "rabbitskin.png" }         
     },
     ["ratmeat"] = {
         label = "Rat Meat",
@@ -2989,6 +3001,7 @@ return {
         stack = true,
         close = true,
         description = "Edible rat meat, a survivalist's choice in desperate times.",
+        client = { image = "ratmeat.png" }         
     },
     ["pigmeat"] = {
         label = "Pig Meat",
@@ -2996,6 +3009,7 @@ return {
         stack = true,
         close = true,
         description = "Juicy pig meat, a staple in many hearty meals.",
+        client = { image = "pigmeat.png" }         
     },
     ["pigskin"] = {
         label = "Pig Skin",
@@ -3003,6 +3017,7 @@ return {
         stack = true,
         close = true,
         description = "Thick and durable pig skin, useful for crafting leather goods.",
+        client = { image = "pigskin.png" }         
     },
     ["coyotemeat"] = {
         label = "Coyote Meat",
@@ -3010,6 +3025,7 @@ return {
         stack = true,
         close = true,
         description = "Lean and gamey coyote meat, favored by wilderness enthusiasts.",
+        client = { image = "coyotemeat.png" }         
     },
     ["coyoteskin"] = {
         label = "Coyote Skin",
@@ -3017,6 +3033,7 @@ return {
         stack = true,
         close = true,
         description = "Tough and weather-resistant coyote skin, perfect for outdoor gear.",
+        client = { image = "coyoteskin.png" }         
     },
     ["coguarmeat"] = {
         label = "Cougarmeat",
@@ -3024,6 +3041,7 @@ return {
         stack = true,
         close = true,
         description = "Exotic cougarmeat, a delicacy for adventurous palates.",
+        client = { image = "coguarmeat.png" }         
     },
     ["coguarskin"] = {
         label = "Cougar Skin",
@@ -3031,6 +3049,7 @@ return {
         stack = true,
         close = true,
         description = "Supple cougar skin, highly valued in the fashion industry.",
+        client = { image = "coguarskin.png" }         
     },
     ["boarmeat"] = {
         label = "Boar Meat",
@@ -3038,6 +3057,7 @@ return {
         stack = true,
         close = true,
         description = "Hearty boar meat, a popular choice among hunters and chefs.",
+        client = { image = "boarmeat.png" }         
     },
     ["boarskin"] = {
         label = "Boar Skin",
@@ -3045,6 +3065,7 @@ return {
         stack = true,
         close = true,
         description = "Tough boar skin, excellent for crafting rugged goods.",
+        client = { image = "boarskin.png" }         
     },
     ["snakemeat"] = {
         label = "Snake Meat",
@@ -3052,6 +3073,7 @@ return {
         stack = true,
         close = true,
         description = "Savory snake meat, a delicacy in some cultures.",
+        client = { image = "snakemeat.png" }         
     },
     ["boarhorn"] = {
         label = "Boar Horn",
@@ -3059,6 +3081,7 @@ return {
         stack = true,
         close = true,
         description = "A large and impressive horn from a boar.",
+        client = { image = "boarhorn.png" }         
     },
     ["snakeskin"] = {
         label = "Snake Skin",
@@ -3066,6 +3089,7 @@ return {
         stack = true,
         close = true,
         description = "Smooth and patterned snake skin, used for various crafts.",
+        client = { image = "snakeskin.png" } 
     },
     ["hawkmeat"] = {
         label = "Hawk Meat",
@@ -3073,6 +3097,7 @@ return {
         stack = true,
         close = true,
         description = "Lean and gamey hawk meat, a rare delicacy among hunters.",
+        client = { image = "hawkmeat.png" } 
     },
     ["hawkskin"] = {
         label = "Hawk Skin",
@@ -3080,6 +3105,7 @@ return {
         stack = true,
         close = true,
         description = "Beautiful hawk skin, prized for its unique markings.",
+        client = { image = "hawkskin.png" } 
     },
     ["hawkpeak"] = {
         label = "Hawk Peak",
@@ -3087,6 +3113,72 @@ return {
         stack = true,
         close = true,
         description = "A majestic feather from a hawk's peak, a symbol of freedom.",
+        client = { image = "hawkpeak.png" } 
+    },
+
+    ["ticket_iceorink"] = {
+        label = "Ticket Ice-O-Rink",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "Ticket to access the ice-o-rink area",
+        client = { image = "ticket_iceorink.png" } 
+    },
+    ["iceskates_white"] = {
+        label = "Ice Skates (White)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_white.png" } 
+    },
+    ["iceskates_black"] = {
+        label = "Ice Skates (Black)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_black.png" } 
+    },
+    ["iceskates_cyan"] = {
+        label = "Ice Skates (Cyan)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_cyan.png" } 
+    },
+    ["iceskates_yellow"] = {
+        label = "Ice Skates (Yellow)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_yellow.png" } 
+    },
+    ["iceskates_pink"] = {
+        label = "Ice Skates (Pink)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_pink.png" } 
+    },
+    ["iceskates_red"] = {
+        label = "Ice Skates (Red)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_red.png" } 
+    },
+    ["iceskates_green"] = {
+        label = "Ice Skates (Green)",
+        weight = 0,
+        stack = false,
+        close = false,
+        description = "This is a skate for ice skating",
+        client = { image = "iceskates_green.png" } 
     },
 
 }
