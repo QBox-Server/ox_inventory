@@ -716,6 +716,103 @@ return {
 			weight = 600,
 			throwable = true,
 		},
+
+		['WEAPON_RADAR'] = {
+			label = 'Police Radar',
+			weight = 250,
+			durability = 0.1,
+		},
+
+		['WEAPON_FLAMETHROWER'] = {
+			label = 'Flamethrower',
+			weight = 10000,
+			durability = 1.0,
+		},
+
+		['WEAPON_HACKINGDEVICE'] = {
+			label = 'Plant Scanner',
+			weight = 1200,
+		},
+
+		['WEAPON_HOBO_TOILET'] = {
+			label = 'Toilet Seat',
+			weight = 1000,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_STICK'] = {
+			label = 'Hobo Stick',
+			weight = 800,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_MOP'] = {
+			label = 'Mop',
+			weight = 900,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_SHARD'] = {
+			label = 'Broken Glass',
+			weight = 400,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_REBAR'] = {
+			label = 'Rebar',
+			weight = 1200,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_PLANK'] = {
+			label = 'Wooden Plank',
+			weight = 1000,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_OLDMACHETE'] = {
+			label = 'Old Machete',
+			weight = 1100,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_DUSTERS'] = {
+			label = 'Bolt Knuckles',
+			weight = 500,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_RATSTICK'] = {
+			label = 'Rat Stick',
+			weight = 700,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_PIPE'] = {
+			label = 'Pipe',
+			weight = 1100,
+			durability = 0.1,
+		},
+
+		['WEAPON_HOBO_DIRTYNEEDLE'] = {
+			label = 'Dirty Needle',
+			weight = 200,
+			durability = 0.1,
+		},
+
+		['WEAPON_HUNTINGRIFLE'] = {
+			label = 'Hunting Rifle',
+			weight = 5000,
+			durability = 0.5,
+			ammoname = 'gg_hunting_rifleammo'
+		},
+		
+		['WEAPON_CROSSBOW'] = {
+			label = 'Hunting Crossbow',
+			weight = 5000,
+			durability = 0.5,
+			ammoname = 'gg_hunting_arrowammo'
+		},
 	},
 
 	Components = {
@@ -1877,87 +1974,14 @@ return {
 			weight = 400,
 		},
 
-		['WEAPON_RADAR'] = {
-			label = 'Police Radar',
-			weight = 250,
-			durability = 0.1,
+		['gg_hunting_arrowammo'] = {
+			label = 'Arrow Ammo',
+			weight = 20,
 		},
-
-		['WEAPON_FLAMETHROWER'] = {
-			label = 'Flamethrower',
-			weight = 10000,
-			durability = 1.0,
-		},
-
-		['WEAPON_HACKINGDEVICE'] = {
-			label = 'Plant Scanner',
-			weight = 1200,
-		},
-
-		['WEAPON_HOBO_TOILET'] = {
-			label = 'Toilet Seat',
-			weight = 1000,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_STICK'] = {
-			label = 'Hobo Stick',
-			weight = 800,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_MOP'] = {
-			label = 'Mop',
-			weight = 900,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_SHARD'] = {
-			label = 'Broken Glass',
-			weight = 400,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_REBAR'] = {
-			label = 'Rebar',
-			weight = 1200,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_PLANK'] = {
-			label = 'Wooden Plank',
-			weight = 1000,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_OLDMACHETE'] = {
-			label = 'Old Machete',
-			weight = 1100,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_DUSTERS'] = {
-			label = 'Bolt Knuckles',
-			weight = 500,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_RATSTICK'] = {
-			label = 'Rat Stick',
-			weight = 700,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_PIPE'] = {
-			label = 'Pipe',
-			weight = 1100,
-			durability = 0.1,
-		},
-
-		['WEAPON_HOBO_DIRTYNEEDLE'] = {
-			label = 'Dirty Needle',
-			weight = 200,
-			durability = 0.1,
+		
+		['gg_hunting_rifleammo'] = {
+			label = 'Hunting Rifle Ammo',
+			weight = 20,
 		},
 
 	}
