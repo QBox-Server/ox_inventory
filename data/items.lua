@@ -1229,112 +1229,86 @@ return {
     },
 
     ["x_coffeemaker"] = {
-    label = "Coffee Maker",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "To make that perfect cup of Joe!",
-    client = {
-        image = "x_coffeemaker.png"
-    }
+        label = "Coffee Maker",
+        weight = 500,
+        stack = true,
+        close = false,
+        description = "To make that perfect cup of Joe!",
+        client = { image = "x_coffeemaker.png" }
     },
-
     ["x_artpiece"] = {
-    label = "Art Piece",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "A unique piece of art!",
-    client = {
-        image = "x_artpiece.png"
-    }
+        label = "Art Piece",
+        weight = 500,
+        stack = true,
+        close = false,
+        description = "A unique piece of art!",
+        client = { image = "x_artpiece.png" }
     },
-
     ["x_guitar"] = {
-    label = "Guitar",
-    weight = 300,
-    stack = true,
-    close = false,
-    description = "A guitar!",
-    client = {
-        image = "x_guitar.png"
-    }
+        label = "Guitar",
+        weight = 300,
+        stack = true,
+        close = false,
+        description = "A guitar!",
+        client = { image = "x_guitar.png" }
     },
-
     ["x_microwave"] = {
-    label = "Microwave",
-    weight = 800,
-    stack = true,
-    close = false,
-    description = "A microwave - for heating things up!",
-    client = {
-        image = "x_microwave.png"
-    }
+        label = "Microwave",
+        weight = 800,
+        stack = true,
+        close = false,
+        description = "A microwave - for heating things up!",
+        client = { image = "x_microwave.png" }
     },
-
     ["x_musicequipment"] = {
-    label = "Coffee Maker",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "The keys to success.. As some Dj's would say",
-    client = {
-        image = "x_musicequipment.png"
-    }
+        label = "Coffee Maker",
+        weight = 500,
+        stack = true,
+        close = false,
+        description = "The keys to success.. As some Dj's would say",
+        client = { image = "x_musicequipment.png" }
     },
-
     ["x_painting"] = {
-    label = "Painting",
-    weight = 200,
-    stack = true,
-    close = false,
-    description = "A modern work of art!",
-    client = {
-        image = "x_painting.png"
-    }
+        label = "Painting",
+        weight = 200,
+        stack = true,
+        close = false,
+        description = "A modern work of art!",
+        client = { image = "x_painting.png" }
     },
 
     ["x_painting2"] = {
-    label = "Painting",
-    weight = 200,
-    stack = true,
-    close = false,
-    description = "A modern work of art!",
-    client = {
-        image = "x_painting2.png"
-    }
+        label = "Painting",
+        weight = 200,
+        stack = true,
+        close = false,
+        description = "A modern work of art!",
+        client = { image = "x_painting2.png" }
     },
 
     ["x_pcequipment"] = {
-    label = "PC",
-    weight = 600,
-    stack = true,
-    close = false,
-    description = "A PC, for gaming?! Well of course it is!",
-    client = {
-        image = "x_pcequipment.png"
-    }
+        label = "PC",
+        weight = 600,
+        stack = true,
+        close = false,
+        description = "A PC, for gaming?! Well of course it is!",
+        client = { image = "x_pcequipment.png" }
     },
-
     ["x_suitcase"] = {
-    label = "Suit Case",
-    weight = 200,
-    stack = true,
-    close = false,
-    description = "A leather suitcase, what the hell is inside of this?",
-    client = {
-        image = "x_suitcase.png"
-    }
+        label = "Suit Case",
+        weight = 200,
+        stack = true,
+        close = false,
+        description = "A leather suitcase, what the hell is inside of this?",
+        client = { image = "x_suitcase.png" }
     },
-        ["advancedlockpick"] = {
-    label = "Advanced Lockpick",
-    weight = 500,
-    stack = true,
-    close = true,
-    description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
-    client = {
-    image = "advancedlockpick.png",
-    }
+    ["advancedlockpick"] = {
+        label = "Advanced Lockpick",
+        weight = 500,
+        stack = true,
+        close = true,
+        description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+        client = { image = "advancedlockpick.png", }
     },
 
     ['mov_basic_ceramic'] = {
@@ -2899,222 +2873,222 @@ return {
         client = { image = "gruppesechstablet.png" } 
     },
 
-    ["pigeonmeat"] = {
-        label = "Pigeon Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Delicious pigeon meat for your culinary adventures.",
-        client = { image = "pigeonmeat.png" }         
-    },
-    ["pigeonfeather"] = {
-        label = "Pigeon Feather",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A soft and lightweight feather from a pigeon.",
-        client = { image = "pigeonfeather.png" }         
-    },
-    ["crowmeat"] = {
-        label = "Crow Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Tasty crow meat, perfect for daring gourmets.",
-        client = { image = "crowmeat.png" }         
-    },
-    ["crowfeather"] = {
-        label = "Crow Feather",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A sleek and dark feather from a crow.",
-        client = { image = "crowfeather.png" }         
-    },
-    ["seagullmeat"] = {
-        label = "Seagull Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Savory seagull meat, a delicacy among fishermen.",
-        client = { image = "seagullmeat.png" }         
-    },
-    ["seagullfeather"] = {
-        label = "Seagull Feather",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A graceful and light feather from a seagull.",
-        client = { image = "seagullfeather.png" }         
-    },
-    ["cormorantmeat"] = {
-        label = "Cormorant Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Meaty cormorant meat, a rare find for adventurous eaters.",
-        client = { image = "cormorantmeat.png" }         
-    },
-    ["cormorantbeak"] = {
-        label = "Cormorant Beak",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A sturdy and pointed beak from a cormorant.",
-        client = { image = "cormorantbeak.png" }         
-    },
-    ["deermeat"] = {
-        label = "Deer Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Succulent deer meat, a favorite among hunters.",
-        client = { image = "deermeat.png" }         
-    },
-    ["deerhorn"] = {
-        label = "Deer Horn",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A majestic horn from a deer, prized for its beauty.",
-        client = { image = "deerhorn.png" }         
-    },
-    ["rabbitmeat"] = {
-        label = "Rabbit Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Tender rabbit meat, perfect for stews and roasts.",
-        client = { image = "rabbitmeat.png" }         
-    },
-    ["rabbitskin"] = {
-        label = "Rabbit Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A soft and supple skin from a rabbit, ideal for crafting.",
-        client = { image = "rabbitskin.png" }         
-    },
-    ["ratmeat"] = {
-        label = "Rat Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Edible rat meat, a survivalist's choice in desperate times.",
-        client = { image = "ratmeat.png" }         
-    },
-    ["pigmeat"] = {
-        label = "Pig Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Juicy pig meat, a staple in many hearty meals.",
-        client = { image = "pigmeat.png" }         
-    },
-    ["pigskin"] = {
-        label = "Pig Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Thick and durable pig skin, useful for crafting leather goods.",
-        client = { image = "pigskin.png" }         
-    },
-    ["coyotemeat"] = {
-        label = "Coyote Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Lean and gamey coyote meat, favored by wilderness enthusiasts.",
-        client = { image = "coyotemeat.png" }         
-    },
-    ["coyoteskin"] = {
-        label = "Coyote Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Tough and weather-resistant coyote skin, perfect for outdoor gear.",
-        client = { image = "coyoteskin.png" }         
-    },
-    ["coguarmeat"] = {
-        label = "Cougarmeat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Exotic cougarmeat, a delicacy for adventurous palates.",
-        client = { image = "coguarmeat.png" }         
-    },
-    ["coguarskin"] = {
-        label = "Cougar Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Supple cougar skin, highly valued in the fashion industry.",
-        client = { image = "coguarskin.png" }         
-    },
-    ["boarmeat"] = {
-        label = "Boar Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Hearty boar meat, a popular choice among hunters and chefs.",
-        client = { image = "boarmeat.png" }         
-    },
-    ["boarskin"] = {
-        label = "Boar Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Tough boar skin, excellent for crafting rugged goods.",
-        client = { image = "boarskin.png" }         
-    },
-    ["snakemeat"] = {
-        label = "Snake Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Savory snake meat, a delicacy in some cultures.",
-        client = { image = "snakemeat.png" }         
-    },
-    ["boarhorn"] = {
-        label = "Boar Horn",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A large and impressive horn from a boar.",
-        client = { image = "boarhorn.png" }         
-    },
-    ["snakeskin"] = {
-        label = "Snake Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Smooth and patterned snake skin, used for various crafts.",
-        client = { image = "snakeskin.png" } 
-    },
-    ["hawkmeat"] = {
-        label = "Hawk Meat",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Lean and gamey hawk meat, a rare delicacy among hunters.",
-        client = { image = "hawkmeat.png" } 
-    },
-    ["hawkskin"] = {
-        label = "Hawk Skin",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "Beautiful hawk skin, prized for its unique markings.",
-        client = { image = "hawkskin.png" } 
-    },
-    ["hawkpeak"] = {
-        label = "Hawk Peak",
-        weight = 1000,
-        stack = true,
-        close = true,
-        description = "A majestic feather from a hawk's peak, a symbol of freedom.",
-        client = { image = "hawkpeak.png" } 
-    },
+    -- ["pigeonmeat"] = {
+    --     label = "Pigeon Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Delicious pigeon meat for your culinary adventures.",
+    --     client = { image = "pigeonmeat.png" }         
+    -- },
+    -- ["pigeonfeather"] = {
+    --     label = "Pigeon Feather",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A soft and lightweight feather from a pigeon.",
+    --     client = { image = "pigeonfeather.png" }         
+    -- },
+    -- ["crowmeat"] = {
+    --     label = "Crow Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Tasty crow meat, perfect for daring gourmets.",
+    --     client = { image = "crowmeat.png" }         
+    -- },
+    -- ["crowfeather"] = {
+    --     label = "Crow Feather",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A sleek and dark feather from a crow.",
+    --     client = { image = "crowfeather.png" }         
+    -- },
+    -- ["seagullmeat"] = {
+    --     label = "Seagull Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Savory seagull meat, a delicacy among fishermen.",
+    --     client = { image = "seagullmeat.png" }         
+    -- },
+    -- ["seagullfeather"] = {
+    --     label = "Seagull Feather",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A graceful and light feather from a seagull.",
+    --     client = { image = "seagullfeather.png" }         
+    -- },
+    -- ["cormorantmeat"] = {
+    --     label = "Cormorant Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Meaty cormorant meat, a rare find for adventurous eaters.",
+    --     client = { image = "cormorantmeat.png" }         
+    -- },
+    -- ["cormorantbeak"] = {
+    --     label = "Cormorant Beak",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A sturdy and pointed beak from a cormorant.",
+    --     client = { image = "cormorantbeak.png" }         
+    -- },
+    -- ["deermeat"] = {
+    --     label = "Deer Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Succulent deer meat, a favorite among hunters.",
+    --     client = { image = "deermeat.png" }         
+    -- },
+    -- ["deerhorn"] = {
+    --     label = "Deer Horn",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A majestic horn from a deer, prized for its beauty.",
+    --     client = { image = "deerhorn.png" }         
+    -- },
+    -- ["rabbitmeat"] = {
+    --     label = "Rabbit Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Tender rabbit meat, perfect for stews and roasts.",
+    --     client = { image = "rabbitmeat.png" }         
+    -- },
+    -- ["rabbitskin"] = {
+    --     label = "Rabbit Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A soft and supple skin from a rabbit, ideal for crafting.",
+    --     client = { image = "rabbitskin.png" }         
+    -- },
+    -- ["ratmeat"] = {
+    --     label = "Rat Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Edible rat meat, a survivalist's choice in desperate times.",
+    --     client = { image = "ratmeat.png" }         
+    -- },
+    -- ["pigmeat"] = {
+    --     label = "Pig Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Juicy pig meat, a staple in many hearty meals.",
+    --     client = { image = "pigmeat.png" }         
+    -- },
+    -- ["pigskin"] = {
+    --     label = "Pig Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Thick and durable pig skin, useful for crafting leather goods.",
+    --     client = { image = "pigskin.png" }         
+    -- },
+    -- ["coyotemeat"] = {
+    --     label = "Coyote Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Lean and gamey coyote meat, favored by wilderness enthusiasts.",
+    --     client = { image = "coyotemeat.png" }         
+    -- },
+    -- ["coyoteskin"] = {
+    --     label = "Coyote Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Tough and weather-resistant coyote skin, perfect for outdoor gear.",
+    --     client = { image = "coyoteskin.png" }         
+    -- },
+    -- ["coguarmeat"] = {
+    --     label = "Cougarmeat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Exotic cougarmeat, a delicacy for adventurous palates.",
+    --     client = { image = "coguarmeat.png" }         
+    -- },
+    -- ["coguarskin"] = {
+    --     label = "Cougar Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Supple cougar skin, highly valued in the fashion industry.",
+    --     client = { image = "coguarskin.png" }         
+    -- },
+    -- ["boarmeat"] = {
+    --     label = "Boar Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Hearty boar meat, a popular choice among hunters and chefs.",
+    --     client = { image = "boarmeat.png" }         
+    -- },
+    -- ["boarskin"] = {
+    --     label = "Boar Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Tough boar skin, excellent for crafting rugged goods.",
+    --     client = { image = "boarskin.png" }         
+    -- },
+    -- ["snakemeat"] = {
+    --     label = "Snake Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Savory snake meat, a delicacy in some cultures.",
+    --     client = { image = "snakemeat.png" }         
+    -- },
+    -- ["boarhorn"] = {
+    --     label = "Boar Horn",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A large and impressive horn from a boar.",
+    --     client = { image = "boarhorn.png" }         
+    -- },
+    -- ["snakeskin"] = {
+    --     label = "Snake Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Smooth and patterned snake skin, used for various crafts.",
+    --     client = { image = "snakeskin.png" } 
+    -- },
+    -- ["hawkmeat"] = {
+    --     label = "Hawk Meat",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Lean and gamey hawk meat, a rare delicacy among hunters.",
+    --     client = { image = "hawkmeat.png" } 
+    -- },
+    -- ["hawkskin"] = {
+    --     label = "Hawk Skin",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "Beautiful hawk skin, prized for its unique markings.",
+    --     client = { image = "hawkskin.png" } 
+    -- },
+    -- ["hawkpeak"] = {
+    --     label = "Hawk Peak",
+    --     weight = 1000,
+    --     stack = true,
+    --     close = true,
+    --     description = "A majestic feather from a hawk's peak, a symbol of freedom.",
+    --     client = { image = "hawkpeak.png" } 
+    -- },
 
     ["ticket_iceorink"] = {
         label = "Ticket Ice-O-Rink",
@@ -3376,4 +3350,366 @@ return {
 		}
 	},
     
+    ["gg_hunting_cookedmeat"] = {
+        label = "Cooked Game Meat",
+        weight = 50,
+        stack = true,
+        close = true,
+        description = "Deliciously cooked meat, perfect for a meal during your hunting adventure.",
+        client = {
+            image = "gg_hunting_cookedmeat.png",
+        }
+    },
+
+    ["gg_boar_tusk_02"] = {
+        label = "Sturdy Boar Tusk",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A sturdy boar tusk with a moderate value, suitable for crafting or trade.",
+        client = {
+            image = "gg_boar_tusk_02.png",
+        }
+    },
+
+    ["gg_boar_tusk_01"] = {
+        label = "Rough Boar Tusk",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A basic, crude boar tusk with minimal value.",
+        client = {
+            image = "gg_boar_tusk_01.png",
+        }
+    },
+
+    ["gg_cougar_claw_03"] = {
+        label = "Pristine Cougar Claw",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A high-quality cougar claw, highly valued by traders and craftsmen.",
+        client = {
+            image = "gg_cougar_claw_03.png",
+        }
+    },
+
+    ["gg_captured_hen"] = {
+        label = "Captured Hen",
+        weight = 5000,
+        stack = false,
+        close = true,
+        description = "A captured hen, a tempting bait for larger predators seeking prey.",
+        client = {
+            image = "gg_captured_hen.png",
+        }
+    },
+
+    ["gg_hunting_campfire"] = {
+        label = "Portable Campfire",
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = "A compact campfire setup for warming up, cooking, and providing light during long hunting expeditions.",
+        client = {
+            image = "gg_hunting_campfire.png",
+        }
+    },
+
+    ["gg_captured_rabbit"] = {
+        label = "Captured Rabbit",
+        weight = 5000,
+        stack = false,
+        close = true,
+        description = "A captured rabbit, perfect for luring carnivores as high-quality bait.",
+        client = {
+            image = "gg_captured_rabbit.png",
+        }
+    },
+
+    ["gg_deer_hide_03"] = {
+        label = "Pristine Deer Hide",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A high-quality, flawless deer hide highly valued by traders.",
+        client = {
+            image = "gg_deer_hide_03.png",
+        }
+    },
+
+    ["gg_hunting_knife_02"] = {
+        label = "Intermediate Hunting Knife",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A well-crafted hunting knife offering improved precision for more efficient butchering.",
+        client = {
+            image = "gg_hunting_knife_02.png",
+        }
+    },
+
+    ["gg_cougar_claw_02"] = {
+        label = "Sturdy Cougar Claw",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A sturdy cougar claw, suitable for crafting or trade.",
+        client = {
+            image = "gg_cougar_claw_02.png",
+        }
+    },
+
+    ["gg_rabbit_pelt_03"] = {
+        label = "Pristine Rabbit Pelt",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A high-quality rabbit pelt, highly valued by traders and craftsmen.",
+        client = {
+            image = "gg_rabbit_pelt_03.png",
+        }
+    },
+
+    ["gg_rabbit_pelt_02"] = {
+        label = "Sturdy Rabbit Pelt",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A decent-quality rabbit pelt, suitable for crafting or trade.",
+        client = {
+            image = "gg_rabbit_pelt_02.png",
+        }
+    },
+
+    ["gg_deer_hide_02"] = {
+        label = "Sturdy Deer Hide",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A good-quality deer hide, suitable for crafting or trade.",
+        client = {
+            image = "gg_deer_hide_02.png",
+        }
+    },
+
+    ["gg_deer_hide_01"] = {
+        label = "Rough Deer Hide",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A basic, coarse deer hide with minimal value.",
+        client = {
+            image = "gg_deer_hide_01.png",
+        }
+    },
+
+    ["gg_salt_block_01"] = {
+        label = "Basic Salt Block",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A simple salt block used to attract animals.",
+        client = {
+            image = "gg_salt_block_01.png",
+        }
+    },
+
+    ["gg_hunting_animaltrap"] = {
+        label = "Heavy-Duty Animal Trap",
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = "A durable trap designed to capture animals alive for easier transportation or use as bait.",
+        client = {
+            image = "gg_hunting_animaltrap.png",
+        }
+    },
+
+    ["gg_hunting_animaltracker"] = {
+        label = "Advanced Animal Tracker",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A sophisticated device used to track animal movements across the terrain, aiding hunters in locating their prey.",
+        client = {
+            image = "gg_hunting_animaltracker.png",
+        }
+    },
+
+    ["gg_hunting_knife_03"] = {
+        label = "Premium Hunting Knife",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A top-tier hunting knife, designed for expert hunters, providing unmatched sharpness and durability for butchering.",
+        client = {
+            image = "gg_hunting_knife_03.png",
+        }
+    },
+
+    ["gg_pug_bait_01"] = {
+        label = "Basic Pug Bait",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A simple and crude bait for attracting pugs.",
+        client = {
+            image = "gg_pug_bait_01.png",
+        }
+    },
+
+    ["gg_salt_block_03"] = {
+        label = "Premium Salt Block",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A high-quality salt block, highly effective at attracting animals.",
+        client = {
+            image = "gg_salt_block_03.png",
+        }
+    },
+
+    ["gg_hunting_meat"] = {
+        label = "Fresh Animal Meat",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "Freshly harvested meat from a hunt, ideal for cooking or trade.",
+        client = {
+            image = "gg_hunting_meat.png",
+        }
+    },
+
+    ["gg_pug_bait_02"] = {
+        label = "Advanced Pug Bait",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A more effective bait to lure in pugs, with a stronger scent.",
+        client = {
+            image = "gg_pug_bait_02.png",
+        }
+    },
+
+    ["gg_pug_bait_03"] = {
+        label = "Specialized Pug Bait",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A premium bait crafted to attract the rarest of pugs.",
+        client = {
+            image = "gg_pug_bait_03.png",
+        }
+    },
+
+    ["gg_coyote_fangs_01"] = {
+        label = "Rough Coyote Fang",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A basic coyote fang with minimal value.",
+        client = {
+            image = "gg_coyote_fangs_01.png",
+        }
+    },
+
+    ["gg_hunting_knife_01"] = {
+        label = "Basic Hunting Knife",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A reliable, entry-level hunting knife ideal for basic butchering tasks.",
+        client = {
+            image = "gg_hunting_knife_01.png",
+        }
+    },
+
+    ["gg_cougar_claw_01"] = {
+        label = "Rough Cougar Claw",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A basic cougar claw with minimal value.",
+        client = {
+            image = "gg_cougar_claw_01.png",
+        }
+    },
+
+    ["gg_boar_tusk_03"] = {
+        label = "Pristine Boar Tusk",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A high-quality boar tusk, highly valued by craftsmen and traders.",
+        client = {
+            image = "gg_boar_tusk_03.png",
+        }
+    },
+
+    ["gg_salt_block_02"] = {
+        label = "Enhanced Salt Block",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A refined salt block that draws in more animals.",
+        client = {
+            image = "gg_salt_block_02.png",
+        }
+    },
+
+    ["gg_captured_chickenhawk"] = {
+        label = "Captured Chickenhawk",
+        weight = 5000,
+        stack = false,
+        close = true,
+        description = "A captured chickenhawk, a rare and enticing bait that attracts powerful predators.",
+        client = {
+            image = "gg_captured_chickenhawk.png",
+        }
+    },
+
+    ["gg_rabbit_pelt_01"] = {
+        label = "Rough Rabbit Pelt",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A basic rabbit pelt with minimal value.",
+        client = {
+            image = "gg_rabbit_pelt_01.png",
+        }
+    },
+
+    ["gg_coyote_fangs_03"] = {
+        label = "Pristine Coyote Fang",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A high-quality coyote fang, highly valued by traders and craftsmen.",
+        client = {
+            image = "gg_coyote_fangs_03.png",
+        }
+    },
+
+    ["gg_coyote_fangs_02"] = {
+        label = "Sturdy Coyote Fang",
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = "A sturdy coyote fang, suitable for crafting or trade.",
+        client = {
+            image = "gg_coyote_fangs_02.png",
+        }
+    },
+
+    ["tablet"] = {
+        label = "Tablet",
+        weight = 840,
+        stack = false,
+        consume = 0,
+        client = {
+            event = "tablet:toggleOpen"
+        }
+    },
+
 }
