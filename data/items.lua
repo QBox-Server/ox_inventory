@@ -82,7 +82,7 @@ return {
         }
     },
 
-    ['parachute'] = {
+    ['parachute'] = { ---
         label = 'Parachute',
         weight = 8000,
         stack = false,
@@ -166,7 +166,7 @@ return {
         }
     },
 
-    ['armour'] = {
+    ['armour'] = { ---
         label = 'Bulletproof Vest',
         weight = 3000,
         stack = false,
@@ -215,7 +215,7 @@ return {
         }
     },
 
-    ['jammer'] = {
+    ['jammer'] = { ---
         label = 'Radio Jammer',
         weight = 10000,
         allowArmed = true,
@@ -224,7 +224,7 @@ return {
         }
     },
 
-    ['radiocell'] = {
+    ['radiocell'] = { ---
         label = 'AAA Cells',
         weight = 1000,
         stack = true,
@@ -234,17 +234,17 @@ return {
         }
     },
 
-    ['advancedlockpick'] = {
-        label = 'Advanced Lockpick',
-        weight = 500,
-    },
+    -- ['advancedlockpick'] = { ---
+    --     label = 'Advanced Lockpick',
+    --     weight = 500,
+    -- },
 
     ['screwdriverset'] = {
         label = 'Screwdriver Set',
         weight = 500,
     },
 
-    ['electronickit'] = {
+    ['electronickit'] = { ---
         label = 'Electronic Kit',
         weight = 500,
     },
@@ -259,7 +259,7 @@ return {
         weight = 2500,
     },
 
-    ['advancedrepairkit'] = {
+    ['advancedrepairkit'] = { ---
         label = 'Advanced Repair Kit',
         weight = 4000,
     },
@@ -309,15 +309,15 @@ return {
         weight = 100,
     },
 
-    ['meth'] = {
-        label = 'Methamphetamine',
-        weight = 100,
-    },
+    -- ['meth'] = {
+    --     label = 'Methamphetamine',
+    --     weight = 100,
+    -- },
 
-    ['oxy'] = {
-        label = 'Oxycodone',
-        weight = 100,
-    },
+    -- ['oxy'] = {
+    --     label = 'Oxycodone',
+    --     weight = 100,
+    -- },
 
     ['weed_ak47'] = {
         label = 'AK47 2g',
@@ -384,7 +384,7 @@ return {
         weight = 2000,
     },
 
-    ['weed_nutrition'] = {
+    ['weed_nutrition'] = { ---
         label = 'Plant Fertilizer',
         weight = 2000,
     },
@@ -394,12 +394,12 @@ return {
         weight = 200,
     },
 
-    ['rolling_paper'] = {
+    ['rolling_paper'] = { ---
         label = 'Rolling Paper',
         weight = 0,
     },
 
-    ['empty_weed_bag'] = {
+    ['empty_weed_bag'] = { ---
         label = 'Empty Weed Bag',
         weight = 0,
     },
@@ -524,12 +524,12 @@ return {
         weight = 1000,
     },
 
-    ['diving_gear'] = {
+    ['diving_gear'] = { ---
         label = 'Diving Gear',
         weight = 30000,
     },
 
-    ['diving_fill'] = {
+    ['diving_fill'] = { ---
         label = 'Diving Tube',
         weight = 3000,
     },
@@ -618,7 +618,6 @@ return {
         label = 'Empty Evidence Bag',
         weight = 200,
     },
-
     ['filled_evidence_bag'] = {
         label = 'Filled Evidence Bag',
         weight = 200,
@@ -633,7 +632,6 @@ return {
         label = 'Handcuffs',
         weight = 200,
     },
-
 	['police_rappel'] = {
 		label = 'Police Rappel',
 		weight = 100,
@@ -644,7 +642,6 @@ return {
 			event = 'p_policejob/client/heli/usePoliceRappel'
 		}
 	},
-	
 	['fingerprint_scanner'] = {
 		label = 'Fingerprint Scanner',
 		weight = 500,
@@ -654,7 +651,6 @@ return {
 			export = 'p_policejob.useScanner'
 		}
 	},
-
     ['spike_strip'] = {
 		label = 'Spike strip',
 		weight = 50,
@@ -664,38 +660,32 @@ return {
 			export = 'p_policejob.spike_strip'
 		}
 	},
-
 	['road_cone'] = {
 		label = 'Road cone',
 		weight = 50,
 		stack = true,
 	},
-
 	['consign'] = {
 		label = 'Road sign',
 		weight = 50,
 		stack = true,
 	},
-
 	['barrier'] = {
 		label = 'Road barrier',
 		weight = 50,
 		stack = true,
 	},
-
 	['roadcone_light'] = {
 		label = 'Road cone light',
 		weight = 50,
 		stack = true,
 	},
-
 	['headbag'] = {
 		label = 'Head bag',
 		weight = 50,
 		stack = false,
 		close = false
 	},
-
 	['police_diving_suit'] = {
 		label = 'Police Diving Suit',
 		weight = 2000,
@@ -705,7 +695,6 @@ return {
 			export = 'p_policejob.police_diving_suit'
 		}
 	},
-
 	['player_clothes'] = {
 		label = 'Your clothes',
 		weight = 250,
@@ -715,28 +704,24 @@ return {
 			export = 'p_policejob.player_clothes'
 		}
 	},
-
 	['fingerprint'] = {
 		label = 'Fingerprint Sample',
 		weight = 5,
 		stack = false,
 		consume = 0,
 	},
-
 	['bullet'] = {
 		label = 'Bullet Sample',
 		weight = 5,
 		stack = false,
 		consume = 0
 	},
-
 	['blood'] = {
 		label = 'Blood Sample',
 		weight = 5,
 		stack = false,
 		consume = 0
 	},
-
 	['tracking_band'] = {
 		label = 'GPS Band',
 		weight = 300,
@@ -744,14 +729,12 @@ return {
 		close = false,
 		consume = 0
 	},
-
 	['radio'] = {
 		label = 'Radio',
 		weight = 1000,
 		stack = false,
 		allowArmed = true
 	},
-
 	['vest_normal'] = {
 		label = 'Bulletproof Vest',
 		weight = 3000,
@@ -761,7 +744,6 @@ return {
 			export = 'p_policejob.vest_normal'
 		}
 	},
-
 	['vest_strong'] = {
 		label = 'Strong Bulletproof Vest',
 		weight = 3000,
@@ -771,7 +753,6 @@ return {
 			export = 'p_policejob.vest_strong'
 		}
 	},
-
 	['body_cam'] = {
 		label = 'Police Bodycam',
 		weight = 200,
@@ -781,7 +762,6 @@ return {
 			export = 'p_policejob.body_cam'
 		}
 	},
-
 	['gps'] = {
 		label = 'GPS',
 		weight = 100,
@@ -800,7 +780,6 @@ return {
 			end
 		}
 	},
-
 	['camera'] = {
 		label = 'Camera',
 		stack = false,
@@ -811,7 +790,6 @@ return {
 			export = 'p_policejob.camera'
 		}
 	},
-
 	['photo'] = {
 		label = 'Photo',
 		stack = false,
@@ -830,7 +808,6 @@ return {
 			},
 		},
 	},
-
 	['handcuffs'] = {
 		label = 'Handcuffs',
 		weight = 100,
@@ -841,7 +818,6 @@ return {
 			export = 'p_policejob.handcuffs'
 		}
 	},
-
 	['cable_ties'] = {
 		label = 'Cable ties',
 		weight = 100,
@@ -849,7 +825,6 @@ return {
 		close = false,
 		consume = 0
 	},
-
 	['mouthtape'] = {
 		label = 'Mouth Tape',
 		weight = 100,
@@ -857,7 +832,6 @@ return {
 		close = false,
 		consume = 0
 	},
-
 	['police_shield'] = {
 		label = 'Police Shield',
 		weight = 250,
@@ -868,7 +842,6 @@ return {
 			event = 'p_policejob/client/objects/togglePoliceShield'
 		}
 	},
-
 	['evidence_camera'] = {
 		label = 'Evidence Camera',
 		weight = 100,
@@ -878,7 +851,6 @@ return {
 			export = 'p_policejob.evidence_camera'
 		}
 	},
-
 	['megaphone'] = {
 		label = 'Megaphone',
 		weight = 100,
@@ -889,7 +861,6 @@ return {
 			export = 'p_policejob.useMegaphone'
 		}
 	},
-
 	['traffic_ticket'] = {
 		label = 'Traffic Ticket',
 		weight = 50,
@@ -897,7 +868,6 @@ return {
 		close = false,
 		consume = 0,
 	},
-
 	['breathalyzer'] = {
 		label = 'Breathalyzer',
 		weight = 150,
@@ -908,7 +878,6 @@ return {
 			export = 'p_policejob.useBreathalyzer'
 		}
 	},
-
 	['cuffs_key'] = {
 		label = 'Handcuffs key',
 	  	weight = 50,
@@ -916,7 +885,6 @@ return {
 	  	close = false,
 		consume = 0
 	},
-
 	['wheel_clamp'] = {
 		label = 'Wheel Clamp',
 		weight = 250,
@@ -925,7 +893,8 @@ return {
 		consume = 0
 	},
 
-    -- Servicing Items
+    -- [[ jg-mechanic ]] --
+        -- Servicing Items
     ["engine_oil"] = {
         label = "Engine Oil",
         weight = 1000,
@@ -954,7 +923,7 @@ return {
         label = "Suspension Parts",
         weight = 1000,
     },
-    -- Engine Items
+        -- Engine Items
     ["i4_engine"] = {
         label = "I4 Engine",
         weight = 1000,
@@ -975,7 +944,7 @@ return {
         label = "Turbocharger",
         weight = 1000,
     },
-    -- Electric Engines
+        -- Electric Engines
     ["ev_motor"] = {
         label = "EV Motor",
         weight = 1000,
@@ -988,7 +957,7 @@ return {
         label = "EV Coolant",
         weight = 1000,
     },
-    -- Drivetrain Items
+        -- Drivetrain Items
     ["awd_drivetrain"] = {
         label = "AWD Drivetrain",
         weight = 1000,
@@ -1001,7 +970,7 @@ return {
         label = "FWD Drivetrain",
         weight = 1000,
     },
-    -- Tuning Items
+        -- Tuning Items
     ["slick_tyres"] = {
         label = "Slick Tyres",
         weight = 1000,
@@ -1022,7 +991,7 @@ return {
         label = "Ceramic Brakes",
         weight = 1000,
     },
-    -- Cosmetic Items
+        -- Cosmetic Items
     ["lighting_controller"] = {
         label = "Lighting Controller",
         weight = 100,
@@ -1061,7 +1030,7 @@ return {
         label = "Extras Kit",
         weight = 1000,
     },
-    -- Nitrous & Cleaning Items
+        -- Nitrous & Cleaning Items
     ["nitrous_bottle"] = {
         label = "Nitrous Bottle",
         weight = 1000,
@@ -1098,12 +1067,12 @@ return {
         event = "jg-mechanic:client:use-duct-tape",
         }
     },
-    -- Performance Item
+        -- Performance Item
     ["performance_part"] = {
         label = "Performance Parts",
         weight = 1000,
     },
-    -- Mechanic Tablet Item
+        -- Mechanic Tablet Item
     ["mechanic_tablet"] = {
         label = "Mechanic Tablet",
         weight = 1000,
@@ -1111,12 +1080,13 @@ return {
         event = "jg-mechanic:client:use-tablet",
         }
     },
-    -- Gearbox
+        -- Gearbox
     ["manual_gearbox"] = {
         label = "Manual Gearbox",
         weight = 1000,
     },
-
+    
+    -- [[ rcore-fuel ]] --
     ['vehicle_manual'] = {
         label = 'Vehicle manual',
         weight = 50,
@@ -1127,7 +1097,6 @@ return {
             export = 'rcore_fuel.vehicle_manual',
         },
     },
-
     ['window_cleaner'] = {
         label = 'windows cleaner',
         weight = 50,
@@ -1138,7 +1107,6 @@ return {
             export = 'rcore_fuel.window_cleaner',
         },
     },
-
     ['fuel_pump'] = {
         label = 'Fuel pumper',
         weight = 10000,
@@ -1150,20 +1118,19 @@ return {
         },
     },
 
+    -- [[ rcore-casino ]] --
     ['casino_beer'] = {
         label = 'Casino Beer',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_burger'] = {
         label = 'casino burger',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_chips'] = {
         label = 'casino chips',
         weight = 0,
@@ -1171,56 +1138,48 @@ return {
         consume = 0,
         stack = true,
     },
-
     ['casino_coffee'] = {
         label = 'casino coffee',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_coke'] = {
         label = 'casino coke',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_donut'] = {
         label = 'casino donut',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_ego_chaser'] = {
         label = 'casino ego chaser',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_luckypotion'] = {
         label = 'casino luckypotion',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_psqs'] = {
         label = 'Casino Ps & Qs',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_sandwitch'] = {
         label = 'casino sandwitch',
         weight = 0,
         close = true,
         consume = 0,
     },
-
     ['casino_sprite'] = {
         label = 'casino sprite',
         weight = 0,
@@ -1228,6 +1187,7 @@ return {
         consume = 0,
     },
 
+    -- [[ projectx-houserobery ]] --
     ["x_coffeemaker"] = {
         label = "Coffee Maker",
         weight = 500,
@@ -1302,6 +1262,7 @@ return {
         description = "A leather suitcase, what the hell is inside of this?",
         client = { image = "x_suitcase.png" }
     },
+
     ["advancedlockpick"] = {
         label = "Advanced Lockpick",
         weight = 500,
@@ -1346,7 +1307,6 @@ return {
         close = true,
         description = 'A kit containing a syringe, a needle, and a blood vial.',
     },
-
     ['blood_vial'] = {
         label = 'Blood Vial',
         weight = 1000,
@@ -1354,7 +1314,6 @@ return {
         close = true,
         description = 'A vial full of blood.',
     },
-    
     ['cleanair'] = {
         label = 'CleanAir+ Mask',
         weight = 500,
@@ -1362,7 +1321,6 @@ return {
         close = true,
         description = 'Oxygen-rich mask. Ideal for respiratory depression. May overstimulate sedated patients.',
     },
-
     ['cardioclamp'] = {
         label = 'CardioClamp',
         weight = 300,
@@ -1370,7 +1328,6 @@ return {
         close = true,
         description = 'Slows heart rate. Use during panic attacks or tachycardia. Not safe for high BP cases.',
     },
-
     ['antipsychotix'] = {
         label = 'AntiPsychotix',
         weight = 250,
@@ -1378,7 +1335,6 @@ return {
         close = true,
         description = 'Stabilizes psychosis and overstimulation. Unsafe with ethanol in bloodstream.',
     },
-
     ['neurolift'] = {
         label = 'NeuroLift',
         weight = 200,
@@ -1386,7 +1342,6 @@ return {
         close = true,
         description = 'Stimulates CNS to wake benzo overdoses. Can trigger seizures in opioid ODs.',
     },
-
     ['gutflush'] = {
         label = 'GutFlush-X',
         weight = 400,
@@ -1394,7 +1349,6 @@ return {
         close = true,
         description = 'Rapid detox via gastric flush. Removes essential hormones with prolonged use.',
     },
-
     ['zendose'] = {
         label = 'ZenDose',
         weight = 250,
@@ -1402,7 +1356,6 @@ return {
         close = true,
         description = 'Induces deep calm. Great for aggression. Dangerous in high-adrenaline emergencies.',
     },
-
     ['pulsedown'] = {
         label = 'PulseDown',
         weight = 300,
@@ -1410,7 +1363,6 @@ return {
         close = true,
         description = 'Drops blood pressure and heart rate. Risk of coma when sedatives are in play.',
     },
-
     ['opionix'] = {
         label = 'OpioNix',
         weight = 350,
@@ -1418,7 +1370,6 @@ return {
         close = true,
         description = 'Reverses opioid effects. May cause cardiac instability in stimulant cases.',
     },
-
     ['focuspatch'] = {
         label = 'FocusPatch',
         weight = 150,
@@ -2024,91 +1975,91 @@ return {
         description = nil,    
     },
 
-    ['impact_driver'] = {
+    ['impact_driver'] = { ---
         label = 'Impact Driver',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Remove vehicle wheels',
     },
-    ['spanner'] = {
+    ['spanner'] = { ---
         label = 'Spanner',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Loosen vehicle wheel lugnuts',
     },
-    ['pliers'] = {
+    ['pliers'] = { ---
         label = 'Pliers',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Cut brake lines',
     },
-    ['adjustable_spanner'] = {
+    ['adjustable_spanner'] = { ---
         label = 'Adjustable Spanner',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Sabotage a vehicle\'s accelerator',
     },
-    ['drill'] = {
+    ['drill'] = { ---
         label = 'Drill',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Used for robberies, or vehicle sabotage',
     },
-    ['buzz_saw'] = {
+    ['buzz_saw'] = { ---
         label = 'Buzz Saw',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Cut off pieces of a vehicle with this',
     },
-    ['screwdriver'] = {
+    ['screwdriver'] = { ---
         label = 'Screwdriver',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Screw with the electronics of a vehicle',
     },
-    ['ignition_bomb'] = {
+    ['ignition_bomb'] = { ---
         label = 'Ignition Bomb',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Placed on vehicle engines directly (when the hood is open).',
     },
-    ['impact_bomb'] = {
+    ['impact_bomb'] = { ---
         label = 'Impact Bomb',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Placed on vehicle engines directly (when the hood is open).',
     },
-    ['remote_bomb'] = {
+    ['remote_bomb'] = { ---
         label = 'Remote Bomb',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Placed on vehicle engines directly (when the hood is open). Remote Bomb Detonator.',
     },
-    ['phone_bomb'] = {
+    ['phone_bomb'] = { ---
         label = 'Remote Bomb Detonator',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Detonates a placed Remote Bomb',
     },
-    ['speed_bomb'] = {
+    ['speed_bomb'] = { ---
         label = 'Speed Bomb',
         weight = 1000,
         stack = false,
         close = true,
         description = 'Placed on vehicle engines directly (when the hood is open).',
     },
-    ['firelighter'] = {
+    ['firelighter'] = { ---
         label = 'Firelighter',
         weight = 1000,
         stack = false,
@@ -2116,406 +2067,343 @@ return {
         description = 'Sets a nearby vehicle on fire',
     },
 
+    -- [[ lunar-drugscreator ]] --
     ['ammonia'] = {
         label = 'Ammonia',
         weight = 500,
         stack = true,
     },
-
     ['sodium_benzoate'] = {
         label = 'Sodium benzoate',
         weight = 750,
         stack = true,
     },
-
     ['meth_tray'] = {
         label = 'Meth tray',
         weight = 1000,
         stack = true,
     },
-
     ['meth'] = {
         label = 'Meth',
         weight = 1,
         stack = true,
     },
-
     ['meth_bag'] = {
         label = 'Meth bag',
         weight = 50,
         stack = true,
     },
-
     ['plastic_bag'] = {
         label = 'Plastic bag',
         weight = 40,
         stack = true,
     },
-
     ['meth_syringe'] = {
         label = 'Meth syringe',
         weight = 75,
         stack = true,
     },
-
-    -- Cocaine related items
+        -- Cocaine related items
     ['coke_seed'] = {
         label = 'Cocaine seed',
         weight = 10,
         stack = true,
     },
-
     ['coke_leaf'] = {
         label = 'Cocaine leaf',
         weight = 50,
         stack = true,
     },
-
     ['coke_paste'] = {
         label = 'Cocaine paste',
         weight = 150,
         stack = true,
     },
-
     ['coke'] = {
         label = 'Cocaine',
         weight = 1,
         stack = true,
     },
-
     ['coke_bag'] = {
         label = 'Cocaine bag',
         weight = 50,
         stack = true,
     },
-
     ['coke_brick'] = {
         label = 'Cocaine brick',
         weight = 200,
         stack = true,
     },
-
     ['coke_doll'] = {
         label = 'Cocaine doll',
         weight = 500,
         stack = true,
     },
-
-    -- Weed related items
+        -- Weed related items
     ['weed_seed'] = {
         label = 'Weed seed',
         weight = 5,
         stack = true,
     },
-
     ['weed_pot'] = {
         label = 'Flower Pot',
         weight = 500,
         stack = true,
     },
-
     ['trowel'] = {
         label = 'Trowel',
         weight = 150,
         stack = true,
     },
-
     ['weed_bud'] = {
         label = 'Weed bud',
         weight = 25,
         stack = true,
     },
-
     ['clean_weed_bud'] = {
         label = 'Clean weed bud',
         weight = 20,
         stack = true,
     },
-
     ['cookie_dough'] = {
         label = 'Cookie dough',
         weight = 200,
         stack = true
     },
-
     ['weed_cookie'] = {
         label = 'Weed cookie',
         weight = 50,
         stack = true
     },
-
     ['weed_bag'] = {
         label = 'Weed bag',
         weight = 50,
         stack = true,
     },
-
     ['weed_joint'] = {
         label = 'Weed joint',
         weight = 15,
         stack = true,
     },
-
     ['weed_papers'] = {
         label = 'Weed papers',
         weight = 5,
         stack = true,
     },
-
-    -- Heroin related items
+        -- Heroin related items
     ['poppy_seeds'] = {
         label = 'Poppy seeds',
         weight = 5,
         stack = true,
     },
-
     ['poppy_plant'] = {
         label = 'Poppy plant',
         weight = 100,
         stack = true,
     },
-
     ['opium'] = {
         label = 'Opium',
         weight = 1,
         stack = true,
     },
-
     ['heroin'] = {
         label = 'Heroin',
         weight = 1,
         stack = true,
     },
-
     ['heroin_bag'] = {
         label = 'Heroin bag',
         weight = 50,
         stack = true,
     },
-
     ['heroin_syringe'] = {
         label = 'Heroin syringe',
         weight = 75,
         stack = true,
     },
-
     ['syringe'] = {
         label = 'Syringe',
         weight = 25,
         stack = true,
     },
-
-    -- LSD related items
+        -- LSD related items
     ['ergot_fungus'] = {
         label = 'Ergot fungus',
         weight = 50,
         stack = true,
     },
-
     ['generic_leaf'] = {
         label = 'Leaf',
         weight = 20,
         stack = true,
     },
-
     ['lsd_liquid'] = {
         label = 'LSD liquid',
         weight = 25,
         stack = true,
     },
-
     ['lsd'] = {
         label = 'LSD',
         weight = 1,
         stack = true,
     },
-
     ['art_papers'] = {
         label = 'Art papers',
         weight = 5,
         stack = true,
     },
-
-    -- Ecstasy related items
+        -- Ecstasy related items
     ['safrole_oil'] = {
         label = 'Safrole oil',
         weight = 300,
         stack = true,
     },
-
     ['ecstasy_crystals'] = {
         label = 'Ecstasy crystals',
         weight = 1,
         stack = true,
     },
-
     ['ecstasy_pill'] = {
         label = 'Ecstasy pill',
         weight = 15,
         stack = true,
     },
-
-    -- Mushroom related items
+        -- Mushroom related items
     ['mushrooms'] = {
         label = 'Mushrooms',
         weight = 1,
         stack = true,
     },
-
     ['mushroom_powder'] = {
         label = 'Mushroom powder',
         weight = 1,
         stack = true,
     },
-
     ['chocolate_chips'] = {
         label = 'Chocolate chips',
         weight = 30,
         stack = true,
     },
-
     ['mushroom_chocolate'] = {
         label = 'Mushroom chocolate',
         weight = 45,
         stack = true,
     },
-
-    -- Ketamine related items
+        -- Ketamine related items
     ['anesthetic'] = {
         label = 'anesthetic',
         weight = 200,
         stack = true,
     },
-
     ['ketamine'] = {
         label = 'Ketamine',
         weight = 1,
         stack = true,
     },
-
     ['ketamine_bag'] = {
         label = 'Ketamine bag',
         weight = 50,
         stack = true,
     },
-
-    -- Crack related items
+        -- Crack related items
     ['baking_soda'] = {
         label = 'Baking soda',
         weight = 100,
         stack = true,
     },
-
     ['crack'] = {
         label = 'Crack',
         weight = 1,
         stack = true,
     },
-
     ['crack_bag'] = {
         label = 'Crack bag',
         weight = 50,
         stack = true,
     },
-
     ['crack_pipe'] = {
         label = 'Crack pipe',
         weight = 150,
         stack = true,
     },
-
     ['crack_syringe'] = {
         label = 'Crack syringe',
         weight = 75,
         stack = true,
     },
-
     ['pipe'] = {
         label = 'Pipe',
         weight = 100,
         stack = true,
     },
-
-    -- Fentanyl related items
+        -- Fentanyl related items
     ['npp_chemical'] = {
         label = 'NPP chemical',
         weight = 300,
         stack = true,
     },
-
     ['aniline_solution'] = {
         label = 'Aniline solution',
         weight = 250,
         stack = true,
     },
-
     ['fentanyl'] = {
         label = 'Fentanyl',
         weight = 1,
         stack = true,
     },
-
     ['fentanyl_bag'] = {
         label = 'Fentanyl bag',
         weight = 25,
         stack = true,
     },
-
     ['meth_table'] = {
         label = 'Meth table',
         weight = 2250,
         stack = false
     },
-
     ['coke_table'] = {
         label = 'Coke table',
         weight = 2250,
         stack = false
     },
-
     ['weed_table'] = {
         label = 'Weed table',
         weight = 2250,
         stack = false
     },
-
     ['chem_table'] = {
         label = 'Chemistry table',
         weight = 2250,
         stack = false
     },
-
     ['burner_phone'] = {
         label = 'Burner phone',
         weight = 200,
         stack = true
     },
-
     ['light1'] = {
         label = 'Portable Lamp',
         weight = 2000,
         stack = true
     },
-
     ['light2'] = {
         label = 'Portable Lamp',
         weight = 2000,
         stack = true
     },
-
     ['fertilizer'] = {
         label = 'Fertilizer',
         weight = 250,
         stack = true
     },
-
     ['water_can'] = {
         label = 'Watering can',
         weight = 250,
         stack = true
     },
 
-    -- Pug Robbery Creator
+    -- [[ Pug Robbery Creator ]] --
     ["gasmask"] = {
         label = "Gas Mask",
         weight = 100,
@@ -2838,7 +2726,6 @@ return {
         description = "A bank card that provides access to bank services.", 
         client = { image = "bigbankcard.png" } 
     },
-
     ["c4"] = { 
         label = "C4 Explosive", 
         weight = 10, 
@@ -2872,223 +2759,6 @@ return {
         description = "A nice device that allows you to rob the gruppe sechs transports", 
         client = { image = "gruppesechstablet.png" } 
     },
-
-    -- ["pigeonmeat"] = {
-    --     label = "Pigeon Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Delicious pigeon meat for your culinary adventures.",
-    --     client = { image = "pigeonmeat.png" }         
-    -- },
-    -- ["pigeonfeather"] = {
-    --     label = "Pigeon Feather",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A soft and lightweight feather from a pigeon.",
-    --     client = { image = "pigeonfeather.png" }         
-    -- },
-    -- ["crowmeat"] = {
-    --     label = "Crow Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Tasty crow meat, perfect for daring gourmets.",
-    --     client = { image = "crowmeat.png" }         
-    -- },
-    -- ["crowfeather"] = {
-    --     label = "Crow Feather",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A sleek and dark feather from a crow.",
-    --     client = { image = "crowfeather.png" }         
-    -- },
-    -- ["seagullmeat"] = {
-    --     label = "Seagull Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Savory seagull meat, a delicacy among fishermen.",
-    --     client = { image = "seagullmeat.png" }         
-    -- },
-    -- ["seagullfeather"] = {
-    --     label = "Seagull Feather",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A graceful and light feather from a seagull.",
-    --     client = { image = "seagullfeather.png" }         
-    -- },
-    -- ["cormorantmeat"] = {
-    --     label = "Cormorant Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Meaty cormorant meat, a rare find for adventurous eaters.",
-    --     client = { image = "cormorantmeat.png" }         
-    -- },
-    -- ["cormorantbeak"] = {
-    --     label = "Cormorant Beak",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A sturdy and pointed beak from a cormorant.",
-    --     client = { image = "cormorantbeak.png" }         
-    -- },
-    -- ["deermeat"] = {
-    --     label = "Deer Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Succulent deer meat, a favorite among hunters.",
-    --     client = { image = "deermeat.png" }         
-    -- },
-    -- ["deerhorn"] = {
-    --     label = "Deer Horn",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A majestic horn from a deer, prized for its beauty.",
-    --     client = { image = "deerhorn.png" }         
-    -- },
-    -- ["rabbitmeat"] = {
-    --     label = "Rabbit Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Tender rabbit meat, perfect for stews and roasts.",
-    --     client = { image = "rabbitmeat.png" }         
-    -- },
-    -- ["rabbitskin"] = {
-    --     label = "Rabbit Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A soft and supple skin from a rabbit, ideal for crafting.",
-    --     client = { image = "rabbitskin.png" }         
-    -- },
-    -- ["ratmeat"] = {
-    --     label = "Rat Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Edible rat meat, a survivalist's choice in desperate times.",
-    --     client = { image = "ratmeat.png" }         
-    -- },
-    -- ["pigmeat"] = {
-    --     label = "Pig Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Juicy pig meat, a staple in many hearty meals.",
-    --     client = { image = "pigmeat.png" }         
-    -- },
-    -- ["pigskin"] = {
-    --     label = "Pig Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Thick and durable pig skin, useful for crafting leather goods.",
-    --     client = { image = "pigskin.png" }         
-    -- },
-    -- ["coyotemeat"] = {
-    --     label = "Coyote Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Lean and gamey coyote meat, favored by wilderness enthusiasts.",
-    --     client = { image = "coyotemeat.png" }         
-    -- },
-    -- ["coyoteskin"] = {
-    --     label = "Coyote Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Tough and weather-resistant coyote skin, perfect for outdoor gear.",
-    --     client = { image = "coyoteskin.png" }         
-    -- },
-    -- ["coguarmeat"] = {
-    --     label = "Cougarmeat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Exotic cougarmeat, a delicacy for adventurous palates.",
-    --     client = { image = "coguarmeat.png" }         
-    -- },
-    -- ["coguarskin"] = {
-    --     label = "Cougar Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Supple cougar skin, highly valued in the fashion industry.",
-    --     client = { image = "coguarskin.png" }         
-    -- },
-    -- ["boarmeat"] = {
-    --     label = "Boar Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Hearty boar meat, a popular choice among hunters and chefs.",
-    --     client = { image = "boarmeat.png" }         
-    -- },
-    -- ["boarskin"] = {
-    --     label = "Boar Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Tough boar skin, excellent for crafting rugged goods.",
-    --     client = { image = "boarskin.png" }         
-    -- },
-    -- ["snakemeat"] = {
-    --     label = "Snake Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Savory snake meat, a delicacy in some cultures.",
-    --     client = { image = "snakemeat.png" }         
-    -- },
-    -- ["boarhorn"] = {
-    --     label = "Boar Horn",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A large and impressive horn from a boar.",
-    --     client = { image = "boarhorn.png" }         
-    -- },
-    -- ["snakeskin"] = {
-    --     label = "Snake Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Smooth and patterned snake skin, used for various crafts.",
-    --     client = { image = "snakeskin.png" } 
-    -- },
-    -- ["hawkmeat"] = {
-    --     label = "Hawk Meat",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Lean and gamey hawk meat, a rare delicacy among hunters.",
-    --     client = { image = "hawkmeat.png" } 
-    -- },
-    -- ["hawkskin"] = {
-    --     label = "Hawk Skin",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "Beautiful hawk skin, prized for its unique markings.",
-    --     client = { image = "hawkskin.png" } 
-    -- },
-    -- ["hawkpeak"] = {
-    --     label = "Hawk Peak",
-    --     weight = 1000,
-    --     stack = true,
-    --     close = true,
-    --     description = "A majestic feather from a hawk's peak, a symbol of freedom.",
-    --     client = { image = "hawkpeak.png" } 
-    -- },
 
     ["ticket_iceorink"] = {
         label = "Ticket Ice-O-Rink",
@@ -3161,21 +2831,18 @@ return {
 		stack = false,
 		close = true,
 	},
-
 	['wheelchair'] = {
 		label = 'Wheelchair',
 		weight = 100,
 		stack = false,
 		close = true,
 	},
-
 	['stretcher'] = {
 		label = 'Stretcher',
 		weight = 100,
 		stack = false,
 		close = true,
 	},
-
 	['medical_kit'] = {
 		label = 'Medical Kit',
 		weight = 200,
@@ -3183,7 +2850,6 @@ return {
 		close = false,
 		description = 'A basic medical kit containing essential supplies for treating minor injuries and illnesses.',
 	},
-
 	['advanced_medical_kit'] = {
 		label = 'Advanced Medical Kit',
 		weight = 200,
@@ -3191,7 +2857,6 @@ return {
 		close = false,
 		description = 'A more advanced medical kit containing additional supplies and equipment for treating injuries and illnesses.',
 	},
-
 	['blood_bag_250'] = {
 		label = 'Blood Bag 250ml',
 		weight = 250,
@@ -3199,7 +2864,6 @@ return {
 		close = false,
 		description = 'A 250ml bag of blood used for blood transfusions.',
 	},
-
 	['blood_bag_500'] = {
 		label = 'Blood Bag 500ml',
 		weight = 500,
@@ -3207,7 +2871,6 @@ return {
 		close = false,
 		description = 'A 500ml bag of blood used for blood transfusions.',
 	},
-
 	['painkillers'] = {
 		label = 'Painkillers',
 		weight = 50,
@@ -3215,14 +2878,12 @@ return {
 		close = false,
 		description = 'A medication used to relieve pain and reduce fever.',
 	},
-
 	['adrenaline'] = {
 		label = 'Adrenaline',
 		weight = 50,
 		stack = true,
 		close = false,
 	},
-
 	['morphine'] = {
 		label = 'Morphine',
 		weight = 50,
@@ -3230,7 +2891,6 @@ return {
 		close = false,
 		description = 'A medication used to relieve pain and reduce fever.',
 	},
-
 	['suture_kit'] = {
 		label = 'Suture Kit',
 		weight = 100,
@@ -3238,7 +2898,6 @@ return {
 		close = false,
 		description = 'A medical device used to close wounds or surgical incisions.',
 	},
-
 	['icepack'] = {
 		label = 'Ice Pack',
 		weight = 100,
@@ -3246,7 +2905,6 @@ return {
 		close = false,
 		description = 'A bag of ice used to reduce swelling and numb pain.',
 	},
-
 	['splint'] = {
 		label = 'Splint',
 		weight = 100,
@@ -3254,21 +2912,18 @@ return {
 		close = false,
 		description = 'A device that is used to apply pressure to a limb.',
 	},
-
 	['defibrilator'] = {
 		label = 'Defibrillator',
 		weight = 500,
 		stack = false,
 		close = true,
 	},
-
 	['bodybag'] = {
 		label = 'Body Bag',
 		weight = 500,
 		stack = true,
 		close = false,
 	},
-
 	['gauze'] = {
 		label = 'Gauze',
 		weight = 20,
@@ -3276,7 +2931,6 @@ return {
 		close = true,
 		description = 'A thin, transparent fabric with a loose open weave, used for dressings, bandages, and surgical sponges.',
 	},
-
 	['bandage'] = {
 		label = 'Bandage',
 		description = 'Very good for stopping bleeding and small injuries',
@@ -3284,7 +2938,6 @@ return {
 		stack = true,
 		close = true
 	},
-
 	['ointment'] = {
 		label = 'Ointment',
 		weight = 50,
@@ -3292,7 +2945,6 @@ return {
 		close = true,
 		description = 'A medical cream used to promote healing and prevent infection in minor cuts, scrapes, and burns.',
 	},
-
 	['disinfectant'] = {
 		label = 'Disinfectant',
 		weight = 50,
@@ -3300,14 +2952,12 @@ return {
 		close = true,
 		description = 'A liquid that kills bacteria and other microorganisms on surfaces.',
 	},
-
 	['cyclonamine'] = {
 		label = 'Cyclonamine',
 		weight = 50,
 		stack = true,
 		close = true,
 	},
-
 	['tourniquet'] = {
 		label = 'Tourniquet',
 		weight = 100,
@@ -3315,7 +2965,6 @@ return {
 		close = true,
 		description = 'A device that is used to apply pressure to a limb.',
 	},
-
 	['medicbag'] = {
 		label = 'Medic Bag',
 		weight = 500,
@@ -3323,7 +2972,6 @@ return {
 		close = true,
 		description = 'A bag containing medical supplies and equipment.',
 	},
-
 	['antipyretics'] = {
 		label = 'Antipyretics',
 		weight = 50,
@@ -3331,7 +2979,6 @@ return {
 		close = true,
 		description = 'A medication that reduces fever.',
 	},
-
 	['ambulance_gps'] = {
 		label = 'Ambulance GPS',
 		weight = 100,
@@ -3360,7 +3007,6 @@ return {
             image = "gg_hunting_cookedmeat.png",
         }
     },
-
     ["gg_boar_tusk_02"] = {
         label = "Sturdy Boar Tusk",
         weight = 1000,
@@ -3371,7 +3017,6 @@ return {
             image = "gg_boar_tusk_02.png",
         }
     },
-
     ["gg_boar_tusk_01"] = {
         label = "Rough Boar Tusk",
         weight = 1000,
@@ -3382,7 +3027,6 @@ return {
             image = "gg_boar_tusk_01.png",
         }
     },
-
     ["gg_cougar_claw_03"] = {
         label = "Pristine Cougar Claw",
         weight = 1000,
@@ -3393,7 +3037,6 @@ return {
             image = "gg_cougar_claw_03.png",
         }
     },
-
     ["gg_captured_hen"] = {
         label = "Captured Hen",
         weight = 5000,
@@ -3404,7 +3047,6 @@ return {
             image = "gg_captured_hen.png",
         }
     },
-
     ["gg_hunting_campfire"] = {
         label = "Portable Campfire",
         weight = 1000,
@@ -3415,7 +3057,6 @@ return {
             image = "gg_hunting_campfire.png",
         }
     },
-
     ["gg_captured_rabbit"] = {
         label = "Captured Rabbit",
         weight = 5000,
@@ -3426,7 +3067,6 @@ return {
             image = "gg_captured_rabbit.png",
         }
     },
-
     ["gg_deer_hide_03"] = {
         label = "Pristine Deer Hide",
         weight = 1000,
@@ -3437,7 +3077,6 @@ return {
             image = "gg_deer_hide_03.png",
         }
     },
-
     ["gg_hunting_knife_02"] = {
         label = "Intermediate Hunting Knife",
         weight = 1000,
@@ -3448,7 +3087,6 @@ return {
             image = "gg_hunting_knife_02.png",
         }
     },
-
     ["gg_cougar_claw_02"] = {
         label = "Sturdy Cougar Claw",
         weight = 1000,
@@ -3459,7 +3097,6 @@ return {
             image = "gg_cougar_claw_02.png",
         }
     },
-
     ["gg_rabbit_pelt_03"] = {
         label = "Pristine Rabbit Pelt",
         weight = 1000,
@@ -3470,7 +3107,6 @@ return {
             image = "gg_rabbit_pelt_03.png",
         }
     },
-
     ["gg_rabbit_pelt_02"] = {
         label = "Sturdy Rabbit Pelt",
         weight = 1000,
@@ -3481,7 +3117,6 @@ return {
             image = "gg_rabbit_pelt_02.png",
         }
     },
-
     ["gg_deer_hide_02"] = {
         label = "Sturdy Deer Hide",
         weight = 1000,
@@ -3492,7 +3127,6 @@ return {
             image = "gg_deer_hide_02.png",
         }
     },
-
     ["gg_deer_hide_01"] = {
         label = "Rough Deer Hide",
         weight = 1000,
@@ -3503,7 +3137,6 @@ return {
             image = "gg_deer_hide_01.png",
         }
     },
-
     ["gg_salt_block_01"] = {
         label = "Basic Salt Block",
         weight = 100,
@@ -3514,7 +3147,6 @@ return {
             image = "gg_salt_block_01.png",
         }
     },
-
     ["gg_hunting_animaltrap"] = {
         label = "Heavy-Duty Animal Trap",
         weight = 1000,
@@ -3525,7 +3157,6 @@ return {
             image = "gg_hunting_animaltrap.png",
         }
     },
-
     ["gg_hunting_animaltracker"] = {
         label = "Advanced Animal Tracker",
         weight = 1000,
@@ -3536,7 +3167,6 @@ return {
             image = "gg_hunting_animaltracker.png",
         }
     },
-
     ["gg_hunting_knife_03"] = {
         label = "Premium Hunting Knife",
         weight = 1000,
@@ -3547,7 +3177,6 @@ return {
             image = "gg_hunting_knife_03.png",
         }
     },
-
     ["gg_pug_bait_01"] = {
         label = "Basic Pug Bait",
         weight = 100,
@@ -3558,7 +3187,6 @@ return {
             image = "gg_pug_bait_01.png",
         }
     },
-
     ["gg_salt_block_03"] = {
         label = "Premium Salt Block",
         weight = 100,
@@ -3569,7 +3197,6 @@ return {
             image = "gg_salt_block_03.png",
         }
     },
-
     ["gg_hunting_meat"] = {
         label = "Fresh Animal Meat",
         weight = 100,
@@ -3580,7 +3207,6 @@ return {
             image = "gg_hunting_meat.png",
         }
     },
-
     ["gg_pug_bait_02"] = {
         label = "Advanced Pug Bait",
         weight = 100,
@@ -3591,7 +3217,6 @@ return {
             image = "gg_pug_bait_02.png",
         }
     },
-
     ["gg_pug_bait_03"] = {
         label = "Specialized Pug Bait",
         weight = 100,
@@ -3602,7 +3227,6 @@ return {
             image = "gg_pug_bait_03.png",
         }
     },
-
     ["gg_coyote_fangs_01"] = {
         label = "Rough Coyote Fang",
         weight = 1000,
@@ -3613,7 +3237,6 @@ return {
             image = "gg_coyote_fangs_01.png",
         }
     },
-
     ["gg_hunting_knife_01"] = {
         label = "Basic Hunting Knife",
         weight = 1000,
@@ -3624,7 +3247,6 @@ return {
             image = "gg_hunting_knife_01.png",
         }
     },
-
     ["gg_cougar_claw_01"] = {
         label = "Rough Cougar Claw",
         weight = 1000,
@@ -3635,7 +3257,6 @@ return {
             image = "gg_cougar_claw_01.png",
         }
     },
-
     ["gg_boar_tusk_03"] = {
         label = "Pristine Boar Tusk",
         weight = 1000,
@@ -3646,7 +3267,6 @@ return {
             image = "gg_boar_tusk_03.png",
         }
     },
-
     ["gg_salt_block_02"] = {
         label = "Enhanced Salt Block",
         weight = 100,
@@ -3657,7 +3277,6 @@ return {
             image = "gg_salt_block_02.png",
         }
     },
-
     ["gg_captured_chickenhawk"] = {
         label = "Captured Chickenhawk",
         weight = 5000,
@@ -3668,7 +3287,6 @@ return {
             image = "gg_captured_chickenhawk.png",
         }
     },
-
     ["gg_rabbit_pelt_01"] = {
         label = "Rough Rabbit Pelt",
         weight = 1000,
@@ -3679,7 +3297,6 @@ return {
             image = "gg_rabbit_pelt_01.png",
         }
     },
-
     ["gg_coyote_fangs_03"] = {
         label = "Pristine Coyote Fang",
         weight = 1000,
@@ -3690,7 +3307,6 @@ return {
             image = "gg_coyote_fangs_03.png",
         }
     },
-
     ["gg_coyote_fangs_02"] = {
         label = "Sturdy Coyote Fang",
         weight = 1000,
@@ -3710,6 +3326,95 @@ return {
         client = {
             event = "tablet:toggleOpen"
         }
+    },
+
+    ["trap_phone"] = {
+        label = 'Trap Phone',
+        description = 'Trap-Line Bling...',
+        weight = 100,
+        stack = false,
+        close = true,
+    },
+    ["scales"] = {
+        label = 'Scales',
+        description = 'Great for weighing things',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ["batteries"] = {
+        label = 'AAA Batteries',
+        description = 'Extra long life',
+        weight = 20,
+        stack = true,
+        close = true,
+    },
+    ["baggies"] = {
+        label = 'Baggies',
+        description = 'Great for holding small things',
+        weight = 20,
+        stack = true,
+        close = true,
+    },
+    ["large_baggies"] = {
+        label = 'Large Baggies',
+        description = 'Great for holding bigger amounts of small things',
+        weight = 20,
+        stack = true,
+        close = true,
+    },
+
+    ['bodycam'] = {
+        label = 'Bodycam',
+        weight = 100,
+        stack = false,
+        description = 'A portable body camera used by law enforcement.',
+        client = {
+            event = 'cs:bodycam:useBodyCam',
+            remove = function(total)
+                if total < 1 then
+                    TriggerEvent('cs:bodycam:forceStop')
+                end
+            end
+        }
+    },
+    ['dashcam'] = {
+        label = 'Dashcam',
+        weight = 200,
+        stack = false,
+        description = 'A vehicle-mounted dashcam used for recording footage.',
+        client = {
+            event = 'cs:bodycam:useDashCam',
+        }
+    },
+
+    ['police_badge'] = {
+        label = 'LSPD Badge',
+        weight = 10,
+        stack = false,
+        close = true,
+        description = 'Badge for Los Santos Police Department'
+    },
+    ['sheriff_badge'] = {
+        label = 'BCSO Badge',
+        weight = 10,
+        stack = false,
+        close = true,
+        description = 'Badge for Blaine County Sheriffs Office'
+    },
+    ['state_badge'] = {
+        label = 'SASP Badge',
+        weight = 10,
+        stack = false,
+        close = true,
+        description = 'Badge for San Andreas State Police'
+    },
+    ['government_badge'] = {
+        label = 'Government Badge',
+        weight = 10,
+        stack = false,
+        close = true,
+        description = 'Badge for San Andreas Government Officials'
     },
 
 }
