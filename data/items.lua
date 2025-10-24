@@ -52,12 +52,11 @@ return {
         },
         consume = 0.3
     },
-
+    -- [[ Default QBox Items ]] --
     ['bandage'] = {
         label = 'Bandage',
         weight = 115,
-    },
-
+    }, 
     ['burger'] = {
         label = 'Burger',
         weight = 220,
@@ -69,7 +68,6 @@ return {
             notification = 'You ate a delicious burger'
         },
     },
-
     ['sprunk'] = {
         label = 'Sprunk',
         weight = 350,
@@ -81,7 +79,6 @@ return {
             notification = 'You quenched your thirst with a sprunk'
         }
     },
-
     ['parachute'] = { ---
         label = 'Parachute',
         weight = 8000,
@@ -91,11 +88,9 @@ return {
             usetime = 1500
         }
     },
-
     ['garbage'] = {
         label = 'Garbage',
     },
-
     ['paperbag'] = {
         label = 'Paper Bag',
         weight = 1,
@@ -103,7 +98,6 @@ return {
         close = false,
         consume = 0
     },
-
     ['panties'] = {
         label = 'Knickers',
         weight = 10,
@@ -115,12 +109,10 @@ return {
             usetime = 2500,
         }
     },
-
     ['lockpick'] = {
         label = 'Lockpick',
         weight = 160,
     },
-
     ['phone'] = {
         label = 'Phone',
         weight = 190,
@@ -140,7 +132,6 @@ return {
             end
         }
     },
-
     ['mustard'] = {
         label = 'Mustard',
         weight = 500,
@@ -152,7 +143,6 @@ return {
             notification = 'You... drank mustard'
         }
     },
-
     ['water'] = {
         label = 'Water',
         weight = 500,
@@ -165,7 +155,6 @@ return {
             notification = 'You drank some refreshing water'
         }
     },
-
     ['armour'] = { ---
         label = 'Bulletproof Vest',
         weight = 3000,
@@ -175,36 +164,28 @@ return {
             usetime = 3500
         }
     },
-
     ['clothing'] = {
         label = 'Clothing',
         consume = 0,
     },
-
     ['money'] = {
         label = 'Money',
     },
-
     ['black_money'] = {
         label = 'Dirty Money',
     },
-
     ['id_card'] = {
         label = 'Identification Card',
     },
-
     ['driver_license'] = {
         label = 'Drivers License',
     },
-
     ['weaponlicense'] = {
         label = 'Weapon License',
     },
-
     ['lawyerpass'] = {
         label = 'Lawyer Pass',
     },
-
     ['radio'] = {
         label = 'Radio',
         weight = 1000,
@@ -214,7 +195,6 @@ return {
             event = 'mm_radio:client:use'
         }
     },
-
     ['jammer'] = { ---
         label = 'Radio Jammer',
         weight = 10000,
@@ -223,7 +203,6 @@ return {
             event = 'mm_radio:client:usejammer'
         }
     },
-
     ['radiocell'] = { ---
         label = 'AAA Cells',
         weight = 1000,
@@ -233,387 +212,311 @@ return {
             event = 'mm_radio:client:recharge'
         }
     },
-
-    -- ['advancedlockpick'] = { ---
-    --     label = 'Advanced Lockpick',
-    --     weight = 500,
-    -- },
-
+    ['advancedlockpick'] = { ---
+        label = 'Advanced Lockpick',
+        weight = 500,
+    },
     ['screwdriverset'] = {
         label = 'Screwdriver Set',
         weight = 500,
     },
-
     ['electronickit'] = { ---
         label = 'Electronic Kit',
         weight = 500,
     },
-
     ['cleaningkit'] = {
         label = 'Cleaning Kit',
         weight = 500,
     },
-
     ['repairkit'] = {
         label = 'Repair Kit',
         weight = 2500,
     },
-
     ['advancedrepairkit'] = { ---
         label = 'Advanced Repair Kit',
         weight = 4000,
     },
-
     ['diamond_ring'] = {
         label = 'Diamond',
         weight = 1500,
     },
-
     ['rolex'] = {
         label = 'Golden Watch',
         weight = 1500,
     },
-
     ['goldbar'] = {
         label = 'Gold Bar',
         weight = 1500,
     },
-
     ['goldchain'] = {
         label = 'Golden Chain',
         weight = 1500,
     },
-
     ['crack_baggy'] = {
         label = 'Crack Baggy',
         weight = 100,
     },
-
     ['cokebaggy'] = {
         label = 'Bag of Coke',
         weight = 100,
     },
-
     ['coke_brick'] = {
         label = 'Coke Brick',
         weight = 2000,
     },
-
     ['coke_small_brick'] = {
         label = 'Coke Package',
         weight = 1000,
     },
-
     ['xtcbaggy'] = {
         label = 'Bag of Ecstasy',
         weight = 100,
     },
+    ['meth'] = {
+        label = 'Methamphetamine',
+        weight = 100,
+    },
 
-    -- ['meth'] = {
-    --     label = 'Methamphetamine',
-    --     weight = 100,
-    -- },
-
-    -- ['oxy'] = {
-    --     label = 'Oxycodone',
-    --     weight = 100,
-    -- },
-
+    ['oxy'] = {
+        label = 'Oxycodone',
+        weight = 100,
+    },
     ['weed_ak47'] = {
         label = 'AK47 2g',
         weight = 200,
     },
-
     ['weed_ak47_seed'] = {
         label = 'AK47 Seed',
         weight = 1,
     },
-
     ['weed_skunk'] = {
         label = 'Skunk 2g',
         weight = 200,
     },
-
     ['weed_skunk_seed'] = {
         label = 'Skunk Seed',
         weight = 1,
     },
-
     ['weed_amnesia'] = {
         label = 'Amnesia 2g',
         weight = 200,
     },
-
     ['weed_amnesia_seed'] = {
         label = 'Amnesia Seed',
         weight = 1,
     },
-
     ['weed_og-kush'] = {
         label = 'OGKush 2g',
         weight = 200,
     },
-
     ['weed_og-kush_seed'] = {
         label = 'OGKush Seed',
         weight = 1,
     },
-
     ['weed_white-widow'] = {
         label = 'OGKush 2g',
         weight = 200,
     },
-
     ['weed_white-widow_seed'] = {
         label = 'White Widow Seed',
         weight = 1,
     },
-
     ['weed_purple-haze'] = {
         label = 'Purple Haze 2g',
         weight = 200,
     },
-
     ['weed_purple-haze_seed'] = {
         label = 'Purple Haze Seed',
         weight = 1,
     },
-
     ['weed_brick'] = {
         label = 'Weed Brick',
         weight = 2000,
     },
-
     ['weed_nutrition'] = { ---
         label = 'Plant Fertilizer',
         weight = 2000,
     },
-
     ['joint'] = {
         label = 'Joint',
         weight = 200,
     },
-
     ['rolling_paper'] = { ---
         label = 'Rolling Paper',
         weight = 0,
     },
-
     ['empty_weed_bag'] = { ---
         label = 'Empty Weed Bag',
         weight = 0,
     },
-
     ['firstaid'] = {
         label = 'First Aid',
         weight = 2500,
     },
-
     ['ifaks'] = {
         label = 'Individual First Aid Kit',
         weight = 2500,
     },
-
     ['painkillers'] = {
         label = 'Painkillers',
         weight = 400,
     },
-
     ['firework1'] = {
         label = '2Brothers',
         weight = 1000,
     },
-
     ['firework2'] = {
         label = 'Poppelers',
         weight = 1000,
     },
-
     ['firework3'] = {
         label = 'WipeOut',
         weight = 1000,
     },
-
     ['firework4'] = {
         label = 'Weeping Willow',
         weight = 1000,
     },
-
     ['steel'] = {
         label = 'Steel',
         weight = 100,
     },
-
     ['rubber'] = {
         label = 'Rubber',
         weight = 100,
     },
-
     ['metalscrap'] = {
         label = 'Metal Scrap',
         weight = 100,
     },
-
     ['iron'] = {
         label = 'Iron',
         weight = 100,
     },
-
     ['copper'] = {
         label = 'Copper',
         weight = 100,
     },
-
     ['aluminum'] = {
         label = 'Aluminium',
         weight = 100,
     },
-
     ['plastic'] = {
         label = 'Plastic',
         weight = 100,
     },
-
     ['glass'] = {
         label = 'Glass',
         weight = 100,
     },
-
     ['gatecrack'] = {
         label = 'Gatecrack',
         weight = 1000,
     },
-
     ['cryptostick'] = {
         label = 'Crypto Stick',
         weight = 100,
     },
-
     ['trojan_usb'] = {
         label = 'Trojan USB',
         weight = 100,
     },
-
     ['toaster'] = {
         label = 'Toaster',
         weight = 5000,
     },
-
     ['small_tv'] = {
         label = 'Small TV',
         weight = 100,
     },
-
     ['security_card_01'] = {
         label = 'Security Card A',
         weight = 100,
     },
-
     ['security_card_02'] = {
         label = 'Security Card B',
         weight = 100,
     },
-
     ['drill'] = {
         label = 'Drill',
         weight = 5000,
     },
-
     ['thermite'] = {
         label = 'Thermite',
         weight = 1000,
     },
-
     ['diving_gear'] = { ---
         label = 'Diving Gear',
         weight = 30000,
     },
-
     ['diving_fill'] = { ---
         label = 'Diving Tube',
         weight = 3000,
     },
-
     ['antipatharia_coral'] = {
         label = 'Antipatharia',
         weight = 1000,
     },
-
     ['dendrogyra_coral'] = {
         label = 'Dendrogyra',
         weight = 1000,
     },
-
     ['jerry_can'] = {
         label = 'Jerrycan',
         weight = 3000,
     },
-
     ['nitrous'] = {
         label = 'Nitrous',
         weight = 1000,
     },
-
     ['wine'] = {
         label = 'Wine',
         weight = 500,
     },
-
     ['grape'] = {
         label = 'Grape',
         weight = 10,
     },
-
     ['grapejuice'] = {
         label = 'Grape Juice',
         weight = 200,
     },
-
     ['coffee'] = {
         label = 'Coffee',
         weight = 200,
     },
-
     ['vodka'] = {
         label = 'Vodka',
         weight = 500,
     },
-
     ['whiskey'] = {
         label = 'Whiskey',
         weight = 200,
     },
-
     ['beer'] = {
         label = 'Beer',
         weight = 200,
     },
-
     ['sandwich'] = {
         label = 'Sandwich',
         weight = 200,
     },
-
     ['walking_stick'] = {
         label = 'Walking Stick',
         weight = 1000,
     },
-
     ['lighter'] = {
         label = 'Lighter',
         weight = 200,
     },
-
     ['binoculars'] = {
         label = 'Binoculars',
         weight = 800,
     },
-
     ['stickynote'] = {
         label = 'Sticky Note',
         weight = 0,
     },
-
     ['empty_evidence_bag'] = {
         label = 'Empty Evidence Bag',
         weight = 200,
@@ -622,16 +525,16 @@ return {
         label = 'Filled Evidence Bag',
         weight = 200,
     },
-
     ['harness'] = {
         label = 'Harness',
         weight = 200,
     },
-
     ['handcuffs'] = {
         label = 'Handcuffs',
         weight = 200,
     },
+
+    -- [[ p_policejob ]] --
 	['police_rappel'] = {
 		label = 'Police Rappel',
 		weight = 100,
@@ -894,8 +797,7 @@ return {
 	},
 
     -- [[ jg-mechanic ]] --
-        -- Servicing Items
-    ["engine_oil"] = {
+    ["engine_oil"] = { -- Servicing Items (till next comment)
         label = "Engine Oil",
         weight = 1000,
     },
@@ -923,8 +825,7 @@ return {
         label = "Suspension Parts",
         weight = 1000,
     },
-        -- Engine Items
-    ["i4_engine"] = {
+    ["i4_engine"] = { -- Engine Items (till next comment)
         label = "I4 Engine",
         weight = 1000,
     },
@@ -944,8 +845,7 @@ return {
         label = "Turbocharger",
         weight = 1000,
     },
-        -- Electric Engines
-    ["ev_motor"] = {
+    ["ev_motor"] = { -- Electric Engines (till next comment)
         label = "EV Motor",
         weight = 1000,
     },
@@ -957,8 +857,7 @@ return {
         label = "EV Coolant",
         weight = 1000,
     },
-        -- Drivetrain Items
-    ["awd_drivetrain"] = {
+    ["awd_drivetrain"] = { -- Drivetrain Items (till next comment)
         label = "AWD Drivetrain",
         weight = 1000,
     },
@@ -970,8 +869,7 @@ return {
         label = "FWD Drivetrain",
         weight = 1000,
     },
-        -- Tuning Items
-    ["slick_tyres"] = {
+    ["slick_tyres"] = { -- Tuning Items (till next comment)
         label = "Slick Tyres",
         weight = 1000,
     },
@@ -991,8 +889,7 @@ return {
         label = "Ceramic Brakes",
         weight = 1000,
     },
-        -- Cosmetic Items
-    ["lighting_controller"] = {
+    ["lighting_controller"] = { -- Cosmetic Items (till next comment)
         label = "Lighting Controller",
         weight = 100,
         client = {
@@ -1030,8 +927,7 @@ return {
         label = "Extras Kit",
         weight = 1000,
     },
-        -- Nitrous & Cleaning Items
-    ["nitrous_bottle"] = {
+    ["nitrous_bottle"] = { -- Nitrous & Cleaning Items (till next comment)
         label = "Nitrous Bottle",
         weight = 1000,
         client = {
@@ -1067,21 +963,18 @@ return {
         event = "jg-mechanic:client:use-duct-tape",
         }
     },
-        -- Performance Item
-    ["performance_part"] = {
+    ["performance_part"] = { -- Performance Item
         label = "Performance Parts",
         weight = 1000,
     },
-        -- Mechanic Tablet Item
-    ["mechanic_tablet"] = {
+    ["mechanic_tablet"] = { -- Mechanic Tablet Item
         label = "Mechanic Tablet",
         weight = 1000,
         client = {
         event = "jg-mechanic:client:use-tablet",
         }
     },
-        -- Gearbox
-    ["manual_gearbox"] = {
+    ["manual_gearbox"] = { -- Gearbox
         label = "Manual Gearbox",
         weight = 1000,
     },
@@ -1236,7 +1129,6 @@ return {
         description = "A modern work of art!",
         client = { image = "x_painting.png" }
     },
-
     ["x_painting2"] = {
         label = "Painting",
         weight = 200,
@@ -1245,7 +1137,6 @@ return {
         description = "A modern work of art!",
         client = { image = "x_painting2.png" }
     },
-
     ["x_pcequipment"] = {
         label = "PC",
         weight = 600,
@@ -1263,6 +1154,7 @@ return {
         client = { image = "x_suitcase.png" }
     },
 
+    -- [[ 17Mov DirtSystem ]] --
     ["advancedlockpick"] = {
         label = "Advanced Lockpick",
         weight = 500,
@@ -1271,28 +1163,24 @@ return {
         description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
         client = { image = "advancedlockpick.png", }
     },
-
     ['mov_basic_ceramic'] = {
         label = "Ceramika Podstawowa",
         description = "Po nałożeniu na samochód brud nie przykleja się do karoserii, co znacznie ułatwia jego zmycie na myjni. Utrzymuje się na samochodzie około 3 dni, po tym czasie konieczna jest ponowna aplikacja dla podtrzymania efektu.",
         image = 'mov_basic_ceramic.png',
         weight = 10,
     },
-
     ['mov_advanced_ceramic'] = {
         label = "Ceramika Premium",
         description = "Po nałożeniu na samochód brud w ogóle nie przylega do karoserii, dlatego na myjni wystarczy go jedynie spłukać. Utrzymuje się na samochodzie około 7 dni, po tym czasie wymagana jest ponowna aplikacja dla podtrzymania efektu.",
         image = 'mov_advanced_ceramic.png',
         weight = 10,
     },
-
     ['mov_basic_wax'] = {
         label = "Wosk Podstawowy",
         description = "Po nałożeniu na samochód auto jest odporne na zabrudzenia zewnętrzne, np. jazdę po drogach nieutwardzonych itp. Nadal będzie się brudziło, ale znacznie wolniej. Utrzymuje się na samochodzie około 3 dni, po tym czasie konieczna jest ponowna aplikacja dla podtrzymania efektu.",
         image = 'mov_basic_wax.png',
         weight = 10,
     },
-
     ['mov_advanced_wax'] = {
         label = "Wosk Zaawansowany",
         description = "Po nałożeniu na samochód auto jest bardzo odporne na zabrudzenia zewnętrzne, takie jak jazda po nieutwardzonych drogach itp. Nadal będzie się brudziło, ale znacznie wolniej. Utrzymuje się na samochodzie około 7 dni, po tym czasie wymagana jest ponowna aplikacja dla podtrzymania efektu.",
@@ -1300,6 +1188,7 @@ return {
         weight = 10,
     },
     
+    -- [[ envi-addictions ]] --
     ['syringe_kit'] = {
         label = 'Blood Sample Kit',
         weight = 1000,
@@ -1378,6 +1267,7 @@ return {
         description = 'Restores alertness. Not recommended if respiratory depression is suspected.',
     },
     
+    -- [[ envi-chopshop ]] --
     ['car_door'] = {        
         label = 'Car Door',        
         weight = 5000,         
@@ -1442,6 +1332,7 @@ return {
         description = 'Chop Contract',    
     },
 
+    -- [[ envi-dumpsters ]] --
     ['bottle_cap'] = {
         label = 'Bottle Cap',
         weight = 0,
@@ -1600,6 +1491,7 @@ return {
         close = true,
     },
 
+    -- [[ envi-foodtrucks ]] --
     ["bacon_burger"] = {
         label = 'Bacon Burger',
         description = 'Mmm.. Delicious!',
@@ -1890,6 +1782,7 @@ return {
         description = 'Give your food that "Jesse Special"',
     },
 
+    -- [[ envi-prescription ]] --
     ['prescription_pad'] = {        
         label = 'Prescription Pad',        
         weight = 200,         
@@ -1975,6 +1868,7 @@ return {
         description = nil,    
     },
 
+    -- [[ envi-sabotage ]] --
     ['impact_driver'] = { ---
         label = 'Impact Driver',
         weight = 1000,
@@ -2088,7 +1982,7 @@ return {
         weight = 1,
         stack = true,
     },
-    ['meth_bag'] = {
+    ['meth_bag'] = { -----------------------------------------------
         label = 'Meth bag',
         weight = 50,
         stack = true,
@@ -2098,7 +1992,7 @@ return {
         weight = 40,
         stack = true,
     },
-    ['meth_syringe'] = {
+    ['meth_syringe'] = { -----------------------------------------------
         label = 'Meth syringe',
         weight = 75,
         stack = true,
@@ -2124,17 +2018,17 @@ return {
         weight = 1,
         stack = true,
     },
-    ['coke_bag'] = {
+    ['coke_bag'] = { -----------------------------------------------
         label = 'Cocaine bag',
         weight = 50,
         stack = true,
     },
-    ['coke_brick'] = {
+    ['coke_brick'] = { -----------------------------------------------
         label = 'Cocaine brick',
         weight = 200,
         stack = true,
     },
-    ['coke_doll'] = {
+    ['coke_doll'] = { -----------------------------------------------
         label = 'Cocaine doll',
         weight = 500,
         stack = true,
@@ -2175,12 +2069,12 @@ return {
         weight = 50,
         stack = true
     },
-    ['weed_bag'] = {
+    ['weed_bag'] = { -----------------------------------------------
         label = 'Weed bag',
         weight = 50,
         stack = true,
     },
-    ['weed_joint'] = {
+    ['weed_joint'] = { -----------------------------------------------
         label = 'Weed joint',
         weight = 15,
         stack = true,
@@ -2211,12 +2105,12 @@ return {
         weight = 1,
         stack = true,
     },
-    ['heroin_bag'] = {
+    ['heroin_bag'] = { -----------------------------------------------
         label = 'Heroin bag',
         weight = 50,
         stack = true,
     },
-    ['heroin_syringe'] = {
+    ['heroin_syringe'] = { -----------------------------------------------
         label = 'Heroin syringe',
         weight = 75,
         stack = true,
@@ -2242,7 +2136,7 @@ return {
         weight = 25,
         stack = true,
     },
-    ['lsd'] = {
+    ['lsd'] = { -----------------------------------------------
         label = 'LSD',
         weight = 1,
         stack = true,
@@ -2263,7 +2157,7 @@ return {
         weight = 1,
         stack = true,
     },
-    ['ecstasy_pill'] = {
+    ['ecstasy_pill'] = { -----------------------------------------------
         label = 'Ecstasy pill',
         weight = 15,
         stack = true,
@@ -2284,7 +2178,7 @@ return {
         weight = 30,
         stack = true,
     },
-    ['mushroom_chocolate'] = {
+    ['mushroom_chocolate'] = { -----------------------------------------------
         label = 'Mushroom chocolate',
         weight = 45,
         stack = true,
@@ -2300,7 +2194,7 @@ return {
         weight = 1,
         stack = true,
     },
-    ['ketamine_bag'] = {
+    ['ketamine_bag'] = { -----------------------------------------------
         label = 'Ketamine bag',
         weight = 50,
         stack = true,
@@ -2316,17 +2210,17 @@ return {
         weight = 1,
         stack = true,
     },
-    ['crack_bag'] = {
+    ['crack_bag'] = { -----------------------------------------------
         label = 'Crack bag',
         weight = 50,
         stack = true,
     },
-    ['crack_pipe'] = {
+    ['crack_pipe'] = { -----------------------------------------------
         label = 'Crack pipe',
         weight = 150,
         stack = true,
     },
-    ['crack_syringe'] = {
+    ['crack_syringe'] = { -----------------------------------------------
         label = 'Crack syringe',
         weight = 75,
         stack = true,
@@ -2352,7 +2246,7 @@ return {
         weight = 1,
         stack = true,
     },
-    ['fentanyl_bag'] = {
+    ['fentanyl_bag'] = { -----------------------------------------------
         label = 'Fentanyl bag',
         weight = 25,
         stack = true,
@@ -2751,6 +2645,7 @@ return {
         client = { image = "bankidcard.png" } 
     },
 
+    -- [[ 17mov Grupp6 ]] --
     ["gruppesechstablet"] = { 
         label = "Gruppe Sechs Tablet", 
         weight = 500, 
@@ -3388,6 +3283,28 @@ return {
         }
     },
 
+	['radio_jammer'] = {
+        label = 'Radio Jammer',
+        weight = 1,
+        stack = true,
+        close = true,
+        description = 'A Radio Jammer'
+	},
+	['vehicle_jammer'] = {
+        label = 'Vehicle Jammer',
+        weight = 1,
+        stack = true,
+        close = true,
+        description = 'A Vehicle Jammer'
+	},
+	['radio_scanner'] = {
+        label = 'Radio Scanner',
+        weight = 1,
+        stack = true,
+        close = true,
+        description = 'A Radio Scanner'
+	},
+
     ['police_badge'] = {
         label = 'LSPD Badge',
         weight = 10,
@@ -3417,4 +3334,161 @@ return {
         description = 'Badge for San Andreas Government Officials'
     },
 
+    -- [[ p_inventory ]] --
+	['clothes_hat'] = {
+		label = 'Hat',
+		weight = 50,
+		stack = false,
+		close = false,
+		buttons = {
+			{
+				label = 'Show/Hide Hair',
+				action = function(slot)
+					TriggerEvent('p_itemclothes/client/toggleHair')
+				end
+			}
+		},
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_ears'] = {
+		label = 'Ear Accessories',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_tshirt'] = {
+		label = 'T-Shirt',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_torso'] = {
+		label = 'Jacket',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_arms'] = {
+		label = 'Gloves',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_pants'] = {
+		label = 'Pants',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_shoes'] = {
+		label = 'Shoes',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_mask'] = {
+		label = 'Mask',
+		weight = 50,
+		stack = false,
+		close = false,
+		buttons = {
+			{
+				label = 'Show/Hide Face',
+				action = function(slot)
+					TriggerEvent('p_itemclothes/client/toggleFace')
+				end
+			}
+		},
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_glasses'] = {
+		label = 'Glasses',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_vest'] = {
+		label = 'Vest',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_bag'] = {
+		label = 'Bag',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_watch'] = {
+		label = 'Watch',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_chain'] = {
+		label = 'Chain',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
+	['clothes_bracelet'] = {
+		label = 'Bracelet',
+		weight = 50,
+		stack = false,
+		close = false,
+		consume = 0,
+		server = {
+			export = 'p_itemclothes.useClothingItem'
+		}
+	},
 }
