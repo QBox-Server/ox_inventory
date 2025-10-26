@@ -716,24 +716,24 @@ return {
 			weight = 600,
 			throwable = true,
 		},
-
+		-- [[ p_policejob ]] --
 		['WEAPON_RADAR'] = {
 			label = 'Police Radar',
 			weight = 250,
 			durability = 0.1,
 		},
-
+		-- [[ Envi-Flamethrower ]] --
 		['WEAPON_FLAMETHROWER'] = {
 			label = 'Flamethrower',
 			weight = 10000,
 			durability = 1.0,
 		},
-
+		-- [[ Lunar-DrugsCreator ]] --
 		['WEAPON_HACKINGDEVICE'] = {
 			label = 'Plant Scanner',
 			weight = 1200,
 		},
-
+		-- [[ Envi-Dumpsters ]] --
 		['WEAPON_HOBO_TOILET'] = {
 			label = 'Toilet Seat',
 			weight = 1000,
@@ -799,19 +799,345 @@ return {
 			weight = 200,
 			durability = 0.1,
 		},
-
+		-- [[gg-hunting ]] --
 		['WEAPON_HUNTINGRIFLE'] = {
 			label = 'Hunting Rifle',
 			weight = 5000,
 			durability = 0.5,
 			ammoname = 'gg_hunting_rifleammo'
 		},
-		
 		['WEAPON_CROSSBOW'] = {
 			label = 'Hunting Crossbow',
 			weight = 5000,
 			durability = 0.5,
 			ammoname = 'gg_hunting_arrowammo'
+		},
+		-- [[ markomods ]] --
+		['WEAPON_TACTICALSNIPER'] = {
+			label = 'TACTICALSNIPER',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+		['WEAPON_TACTICALSNIPER_TANODIZED'] = {
+			label = 'TACTICALSNIPER TANODIZED',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+		['WEAPON_TACTICALSNIPER_FDE'] = {
+			label = 'TACTICALSNIPER FDE',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+		['WEAPON_590'] = {
+			label = '590',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-shotgun',
+		},
+		['WEAPON_PM4'] = {
+			label = 'PM4',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-rifle',
+		},
+		['WEAPON_R9'] = {
+			label = 'R9',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-rifle',
+		},
+		['WEAPON_X17'] = {
+			label = 'X17',
+			weight = 1600,
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+		--[[ PixelCraft ]] --
+		-- PISTOLS
+		['WEAPON_CZP10F'] = {
+			label = 'CZ P-10F',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZP10F-B'] = {
+			label = 'CZ P-10F Blue',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZP10F-G'] = {
+			label = 'CZ P-10F Green',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZP10F-R'] = {
+			label = 'CZ P-10F Red',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZP10F-P'] = {
+			label = 'CZ P-10F Purple',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZP10F-Y'] = {
+			label = 'CZ P-10F Yellow',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_CZS'] = {
+			label = 'CZ Shadow 2',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_FIVESEVEN'] = {
+			label = 'FN Five-Seven',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_FN509'] = {
+			label = 'FN 509',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_FNX_VENOM'] = {
+			label = 'FNX Venom',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_GLOCK17GEN4'] = {
+			label = 'Glock 17 Gen4',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_GLOCK19'] = {
+			label = 'Glock 19',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_JERICHO941'] = {
+			label = 'Jericho 941',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_M9'] = {
+			label = 'Beretta M9',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_BM70'] = {
+			label = 'Beretta M70',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_P320X'] = {
+			label = 'SIG P320X',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_PISTOL1911'] = {
+			label = 'Colt 1911',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_PX4C'] = {
+			label = 'Beretta PX4 Compact',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_PX4S'] = {
+			label = 'Beretta PX4 Storm',
+			weight = 1000,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		-- SMGs
+		['WEAPON_MAC10'] = {
+			label = 'MAC-10',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_MP5'] = {
+			label = 'H&K MP5',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_MP7'] = {
+			label = 'H&K MP7',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_P90'] = {
+			label = 'FN P90',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_SEVO'] = {
+			label = 'Scorpion EVO',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_TPM'] = {
+			label = 'TPM Submachine Gun',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_UMP45'] = {
+			label = 'H&K UMP45',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_UZI'] = {
+			label = 'IMI Uzi',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		['WEAPON_VECTOR'] = {
+			label = 'KRISS Vector',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-9'
+		},
+
+		-- ASSAULT RIFLES
+		['WEAPON_AK47'] = {
+			label = 'AK-47',
+			weight = 3500,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_AK74U'] = {
+			label = 'AK-74U',
+			weight = 3200,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_AKG'] = {
+			label = 'AK Ghost',
+			weight = 3500,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_AR15C'] = {
+			label = 'AR-15 Compact',
+			weight = 3200,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_AR15C-R'] = {
+			label = 'AR-15C Red',
+			weight = 3200,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_AR15D'] = {
+			label = 'AR-15 Demon',
+			weight = 3500,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_CZBREN'] = {
+			label = 'CZ Bren',
+			weight = 4000,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_FCX'] = {
+			label = 'SIG MCX',
+			weight = 3200,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_M4'] = {
+			label = 'M4A1 Carbine',
+			weight = 3500,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		['WEAPON_M16'] = {
+			label = 'Colt M16A4',
+			weight = 3800,
+			durability = 0.03,
+			ammoname = 'ammo-rifle'
+		},
+
+		-- SHOTGUNS
+		['WEAPON_M500'] = {
+			label = 'Smith & Wesson M500',
+			weight = 2500,
+			durability = 0.03,
+			ammoname = 'ammo-shotgun'
+		},
+
+		['WEAPON_RM870'] = {
+			label = 'Remington 870',
+			weight = 3000,
+			durability = 0.03,
+			ammoname = 'ammo-shotgun'
 		},
 	},
 
@@ -1872,6 +2198,1645 @@ return {
 					`COMPONENT_SMG_MK2_CAMO_IND_01`,
 					`COMPONENT_SNSPISTOL_MK2_CAMO_IND_01`,
 					`COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01`,
+				},
+				usetime = 2500
+			}
+		},
+		-- [[ markomods ]] --
+		['tacticalsniper_mag_04'] = {
+			label = 'Tacticalsniper Mag #04',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_MAG_04'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_mag_03'] = {
+			label = 'Tacticalsniper Mag #03',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_MAG_03'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_mag_02'] = {
+			label = 'Tacticalsniper Mag #02',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_MAG_02'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_mag_01'] = {
+			label = 'Tacticalsniper Mag #01',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_MAG_01'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_bipod'] = {
+			label = 'Tacticalsniper Bipod',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_BIPOD'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_muzzle_01'] = {
+			label = 'Tacticalsniper Muzzle #01',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_MUZZLE_01'},
+				usetime = 2500
+			},
+		},
+		['tacticalsniper_suppressor_01'] = {
+			label = 'Tacticalsniper Suppressor #01',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_TACTICALSNIPER_SUPPRESSOR_01'},
+				usetime = 2500
+			},
+		},
+		['590_suppressor_01'] = {
+			label = '590 Suppressor #01',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_SUPPRESSOR_01'},
+				usetime = 2500
+			},
+		},
+		['590_stock_01'] = {
+			label = '590 Stock #01',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_STOCK_01'},
+				usetime = 2500
+			},
+		},
+		['590_stock_02'] = {
+			label = '590 Stock #02',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_STOCK_02'},
+				usetime = 2500
+			},
+		},
+		['590_stock_03'] = {
+			label = '590 Stock #03',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_STOCK_03'},
+				usetime = 2500
+			},
+		},
+		['590_stock_04'] = {
+			label = '590 Stock #04',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_STOCK_04'},
+				usetime = 2500
+			},
+		},
+		['590_misc_01'] = {
+			label = '590 Misc #01',
+			weight = 200,
+			type = 'misc',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_MISC_01'},
+				usetime = 2500
+			},
+		},
+		['590_misc_02'] = {
+			label = '590 Misc #02',
+			weight = 200,
+			type = 'misc',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_MISC_02'},
+				usetime = 2500
+			},
+		},
+		['590_misc_03'] = {
+			label = '590 Misc #03',
+			weight = 200,
+			type = 'misc',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_MISC_03'},
+				usetime = 2500
+			},
+		},
+		['590_misc_04'] = {
+			label = '590 Misc #04',
+			weight = 200,
+			type = 'misc',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_MISC_04'},
+				usetime = 2500
+			},
+		},
+		['590_misc_05'] = {
+			label = '590 Misc #05',
+			weight = 200,
+			type = 'misc',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_MISC_05'},
+				usetime = 2500
+			},
+		},
+		['590_grip_01'] = {
+			label = '590 Grip #01',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_GRIP_01'},
+				usetime = 2500
+			},
+		},
+		['590_grip_02'] = {
+			label = '590 Grip #02',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_GRIP_02'},
+				usetime = 2500
+			},
+		},
+		['590_grip_03'] = {
+			label = '590 Grip #03',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_GRIP_03'},
+				usetime = 2500
+			},
+		},
+		['590_grip_04'] = {
+			label = '590 Grip #04',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_GRIP_04'},
+				usetime = 2500
+			},
+		},
+		['590_grip_05'] = {
+			label = '590 Grip #05',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS590_GRIP_05'},
+				usetime = 2500
+			},
+		},
+		['pm4_mag_1'] = {
+			label = 'Pm4 Mag #1',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_PM4_MAG_1'},
+				usetime = 2500
+			},
+		},
+		['pm4_stock_1'] = {
+			label = 'Pm4 Stock #1',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_PM4_STOCK_1'},
+				usetime = 2500
+			},
+		},
+		['pm4_muzzle_1'] = {
+			label = 'Pm4 Muzzle #1',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_PM4_MUZZLE_1'},
+				usetime = 2500
+			},
+		},
+		['pm4_scope_1'] = {
+			label = 'Pm4 Scope #1',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_PM4_SCOPE_1'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_01'] = {
+			label = 'R9 Clip #01',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_01'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_02'] = {
+			label = 'R9 Clip #02',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_02'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_03'] = {
+			label = 'R9 Clip #03',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_03'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_04'] = {
+			label = 'R9 Clip #04',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_04'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_05'] = {
+			label = 'R9 Clip #05',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_05'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_06'] = {
+			label = 'R9 Clip #06',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_06'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_07'] = {
+			label = 'R9 Clip #07',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_07'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_08'] = {
+			label = 'R9 Clip #08',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_08'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_09'] = {
+			label = 'R9 Clip #09',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_09'},
+				usetime = 2500
+			},
+		},
+		['r9_clip_10'] = {
+			label = 'R9 Clip #10',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_CLIP_10'},
+				usetime = 2500
+			},
+		},
+		['r9_base_01'] = {
+			label = 'R9 Base #01',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_BASE_01'},
+				usetime = 2500
+			},
+		},
+		['r9_base_02'] = {
+			label = 'R9 Base #02',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_BASE_02'},
+				usetime = 2500
+			},
+		},
+		['r9_base_03'] = {
+			label = 'R9 Base #03',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_BASE_03'},
+				usetime = 2500
+			},
+		},
+		['r9_base_04'] = {
+			label = 'R9 Base #04',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_BASE_04'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_01'] = {
+			label = 'R9 Stock #01',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_01'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_02'] = {
+			label = 'R9 Stock #02',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_02'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_03'] = {
+			label = 'R9 Stock #03',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_03'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_04'] = {
+			label = 'R9 Stock #04',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_04'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_05'] = {
+			label = 'R9 Stock #05',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_05'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_06'] = {
+			label = 'R9 Stock #06',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_06'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_07'] = {
+			label = 'R9 Stock #07',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_07'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_08'] = {
+			label = 'R9 Stock #08',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_08'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_09'] = {
+			label = 'R9 Stock #09',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_09'},
+				usetime = 2500
+			},
+		},
+		['r9_stock_10'] = {
+			label = 'R9 Stock #10',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_STOCK_10'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_01'] = {
+			label = 'R9 Grip #01',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_01'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_02'] = {
+			label = 'R9 Grip #02',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_02'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_03'] = {
+			label = 'R9 Grip #03',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_03'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_04'] = {
+			label = 'R9 Grip #04',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_04'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_05'] = {
+			label = 'R9 Grip #05',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_05'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_06'] = {
+			label = 'R9 Grip #06',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_06'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_07'] = {
+			label = 'R9 Grip #07',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_07'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_08'] = {
+			label = 'R9 Grip #08',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_08'},
+				usetime = 2500
+			},
+		},
+		['r9_grip_09'] = {
+			label = 'R9 Grip #09',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_GRIP_09'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_01'] = {
+			label = 'R9 Suppressor #01',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_01'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_02'] = {
+			label = 'R9 Suppressor #02',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_02'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_03'] = {
+			label = 'R9 Suppressor #03',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_03'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_04'] = {
+			label = 'R9 Suppressor #04',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_04'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_05'] = {
+			label = 'R9 Suppressor #05',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_05'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_06'] = {
+			label = 'R9 Suppressor #06',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_06'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_07'] = {
+			label = 'R9 Suppressor #07',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_07'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_08'] = {
+			label = 'R9 Suppressor #08',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_08'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_09'] = {
+			label = 'R9 Suppressor #09',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_09'},
+				usetime = 2500
+			},
+		},
+		['r9_suppressor_10'] = {
+			label = 'R9 Suppressor #10',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SUPPRESSOR_10'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_01'] = {
+			label = 'R9 Scope #01',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_01'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_02'] = {
+			label = 'R9 Scope #02',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_02'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_03'] = {
+			label = 'R9 Scope #03',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_03'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_04'] = {
+			label = 'R9 Scope #04',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_04'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_05'] = {
+			label = 'R9 Scope #05',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_05'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_06'] = {
+			label = 'R9 Scope #06',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_06'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_07'] = {
+			label = 'R9 Scope #07',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_07'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_08'] = {
+			label = 'R9 Scope #08',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_08'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_09'] = {
+			label = 'R9 Scope #09',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_09'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_10'] = {
+			label = 'R9 Scope #10',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_10'},
+				usetime = 2500
+			},
+		},
+		['r9_scope_11'] = {
+			label = 'R9 Scope #11',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_SCOPE_11'},
+				usetime = 2500
+			},
+		},
+		['r9_accs_01'] = {
+			label = 'R9 Accs #01',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_ACCS_01'},
+				usetime = 2500
+			},
+		},
+		['r9_accs_02'] = {
+			label = 'R9 Accs #02',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_ACCS_02'},
+				usetime = 2500
+			},
+		},
+		['r9_accs_03'] = {
+			label = 'R9 Accs #03',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_ACCS_03'},
+				usetime = 2500
+			},
+		},
+		['r9_accs_04'] = {
+			label = 'R9 Accs #04',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_ACCS_04'},
+				usetime = 2500
+			},
+		},
+		['r9_accs_05'] = {
+			label = 'R9 Accs #05',
+			weight = 200,
+			type = 'clip',
+			client = {
+				component = {'COMPONENT_MARKOMODSR9_ACCS_05'},
+				usetime = 2500
+			},
+		},
+		['x17a_flash_01'] = {
+			label = 'X17a X17a Flash #01',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_x17A_FLASH_01'},
+				usetime = 2500
+			},
+		},
+		['x17a_mag_02'] = {
+			label = 'X17a X17a Mag #02',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_x17A_MAG_02'},
+				usetime = 2500
+			},
+		},
+		['x17a_mag_01'] = {
+			label = 'X17a X17a Mag #01',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_x17A_MAG_01'},
+				usetime = 2500
+			},
+		},
+		['shared_laser_01'] = {
+			label = 'Shared Laser #01 (Fits TACTICALSNIPER, PM4)',
+			weight = 200,
+			type = 'laser',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_LASER_01'},
+				usetime = 2500
+			},
+		},
+		['shared_laser_02'] = {
+			label = 'Shared Laser #02 (Fits TACTICALSNIPER, PM4)',
+			weight = 200,
+			type = 'laser',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_LASER_02'},
+				usetime = 2500
+			},
+		},
+		['shared_laser_03'] = {
+			label = 'Shared Laser #03 (Fits TACTICALSNIPER, PM4)',
+			weight = 200,
+			type = 'laser',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_LASER_03'},
+				usetime = 2500
+			},
+		},
+		['shared_laser_07'] = {
+			label = 'Shared Laser #07 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'laser',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_LASER_07'},
+				usetime = 2500
+			},
+		},
+		['shared_laser_08'] = {
+			label = 'Shared Laser #08 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'laser',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_LASER_08'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_01'] = {
+			label = 'Shared Grip #01 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_01'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_03'] = {
+			label = 'Shared Grip #03 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_03'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_08'] = {
+			label = 'Shared Grip #08 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_08'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_16'] = {
+			label = 'Shared Grip #16 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_16'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_09'] = {
+			label = 'Shared Suppressor #09 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_09'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_08'] = {
+			label = 'Shared Suppressor #08 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_08'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_12'] = {
+			label = 'Shared Suppressor #12 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_12'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_18'] = {
+			label = 'Shared Suppressor #18 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_18'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_01'] = {
+			label = 'Shared Zoomscope #01 (Fits TACTICALSNIPER, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_01'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_04'] = {
+			label = 'Shared Zoomscope #04 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_04'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_05'] = {
+			label = 'Shared Zoomscope #05 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_05'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_06'] = {
+			label = 'Shared Zoomscope #06 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_06'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_07'] = {
+			label = 'Shared Zoomscope #07 (Fits TACTICALSNIPER, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_07'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_09'] = {
+			label = 'Shared Zoomscope #09 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_09'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_10'] = {
+			label = 'Shared Zoomscope #10 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_10'},
+				usetime = 2500
+			},
+		},
+		['shared_zoomscope_11'] = {
+			label = 'Shared Zoomscope #11 (Fits TACTICALSNIPER)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_ZOOMSCOPE_11'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_01'] = {
+			label = 'Shared Pflash #01 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_01'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_03'] = {
+			label = 'Shared Pflash #03 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_03'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_05'] = {
+			label = 'Shared Pflash #05 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_05'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_06'] = {
+			label = 'Shared Pflash #06 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_06'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_07'] = {
+			label = 'Shared Pflash #07 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_07'},
+				usetime = 2500
+			},
+		},
+		['shared_pflash_08'] = {
+			label = 'Shared Pflash #08 (Fits 590)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_PFLASH_08'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_01'] = {
+			label = 'Shared Scope #01 (Fits 590, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_01'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_02'] = {
+			label = 'Shared Scope #02 (Fits 590, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_02'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_05'] = {
+			label = 'Shared Scope #05 (Fits 590, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_05'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_06'] = {
+			label = 'Shared Scope #06 (Fits 590, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_06'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_07'] = {
+			label = 'Shared Scope #07 (Fits 590)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_07'},
+				usetime = 2500
+			},
+		},
+		['shared_scope_08'] = {
+			label = 'Shared Scope #08 (Fits 590, PM4)',
+			weight = 200,
+			type = 'scope',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SCOPE_08'},
+				usetime = 2500
+			},
+		},
+		['shared_556mag_01'] = {
+			label = 'Shared 556mag #01 (Fits PM4)',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_556MAG_01'},
+				usetime = 2500
+			},
+		},
+		['shared_556mag_03'] = {
+			label = 'Shared 556mag #03 (Fits PM4)',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_556MAG_03'},
+				usetime = 2500
+			},
+		},
+		['shared_556mag_04'] = {
+			label = 'Shared 556mag #04 (Fits PM4)',
+			weight = 200,
+			type = 'magazine',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_556MAG_04'},
+				usetime = 2500
+			},
+		},
+		['shared_stock_03'] = {
+			label = 'Shared Stock #03 (Fits PM4)',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_STOCK_03'},
+				usetime = 2500
+			},
+		},
+		['shared_stock_05'] = {
+			label = 'Shared Stock #05 (Fits PM4)',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_STOCK_05'},
+				usetime = 2500
+			},
+		},
+		['shared_stock_08'] = {
+			label = 'Shared Stock #08 (Fits PM4)',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_STOCK_08'},
+				usetime = 2500
+			},
+		},
+		['shared_stock_10'] = {
+			label = 'Shared Stock #10 (Fits PM4)',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_STOCK_10'},
+				usetime = 2500
+			},
+		},
+		['shared_stock_12'] = {
+			label = 'Shared Stock #12 (Fits PM4)',
+			weight = 200,
+			type = 'stock',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_STOCK_12'},
+				usetime = 2500
+			},
+		},
+		['shared_flash_07a'] = {
+			label = 'Shared Flashlight 07a (Fits PM4)',
+			weight = 200,
+			type = 'flashlight',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_FLASH_07a'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_19'] = {
+			label = 'Shared Grip #19 (Fits PM4)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_19'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_17'] = {
+			label = 'Shared Grip #17 (Fits PM4)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_17'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_07'] = {
+			label = 'Shared Grip #07 (Fits PM4)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_07'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_14'] = {
+			label = 'Shared Grip #14 (Fits PM4)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_14'},
+				usetime = 2500
+			},
+		},
+		['shared_grip_12'] = {
+			label = 'Shared Grip #12 (Fits PM4)',
+			weight = 200,
+			type = 'grip',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_GRIP_12'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_14'] = {
+			label = 'Shared Suppressor #14 (Fits PM4)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_14'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_19'] = {
+			label = 'Shared Suppressor #19 (Fits PM4)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_19'},
+				usetime = 2500
+			},
+		},
+		['shared_supp_21'] = {
+			label = 'Shared Suppressor #21 (Fits PM4)',
+			weight = 200,
+			type = 'muzzle',
+			client = {
+				component = {'COMPONENT_MARKOMODS_SHARED_SUPP_21'},
+				usetime = 2500
+			},
+		},
+		--[[ PixelCraft ]] --
+		['at_clearclip'] = {
+			label = 'Clear Clip Attachment',
+			weight = 120,
+			type = 'clip',
+			client = {
+					component = {
+						`COMPONENT_CLEARCLIP_PISTOL`,
+						`COMPONENT_CLEARCLIP`,
+						`COMPONENT_CLEARCLIP_SMG`
+					},
+				usetime = 2500
+			}
+		},
+		['at_pistol_flashlight_advanced'] = {
+			label = 'Pistol Advanced Flashlight',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				component = { 'COMPONENT_AT_PI_FLSH_CUSTOM2' },
+				usetime = 2500
+			}
+		},
+		['at_pistol_flashlight_custom'] = {
+			label = 'Pistol Flashlight Tactical',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				component = { 'COMPONENT_AT_PI_FLSH_CUSTOM' },
+				usetime = 2500
+			}
+		},
+		['at_pistol_flashlight_operator'] = {
+			label = 'Pistol Flashlight Operator',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				component = { 'COMPONENT_AT_PI_FLSH_CUSTOM3' },
+				usetime = 2500
+			}
+		},
+		['at_pistol_boxmag'] = {
+			label = 'Pistol Box Magazine',
+			weight = 120,
+			type = 'clip',
+			client = {
+				component = { 'COMPONENT_PI_CLIP_03' },
+				usetime = 2500
+			}
+		},
+		['at_pistol_drum_mag'] = {
+			label = 'Pistol Drum Magazine',
+			weight = 120,
+			type = 'clip',
+			client = {
+				component = { 'COMPONENT_PI_CLIP_04' },
+				usetime = 2500
+			}
+		},
+		['at_fcx_vertgrip'] = {
+			label = 'FCX VertGrip',
+			weight = 120,
+			type = 'grip',
+			client = {
+				component = { 'COMPONENT_AT_FCX_VERTGRIP' },
+				usetime = 2500
+			}
+		},
+		['at_grip'] = {
+			label = 'Grip',
+			type = 'grip',
+			weight = 280,
+			client = {
+				component = {
+					`COMPONENT_AT_AR_AFGRIP_CUST`,
+				},
+				usetime = 2500
+			}
+		},
+		['at_barrel'] = {
+			label = 'Heavy Barrel',
+			type = 'barrel',
+			weight = 280,
+			client = {
+				component = {
+					`COMPONENT_AT_AR_BARREL_CUSTOM2`,
+				},
+				usetime = 2500
+			}
+		},
+		['at_pistol_muzzle_brake'] = {
+			label = 'Pistol Muzzle Brake',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_PI_MUZZLE_01`
+				},
+				usetime = 2500
+			}
+		},
+    	['at_muzzle_flat'] = {
+			label = 'Flat Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_01`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_tactical'] = {
+			label = 'Tactical Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_02`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_fat'] = {
+			label = 'Fat Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_03`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_precision'] = {
+			label = 'Precision Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_04`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_heavy'] = {
+			label = 'Heavy Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_05`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_slanted'] = {
+			label = 'Slanted Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_06`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_split'] = {
+			label = 'Split Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_07`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_squared'] = {
+			label = 'Squared Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_08`
+				},
+				usetime = 2500
+			}
+		},
+		['at_muzzle_bell'] = {
+			label = 'Bell Muzzle',
+			type = 'muzzle',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_AT_MUZZLE_09`
+				},
+				usetime = 2500
+			}
+		},
+    
+		['at_acog_scope'] = {
+			label = 'ACOG TA31 Scope',
+			type = 'sight',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_ACOGTA31_SCOPE_MEDIUM`
+				},
+				usetime = 2500
+			}
+		},
+		['at_eo553_medium_scope'] = {
+			label = 'EOTech 553 Holo Sight',
+			type = 'sight',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_EO553_SCOPE_MEDIUM`
+				},
+				usetime = 2500
+			}
+		},
+		['at_eo553_small_scope'] = {
+			label = 'EOTech 553 Compact',
+			type = 'sight',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_EO553_SCOPE_SMALL`
+				},
+				usetime = 2500
+			}
+		},
+		['at_kobra_scope'] = {
+			label = 'Kobra G33 Sight',
+			type = 'sight',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_KOBG33_SCOPE_MEDIUM`
+				},
+				usetime = 2500
+			}
+		},
+		['at_trijicon_mro_scope'] = {
+			label = 'Trijicon MRO',
+			type = 'sight',
+			weight = 80,
+			client = {
+				component = {
+					`COMPONENT_TRIJMRO_SCOPE_SMALL`
+				},
+				usetime = 2500
+			}
+		},
+        ['at_scope_macro'] = {
+			label = 'Macro Scope',
+			type = 'sight',
+			weight = 280,
+			client = {
+				component = {
+					`COMPONENT_GLOCK19_MACRO1`,
+					`COMPONENT_AT_SCOPE_SMALL_02`,
+					`COMPONENT_C1911_MACRO`
+				},
+				usetime = 2500
+			}
+		},
+		['at_scope_medium'] = {
+			label = 'Medium Scope',
+			type = 'sight',
+			weight = 280,
+			client = {
+				component = {
+					`COMPONENT_AR15_SCOPE_MED`,
+					`COMPONENT_C1911_MACRO_02`
+				},
+				usetime = 2500
+			}
+		},
+		['at_scope_large'] = {
+			label = 'Large Scope',
+			type = 'sight',
+			weight = 280,
+			client = {
+				component = {
+					`COMPONENT_AT_SCOPE_LARGE`
+				},
+				usetime = 2500
+			}
+		},
+  		['at_pistol_suppressor_tactical'] = {
+			label = 'Pistol Suppressor Tactical',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'pistol_suppressor_tactical.png',
+				component = {
+					`COMPONENT_AT_PI_SUPP_CUSTOM`,
+				},
+				usetime = 2500
+			}
+		},
+        ['at_flashlight'] = {
+			label = 'Tactical Flashlight',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				component = {
+					`COMPONENT_AT_AR_FLSH_TACT`,
+
+				},
+				usetime = 2500
+			}
+		},
+        ['at_clip_drum_rifle'] = {
+			label = 'Rifle Drum',
+			type = 'magazine',
+			weight = 280,
+			client = {
+                image = 'at_clip_drum.png',
+				component = {
+					`COMPONENT_ASSAULTRIFLE_CLIP_03`,
+					`COMPONENT_COMPACTRIFLE_CLIP_03`,
+					`COMPONENT_CARBINERIFLE_CLIP_03`,
+					`COMPONENT_SPECIALCARBINE_CLIP_03`,
+				},
+				usetime = 2500
+			}
+		},
+    	['at_clip_extended_rifle'] = {
+			label = 'Extended Rifle Clip',
+			type = 'magazine',
+			weight = 280,
+			client = {
+                image = 'at_clip_extended2.png',
+				component = {
+					`COMPONENT_M4_CLIP_02`,
+					`COMPONENT_CARBINERIFLE_CLIP_02`,
+					`COMPONENT_M16_CLIP_02`,
+					`COMPONENT_AR15C_CLIP_02`,
+					`COMPONENT_AKG_CLIP_02`,
+					`COMPONENT_AK74U_CLIP_02`,
+					`COMPONENT_AK47_CLIP_02`,
+					`COMPONENT_CZBREN_CLIP_02`,
+					`COMPONENT_TACTICALRIFLE_CLIP_02`,
+					`COMPONENT_BATTLERIFLE_CLIP_02`,
+				},
+				usetime = 2500
+			}
+		},
+    	['at_clip_extended_pistol'] = {
+			label = 'Extended Pistol Clip',
+			type = 'magazine',
+			weight = 280,
+			client = {
+                image = 'at_clip_extended.png',
+				component = {
+					`COMPONENT_CZP10F_CLIP_02`,
+					`COMPONENT_CZS_CLIP_02`,
+					`COMPONENT_FIVESEVEN_CLIP_02`,
+					`COMPONENT_FN509_CLIP_02`,
+					`COMPONENT_FNX_VENOM_CLIP_02`,
+					`COMPONENT_GLOCK17GEN4_CLIP_02`,
+					`COMPONENT_GLOCK19_CLIP_02`,
+					`COMPONENT_JERICHO941_CLIP_02`,
+					`COMPONENT_M9_CLIP_02`,
+					`COMPONENT_M70_CLIP_02`,
+                    `COMPONENT_P320X_CLIP_02`,
+                    `COMPONENT_PISTOL1911_CLIP_02`,
+					`COMPONENT_PX4C_CLIP_02`,
+                    `COMPONENT_PX4S_CLIP_02`,
+				},
+				usetime = 2500
+			}
+		},
+		['at_clip_extended_smg'] = {
+			label = 'Extended SMG Clip',
+			type = 'magazine',
+			weight = 280,
+			client = {
+                image = 'at_clip_extended.png',
+				component = {
+					`COMPONENT_MAC10_CLIP_02`,
+					`COMPONENT_MP5_CLIP_02`,
+					`COMPONENT_MP7_CLIP_02`,
+					`COMPONENT_P90_CLIP_02`,
+					`COMPONENT_SEVO_CLIP_02`,
+					`COMPONENT_TPM_CLIP_02`,
+					`COMPONENT_UZI_CLIP_02`,
+                    `COMPONENT_COMBATPDW_CLIP_02`,
 				},
 				usetime = 2500
 			}
