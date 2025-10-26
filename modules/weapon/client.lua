@@ -21,20 +21,22 @@ function Weapon.Equip(item, data, noWeaponAnim)
     local sleep
 
 	if client.weaponanims then
-		if noWeaponAnim or (cache.vehicle and vehicleIsCycle(cache.vehicle)) then
-			goto skipAnim
-		end
+        if noWeaponAnim or (cache.vehicle and vehicleIsCycle(cache.vehicle)) then
+            goto skipAnim
+        end
+        
+        local holsterItem = 'holster'
+        local hasHolster = exports.ox_inventory:Search('count', holsterItem) > 0
+        local anim = data.anim or anims[GetWeapontypeGroup(data.hash)]
 
-		local anim = data.anim or anims[GetWeapontypeGroup(data.hash)]
+        if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) and not hasHolster then
+            anim = nil
+        end
 
-		if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
-			anim = nil
-		end
+        sleep = anim and anim[3] or 1200
 
-		sleep = anim and anim[3] or 1200
-
-		Utils.PlayAnimAdvanced(sleep, anim and anim[1] or 'reaction@intimidation@1h', anim and anim[2] or 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, sleep*2, 50, 0.1)
-	end
+        Utils.PlayAnimAdvanced(sleep, anim and anim[1] or 'reaction@intimidation@1h', anim and anim[2] or 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed), 8.0, 3.0, sleep * 2, 50, 0.1)
+    end
 
 	::skipAnim::
 
@@ -108,13 +110,16 @@ function Weapon.Disarm(currentWeapon, noAnim)
 
 			ClearPedSecondaryTask(cache.ped)
 
+        local holsterItem = 'holster'
+        local hasHolster = exports.ox_inventory:Search('count', holsterItem) > 0
 			local item = Items[currentWeapon.name]
 			local coords = GetEntityCoords(cache.ped, true)
 			local anim = item.anim or anims[GetWeapontypeGroup(currentWeapon.hash)]
 
-			if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) then
-				anim = nil
-			end
+        if anim == anims[`GROUP_PISTOL`] and not client.hasGroup(shared.police) and not hasHolster then
+            anim = nil
+        end
+
 
 			local sleep = anim and anim[6] or 1400
 
