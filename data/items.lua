@@ -3491,4 +3491,12 @@ return {
 			export = 'p_itemclothes.useClothingItem'
 		}
 	},
+
+    ['holster'] = {
+        label = "Holster",
+        stack = false,
+        weight = 100,
+        description = "Durable leather holster, designed for secure firearm storage and quick-draw",
+    },
+    
 }
