@@ -276,7 +276,6 @@ return {
         label = 'Methamphetamine',
         weight = 100,
     },
-
     ['oxy'] = {
         label = 'Oxycodone',
         weight = 100,
@@ -3492,6 +3491,7 @@ return {
 		}
 	},
 
+    -- [[ my own addition ]] ==
     ['holster'] = {
         label = "Holster",
         stack = false,
@@ -3499,4 +3499,32 @@ return {
         description = "Durable leather holster, designed for secure firearm storage and quick-draw",
     },
     
+    -- [[ pug-repojob ]] --
+    ['towremote'] = {
+        label = 'Tow Remote',
+        stack = false,
+        weight = 100,
+        description = "A remote to operate a tow truck.",
+    },
+    ['reponote'] = {
+        label = 'Tow Note',
+        stack = false,
+        weight = 100,
+        description = "A note with info on your tow job.",
+    },
+
+    -- [[ brutal-gangs ]] --
+    ["spraycan"] = {
+        label = "Spray Can",
+        weight = 1,
+        stack = true,
+        close = false,
+    },
+    ["sprayremover"] = {
+        label = "Spray Remover",
+        weight = 1,
+        stack = true,
+        close = false,
+    },
+
 }
