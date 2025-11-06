@@ -48,7 +48,7 @@ local function canOpenInventory()
         return shared.info('cannot open inventory', '(player inventory has not loaded)')
     end
 
-    if IsPauseMenuActive() then return end
+    -- if IsPauseMenuActive() then return end
 
     if invBusy or invOpen == nil or (currentWeapon?.timer or 0) > 0 then
         return shared.info('cannot open inventory', '(is busy)')
@@ -117,6 +117,8 @@ local Inventory = require 'modules.inventory.client'
 ---@param data any?
 ---@return boolean?
 function client.openInventory(inv, data)
+	Citizen.Wait(150)
+
 	if invOpen then
 		if not inv and currentInventory.type == 'newdrop' then
 			return client.closeInventory()
@@ -140,9 +142,9 @@ function client.openInventory(inv, data)
 				end
 			end
 		end
-	elseif IsNuiFocused() then
+	elseif IsNuiFocused() or IsPauseMenuActive() then
 		-- If triggering from another nui, may need to wait for focus to end.
-		Wait(100)
+		Wait(300)
 
         -- People still complain about this being an "error" and ask "how fix" despite being a warning
         -- for people with above room-temperature iqs to look into resource conflicts on their own.
@@ -274,7 +276,8 @@ function client.openInventory(inv, data)
     currentInventory = right or defaultInventory
     left.items = PlayerData.inventory
     left.groups = PlayerData.groups
-
+	currentPayment = 'money'
+	
     SendNUIMessage({
         action = 'setupInventory',
         data = {
@@ -438,7 +441,10 @@ local function useItem(data, cb, noAnim)
         DisablePlayerFiring(cache.playerId, true)
     end
 
-    if invOpen and data.close then client.closeInventory() end
+    if invOpen and data.close then 
+		client.closeInventory() 
+		Citizen.Wait(200)
+	end
 
     usingItem = true
     ---@type boolean?
@@ -501,7 +507,10 @@ local function useSlot(slot, noAnim)
 		if item.metadata.container then
 			return client.openInventory('container', item.slot)
 		elseif data.client then
-			if invOpen and data.close then client.closeInventory() end
+			if invOpen and data.close then 
+				client.closeInventory() 
+				Citizen.Wait(200)
+			end
 
 			if data.export then
 				return data.export(data, {name = item.name, slot = item.slot, metadata = item.metadata})
@@ -689,6 +698,65 @@ local function useSlot(slot, noAnim)
     end
 end
 exports('useSlot', useSlot)
+
+local isThrowing = false
+local function throwSlot(slot)
+	if isThrowing then return end
+
+	local itemData = PlayerData.inventory[slot]
+	if not itemData then return end
+
+	client.closeInventory()
+	isThrowing = true
+	Citizen.Wait(100)
+	lib.showTextUI(locale('throw_item_textui'))
+	local plyCoords = GetEntityCoords(cache.ped)
+	local throwModel = lib.requestModel(Items[itemData.name]?.prop or 'prop_med_bag_01b')
+	local throwObj = CreateObject(throwModel, plyCoords.x, plyCoords.y, plyCoords.z, true, true, true)
+	AttachEntityToEntity(throwObj, cache.ped, GetPedBoneIndex(cache.ped, 57005), 0.11, 0.03, -0.04, 0.0, 0.0, 0.0, true, true, false, true, 1, true)
+	Citizen.CreateThread(function()
+		while isThrowing do
+			Citizen.Wait(0)
+			local camRot = GetGameplayCamRot(0)
+			local throwHeading = camRot.z
+			local throwPower = 2.0
+			if itemData.weight then
+				throwPower = math.max(1.0, 5.0 - (itemData.weight / 10))
+			end
+			DisableControlAction(0, 24, true) -- Attack
+			DisableControlAction(0, 25, true) -- Aim
+			if IsDisabledControlPressed(0, 24) then
+				local animDict = lib.requestAnimDict('weapons@projectile@')
+				TaskPlayAnim(cache.ped, animDict, 'throw_h_fb_stand', 8.0, -8.0, 1500, 49, 0, false, false, false)
+				isThrowing = false
+				lib.hideTextUI()
+				Citizen.Wait(200)
+				local forward = GetEntityForwardVector(cache.ped)
+				DetachEntity(throwObj, true, true)
+				Citizen.Wait(1)
+				SetEntityVelocity(throwObj, forward.x * throwPower, forward.y * throwPower, forward.z * throwPower + 5.0)
+				local mass = (itemData.weight or 100) / 100
+				SetEntityDynamic(throwObj, true)
+				SetEntityCollision(throwObj, true, true)
+				SetEntityHasGravity(throwObj, true)
+				ApplyForceToEntity(throwObj, 1, forward.x * throwPower * 20, forward.y * throwPower * 20, 3.0, 0.0, 0.0, 0.0, 0, false, true, true, false, true)
+				SetModelAsNoLongerNeeded(throwModel)
+				Citizen.Wait(1000)
+				while GetEntitySpeed(throwObj) > 0.125 do
+					Citizen.Wait(10)
+				end
+				local coords = GetEntityCoords(throwObj)
+				local retval, groundZ = GetGroundZFor_3dCoord(coords.x, coords.y, coords.z + 1.5, true)
+				TriggerServerEvent('ox_inventory:throwItem', slot, vec3(coords.x, coords.y, retval and groundZ or coords.z))
+				DeleteEntity(throwObj)
+			elseif IsDisabledControlPressed(0, 25) then
+				isThrowing = false
+				lib.hideTextUI()
+				DeleteEntity(throwObj)
+			end
+		end
+	end)
+end
 
 ---@param id number
 ---@param slot number
@@ -898,8 +966,8 @@ function client.closeInventory(server)
 		end
 
 		currentInventory = nil
-		plyState.invOpen = false
 		defaultInventory.coords = nil
+		plyState.invOpen = false
 	end
 end
 
@@ -1223,6 +1291,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 			stack = v.stack,
 			close = v.close,
 			count = 0,
+			rarity = v.rarity,
 			description = v.description,
 			buttons = buttons,
 			ammoName = v.ammoname,
@@ -1332,7 +1401,14 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 				items = PlayerData.inventory,
 				maxWeight = shared.playerweight,
 			},
-			imagepath = client.imagepath
+			imagepath = client.imagepath,
+			options = {
+				rarity = shared.rarity,
+				clothing = shared.clothing,
+				throwing = shared.throwing,
+				rename = shared.rename,
+				robclothes = shared.robclothes,
+			}
 		}
 	})
 
@@ -1658,8 +1734,37 @@ RegisterNUICallback('removeAmmo', function(slot, cb)
 	end
 end)
 
+local function renameSlot(slot)
+	client.closeInventory()
+	Citizen.Wait(10)
+	local itemData = PlayerData.inventory[slot]
+	if not itemData then return end
+
+	local input = lib.inputDialog(locale('rename_item'), {
+		{type = 'input', label = locale('new_name'), default = itemData.metadata?.label or Items[itemData.name]?.label or '', required = true},
+	})
+
+	if not input then return end
+	local newName = input[1]:sub(1, 50):gsub('%s+', ' '):gsub('^%s', ''):gsub('%s$', '')
+	if newName:len() < 3 or newName:len() > 50 then
+		return lib.notify({ type = 'error', description = locale('invalid_item_name') })
+	end
+
+	TriggerServerEvent('ox_inventory:renameSlot', slot, newName)
+end
+
 RegisterNUICallback('useItem', function(slot, cb)
 	useSlot(slot --[[@as number]])
+	cb(1)
+end)
+
+RegisterNUICallback('throwItem', function(slot, cb)
+	throwSlot(slot --[[@as number]])
+	cb(1)
+end)
+
+RegisterNUICallback('renameItem', function(slot, cb)
+	renameSlot(slot --[[@as number]])
 	cb(1)
 end)
 
@@ -1857,8 +1962,15 @@ RegisterNUICallback('swapItems', function(data, cb)
 	end
 end)
 
+currentPayment = 'money'
+RegisterNUICallback('setShopPayment', function(data, cb)
+	currentPayment = data
+	cb(1)
+end)
+
 RegisterNUICallback('buyItem', function(data, cb)
 	---@type boolean, false | { [1]: number, [2]: SlotWithItem, [3]: SlotWithItem | false, [4]: number}, NotifyProps
+	data.payment = currentPayment
 	local response, data, message = lib.callback.await('ox_inventory:buyItem', 100, data)
 
 	if data then
