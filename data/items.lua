@@ -3527,4 +3527,30 @@ return {
         close = false,
     },
 
+    -- [[ jim-recycle ]] --
+    ["recyclablematerial"] = {
+        name = "recyclablematerial",
+        label = "Recycle Box",
+        weight = 100,
+        client = {
+          image = "recyclablematerial.png",
+        }
+    },
+    ["bottle"] = {
+        name = "bottle",
+        label = "Empty Bottle",
+        weight = 10,
+        client = {
+          image = "bottle.png",
+        }
+    },
+    ["can"] = {
+        name = "can",
+        label = "Empty Can",
+        weight = 10,
+        client = {
+          image = "can.png",
+        }
+    },
+
 }
