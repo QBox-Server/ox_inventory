@@ -116,8 +116,14 @@ local Inventory = require 'modules.inventory.client'
 ---@param inv string?
 ---@param data any?
 ---@return boolean?
+local antiSpam = GetGameTimer()
 function client.openInventory(inv, data)
-	Citizen.Wait(150)
+	Citizen.Wait(200)
+	if antiSpam > GetGameTimer() then
+		return
+	end
+
+	antiSpam = GetGameTimer() + 500
 
 	if invOpen then
 		if not inv and currentInventory.type == 'newdrop' then
