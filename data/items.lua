@@ -2719,6 +2719,7 @@ return {
         client = { image = "iceskates_green.png" } 
     },
 
+    -- [[ pscripts ambulancejob ]] --
 	['crutch'] = {
 		label = 'Crutch',
 		weight = 100,
@@ -2880,6 +2881,7 @@ return {
 		close = true,
 	},
 
+    -- [[ not sure ]] --
 	['printer_document'] = {
 		label = 'Document',
 		weight = 10,
@@ -2891,6 +2893,7 @@ return {
 		}
 	},
     
+    -- [[ GG Hunting ]] --
     ["gg_hunting_cookedmeat"] = {
         label = "Cooked Game Meat",
         weight = 50,
