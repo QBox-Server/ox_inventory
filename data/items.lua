@@ -528,10 +528,10 @@ return {
         label = 'Harness',
         weight = 200,
     },
-    ['handcuffs'] = {
-        label = 'Handcuffs',
-        weight = 200,
-    },
+    -- ['handcuffs'] = {
+    --     label = 'Handcuffs',
+    --     weight = 200,
+    -- },
 
     -- [[ p_policejob ]] --
 	['police_rappel'] = {
