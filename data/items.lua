@@ -99,7 +99,7 @@ return {
         consume = 0
     },
     ['panties'] = {
-        label = 'Knickers',
+        label = 'Panties',
         weight = 10,
         consume = 0,
         client = {
@@ -183,6 +183,16 @@ return {
     ['weaponlicense'] = {
         label = 'Weapon License',
     },
+    -- ['weaponlicense'] = {
+    --     label = 'Weapon License',
+    --     weight = 1,
+    --     stack = false,
+    --     close = true,
+    --     description = 'Legal permit to carry and operate firearms',
+    --     client = {
+    --         image = "wlicense.png",
+    --     }
+    -- },
     ['lawyerpass'] = {
         label = 'Lawyer Pass',
     },
@@ -336,10 +346,10 @@ return {
         label = 'Plant Fertilizer',
         weight = 2000,
     },
-    ['joint'] = {
-        label = 'Joint',
-        weight = 200,
-    },
+    -- ['joint'] = {
+    --     label = 'Joint',
+    --     weight = 200,
+    -- },
     ['rolling_paper'] = { ---
         label = 'Rolling Paper',
         weight = 0,
@@ -361,19 +371,19 @@ return {
         weight = 400,
     },
     ['firework1'] = {
-        label = '2Brothers',
+        label = '2Brothers Firework',
         weight = 1000,
     },
     ['firework2'] = {
-        label = 'Poppelers',
+        label = 'Poppelers Firework',
         weight = 1000,
     },
     ['firework3'] = {
-        label = 'WipeOut',
+        label = 'WipeOut Firework',
         weight = 1000,
     },
     ['firework4'] = {
-        label = 'Weeping Willow',
+        label = 'Weeping Willow Firework',
         weight = 1000,
     },
     ['steel'] = {
@@ -436,10 +446,10 @@ return {
         label = 'Security Card B',
         weight = 100,
     },
-    ['drill'] = {
-        label = 'Drill',
-        weight = 5000,
-    },
+    -- ['drill'] = {
+    --     label = 'Drill',
+    --     weight = 5000,
+    -- },
     ['thermite'] = {
         label = 'Thermite',
         weight = 1000,
@@ -504,10 +514,10 @@ return {
         label = 'Walking Stick',
         weight = 1000,
     },
-    ['lighter'] = {
-        label = 'Lighter',
-        weight = 200,
-    },
+    -- ['lighter'] = {
+    --     label = 'Lighter',
+    --     weight = 200,
+    -- },
     ['binoculars'] = {
         label = 'Binoculars',
         weight = 800,
@@ -524,10 +534,10 @@ return {
         label = 'Filled Evidence Bag',
         weight = 200,
     },
-    ['harness'] = {
-        label = 'Harness',
-        weight = 200,
-    },
+    -- ['harness'] = {
+    --     label = 'Harness',
+    --     weight = 200,
+    -- },
     -- ['handcuffs'] = {
     --     label = 'Handcuffs',
     --     weight = 200,
@@ -1153,7 +1163,6 @@ return {
         client = { image = "x_suitcase.png" }
     },
 
-    -- [[ 17Mov DirtSystem ]] --
     ["advancedlockpick"] = {
         label = "Advanced Lockpick",
         weight = 500,
@@ -1162,6 +1171,8 @@ return {
         description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
         client = { image = "advancedlockpick.png", }
     },
+
+    -- [[ 17Mov DirtSystem ]] --
     ['mov_basic_ceramic'] = {
         label = "Ceramika Podstawowa",
         description = "Po nałożeniu na samochód brud nie przykleja się do karoserii, co znacznie ułatwia jego zmycie na myjni. Utrzymuje się na samochodzie około 3 dni, po tym czasie konieczna jest ponowna aplikacja dla podtrzymania efektu.",
@@ -2654,6 +2665,7 @@ return {
         client = { image = "gruppesechstablet.png" } 
     },
 
+    -- [[ brunx-iceorink]] --
     ["ticket_iceorink"] = {
         label = "Ticket Ice-O-Rink",
         weight = 0,
@@ -3215,6 +3227,7 @@ return {
         }
     },
 
+    -- [[ lb-tablet ]] --
     ["tablet"] = {
         label = "Tablet",
         weight = 840,
@@ -3225,6 +3238,7 @@ return {
         }
     },
 
+    -- [[ envi-trapphone ]] --
     ["trap_phone"] = {
         label = 'Trap Phone',
         description = 'Trap-Line Bling...',
@@ -3261,6 +3275,7 @@ return {
         close = true,
     },
 
+    -- [[ cs-bodycam ]] --
     ['bodycam'] = {
         label = 'Bodycam',
         weight = 100,
@@ -3285,6 +3300,7 @@ return {
         }
     },
 
+    -- [[ cs-radio ]] --
 	['radio_jammer'] = {
         label = 'Radio Jammer',
         weight = 1,
@@ -3307,6 +3323,7 @@ return {
         description = 'A Radio Scanner'
 	},
 
+    -- [[ cs-id ]] --
     ['police_badge'] = {
         label = 'LSPD Badge',
         weight = 10,
@@ -3555,5 +3572,249 @@ return {
           image = "can.png",
         }
     },
-
+    -- [[ rcore-prison ]] --
+    ['sludgie'] = {
+        name = 'sludgie',
+        label = 'Sludgie',
+        weight = 350,
+        client = {
+            status = { thirst = 200000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 2500,
+            notification = 'You quenched your thirst with a Coffee'
+        }
+    },
+    ['ecola_light'] = {
+        name = 'ecola_light',
+        label = 'Ecola light',
+        weight = 350,
+        client = {
+            status = { thirst = 200000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 2500,
+            notification = 'You quenched your thirst with a Coffee'
+        }
+    },
+    ['ecola'] = {
+        name = 'ecola',
+        label = 'Ecola',
+        weight = 350,
+        client = {
+            status = { thirst = 200000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 2500,
+            notification = 'You quenched your thirst with a Coffee'
+        }
+    },
+    ['coffee'] = {
+        name = 'coffee',
+        label = 'Coffee',
+        weight = 350,
+        client = {
+            status = { thirst = 200000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_ld_can_01', pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 2500,
+            notification = 'You quenched your thirst with a Coffee'
+        }
+    },
+    ['fries'] = {
+        name = 'fries',
+        label = 'Fries',
+        weight = 350,
+        client = {
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_food_cb_chips', pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+            usetime = 2500,
+            notification = 'You eat Fries'
+        }
+    },
+    ['pizza_ham'] = {
+        name = 'pizza_ham',
+        label = 'Pizza Ham',
+        weight = 350,
+        client = {
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_food_cb_chips', pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+            usetime = 2500,
+            notification = 'You eat Fries'
+        }
+    },
+    ['chips'] = {
+        name = 'chips',
+        label = 'Chips',
+        weight = 350,
+        client = {
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_food_cb_chips', pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+            usetime = 2500,
+            notification = 'You eat Chips'
+        }
+    },
+    ['donut'] = {
+        name = 'donut',
+        label = 'Donut',
+        weight = 350,
+        client = {
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_amb_donut', pos = vec3(0.02, 0.02, -0.02), rot = vec3(0.0, 0.0, 0.0) },
+            usetime = 2500,
+            notification = 'You eat Donut'
+        }
+    },
+    ['wire_cutter'] = {
+        name = 'wire_cutter',
+        label = 'cutter',
+        weight = 100,
+        stack = true,
+        consume = 0,
+        close = true,
+    },
+    ['cigarrete'] = {
+        name = 'cigarrete',
+        label = 'Cigarrete',
+        weight = 100,
+        stack = true,
+        consume = 0,
+        close = true,
+    },
+    -- [[ p_banking ]] --
+    ['bank_card'] = {
+        label = 'Bank Card',
+        weight = 50,
+        stack = false,
+        consume = 0
+    },
+    -- [[ ENVI-HUD ]] --
+    ['harness'] = {
+        label = 'Basic Harness',
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'A basic racing harness that provides some protection from crashes',
+    },
+    ['advanced_harness'] = {
+        label = 'Advanced Harness', 
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'An advanced racing harness that provides better protection from crashes',
+    },
+    ['ultra_harness'] = {
+        label = 'Ultra Harness',
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'An ultra racing harness that provides maximum protection from crashes',
+    },
+    ['mech_toolkit'] = {
+        label = 'Mechanic Toolkit',
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'A toolkit used by mechanics to remove vehicle harnesses',
+    },
+    -- [[ zyke smoking ]] --
+    ["joint"] = {
+        label = "Joint",
+        weight = 50,
+        stack = true,
+        close = true
+    },
+    ["cigar"] = {
+        label = "Cigar",
+        weight = 50,
+        stack = true,
+        close = true
+    },
+    ["cigarette"] = {
+        label = "Cigarette",
+        weight = 30,
+        stack = true,
+        close = true
+    },
+    ["lighter"] = {
+        label = "Lighter",
+        weight = 50,
+        stack = false,
+        close = true
+    },
+    ["bong"] = {
+        label = "Bong",
+        weight = 250,
+        stack = false,
+        close = true
+    },
+    ["vape"] = {
+        label = "Vape",
+        weight = 150,
+        stack = false,
+        close = true
+    },
+    ["vape_battery"] = {
+        label = "Vape Battery",
+        weight = 100,
+        stack = true,
+        close = true
+    },
+    ["vape_vanilla_flavour"] = {
+        label = "Vanilla Capsule",
+        weight = 20,
+        stack = false,
+        close = true
+    },
+    ["vape_green_flavour"] = {
+        label = "Green Capsule",
+        weight = 20,
+        stack = false,
+        close = true
+    },
+    ["vape_purple_flavour"] = {
+        label = "Purple Capsule",
+        weight = 20,
+        stack = false,
+        close = true
+    },
+    ["vape_rainbow_flavour"] = {
+        label = "Rainbow Capsule",
+        weight = 20,
+        stack = false,
+        close = true
+    },
+    ["weed_nugget"] = {
+        label = "Weed Nugget",
+        weight = 1,
+        stack = true,
+        close = true,
+    },
+    ["cigarette_pack"] = {
+        label = "Cigarette Pack",
+        weight = 200,
+        stack = false,
+        close = true
+    },
+    ["bong_water"] = {
+        label = "Bong Water",
+        weight = 250,
+        stack = true,
+        close = true
+    },
+    -- KuzQuality OutfitBag
+    ["kq_outfitbag"] = {
+        label = "Outfit bag",
+        weight = 4,
+        stack = true,
+        close = true,
+        consume = 0,
+        server = {
+            export = 'kq_outfitbag2.UseBag',
+        },
+    },
 }
