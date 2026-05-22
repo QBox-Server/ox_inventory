@@ -430,10 +430,10 @@ return {
             event = 'mm_radio:client:recharge'
         }
     },
-    ['advancedlockpick'] = { ---
-        label = 'Advanced Lockpick',
-        weight = 500,
-    },
+    -- ['advancedlockpick'] = { ---
+    --     label = 'Advanced Lockpick',
+    --     weight = 500,
+    -- },
     ['screwdriverset'] = {
         label = 'Screwdriver Set',
         weight = 500,
@@ -658,10 +658,10 @@ return {
     --     label = 'Drill',
     --     weight = 5000,
     -- },
-    ['thermite'] = {
-        label = 'Thermite',
-        weight = 1000,
-    },
+    -- ['thermite'] = {
+    --     label = 'Thermite',
+    --     weight = 1000,
+    -- },
     ['diving_gear'] = { ---
         label = 'Diving Gear',
         weight = 30000,
@@ -1034,78 +1034,55 @@ return {
         consume = 0,
     },
 
-    -- [[ projectx-houserobery ]] --
-    ["x_coffeemaker"] = {
-        label = "Coffee Maker",
-        weight = 500,
-        stack = true,
+    -- [[ projectx-houserobery_V2 ]] --
+    ["house_key"] = {
+        label = "House Key",
+        weight = 100,
+        stack = false,
         close = false,
-        description = "To make that perfect cup of Joe!",
-        client = { image = "x_coffeemaker.png" }
+        description = "To unlock the front door",
     },
-    ["x_artpiece"] = {
-        label = "Art Piece",
-        weight = 500,
-        stack = true,
+    ["x_burner"] = {
+        label = "Burner Phone",
+        weight = 100,
+        stack = false,
         close = false,
-        description = "A unique piece of art!",
-        client = { image = "x_artpiece.png" }
+        description = "Nothing suspicious about this phone..",
     },
-    ["x_guitar"] = {
-        label = "Guitar",
-        weight = 300,
-        stack = true,
+    ["x_tablet"] = {
+        label = "X Tablet",
+        weight = 100,
+        stack = false,
         close = false,
-        description = "A guitar!",
-        client = { image = "x_guitar.png" }
+        description = "Nothing suspicious about this tablet..",
     },
-    ["x_microwave"] = {
-        label = "Microwave",
-        weight = 800,
-        stack = true,
+    ["bag"] = {
+        label = "Bag",
+        weight = 400,
+        stack = false,
         close = false,
-        description = "A microwave - for heating things up!",
-        client = { image = "x_microwave.png" }
+        description = "Duffel bag",
     },
-    ["x_musicequipment"] = {
-        label = "Coffee Maker",
-        weight = 500,
-        stack = true,
-        close = false,
-        description = "The keys to success.. As some Dj's would say",
-        client = { image = "x_musicequipment.png" }
-    },
-    ["x_painting"] = {
-        label = "Painting",
+    ["x_stethoscope"] = {
+        label = "X Stethoscope",
         weight = 200,
-        stack = true,
+        stack = false,
         close = false,
-        description = "A modern work of art!",
-        client = { image = "x_painting.png" }
+        description = "click click",
     },
-    ["x_painting2"] = {
-        label = "Painting",
-        weight = 200,
-        stack = true,
+    ["x_device"] = {
+        label = "X Device",
+        weight = 50,
+        stack = false,
         close = false,
-        description = "A modern work of art!",
-        client = { image = "x_painting2.png" }
+        description = "?????????",
     },
-    ["x_pcequipment"] = {
-        label = "PC",
-        weight = 600,
-        stack = true,
+    ["glass_cutter"] = {
+        label = "Glass Cutter",
+        weight = 1000,
+        stack = false,
         close = false,
-        description = "A PC, for gaming?! Well of course it is!",
-        client = { image = "x_pcequipment.png" }
-    },
-    ["x_suitcase"] = {
-        label = "Suit Case",
-        weight = 200,
-        stack = true,
-        close = false,
-        description = "A leather suitcase, what the hell is inside of this?",
-        client = { image = "x_suitcase.png" }
+        description = "",
     },
     ["advancedlockpick"] = {
         label = "Advanced Lockpick",
@@ -1113,7 +1090,104 @@ return {
         stack = true,
         close = true,
         description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
-        client = { image = "advancedlockpick.png", }
+    },
+    ["x_coffeemaker"] = {
+        label = "Coffee Maker",
+        weight = 5000,
+        stack = true,
+        close = false,
+        description = "To make that perfect cup of Joe!",
+    },
+    ["x_microwave"] = {
+        label = "Microwave",
+        weight = 5000,
+        stack = true,
+        close = false,
+        description = "A microwave - for heating things up!",
+    },
+    ["x_painting"] = {
+        label = "Painting",
+        weight = 3000,
+        stack = true,
+        close = false,
+        description = "A beautiful painting - worth a lot!",
+    },
+    ["x_plush"] = {
+        label = "Plush Toy",
+        weight = 100,
+        stack = true,
+        close = false,
+        description = "A cute plush toy",
+    },
+    ["x_toaster"] = {
+        label = "Toaster",
+        weight = 1000,
+        stack = true,
+        close = false,
+        description = "A kitchen toaster",
+    },
+    ["laptop"] = {
+        label = "Laptop",
+        weight = 500,
+        stack = true,
+        close = false,
+        description = "A high-end laptop",
+    },
+    ["x_printer"] = {
+        label = "Printer",
+        weight = 5000,
+        stack = true,
+        close = false,
+        description = "A color printer",
+    },
+    ["emerald_necklace"] = {
+        label = "Emerald Necklace",
+        weight = 200,
+        stack = true,
+        close = false,
+        description = "",
+    },
+    ['x_goldenknife'] = {
+        label = "X Golden Knife",
+        weight = 300,
+        stack = false,
+        close = false,
+        description = "?????????",
+    },
+    ['x_television'] = {
+        label = "X Television",
+        weight = 10000,
+        stack = false,
+        close = false,
+        description = "A high-definition television",
+    },
+    ["x_watch"] = {
+        label = "Watch",
+        weight = 100,
+        stack = true,
+        close = false,
+        description = "Wrist watch",
+    },
+    ["x_bananatrophy"] = {
+        label = "Banana Trophy",
+        weight = 1000,
+        stack = false,
+        close = false,
+        description = "Don't ask..",
+    },
+    ["x_electricguitar"] = {
+        label = "Electric Guitar",
+        weight = 1000,
+        stack = false,
+        close = false,
+        description = "Rock on!",
+    },
+    ["giant_gem"] = {
+        label = "Giant Gem",
+        weight = 500,
+        stack = false,
+        close = false,
+        description = "A huge sparkling gem",
     },
 
     -- [[ 17Mov DirtSystem ]] --
@@ -3571,7 +3645,7 @@ return {
 	},
 	['vest_normal'] = {
 		label = 'Bulletproof Vest',
-		weight = 3000,
+		weight = 1000,
 		stack = false,
 		consume = 1,
 		client = {
@@ -3580,7 +3654,7 @@ return {
 	},
 	['vest_strong'] = {
 		label = 'Strong Bulletproof Vest',
-		weight = 3000,
+		weight = 1000,
 		stack = false,
 		consume = 1,
 		client = {
@@ -3660,7 +3734,7 @@ return {
 	['handcuffs'] = {
 		label = 'Handcuffs',
 		weight = 100,
-		stack = false,
+		stack = true,
 		close = false,
 		consume = 0,
 		client = {
@@ -4986,6 +5060,7 @@ return {
         weight = 200,
         stack = true,
     },
+
     -- GRILL OUTPUTS - RIBS & BBQ
     ['bbq_ribs'] = {
         label = 'BBQ Ribs',
@@ -5009,6 +5084,7 @@ return {
         weight = 180,
         stack = true,
     },
+
     -- GRILL OUTPUTS - MISC
     ['grilled_sausage'] = {
         label = 'Grilled Sausage',
@@ -5055,6 +5131,7 @@ return {
         weight = 70,
         stack = true,
     },
+
     -- ============================================================================
     -- FRYER OUTPUTS
     -- ============================================================================
@@ -5088,6 +5165,7 @@ return {
         weight = 120,
         stack = true,
     },
+
     -- ============================================================================
     -- FINISHING STATION OUTPUTS - BURGERS
     -- ============================================================================
@@ -5106,6 +5184,7 @@ return {
         weight = 350,
         stack = true,
     },
+
     -- FINISHING STATION OUTPUTS - MEXICAN
     ['carnitas_taco'] = {
         label = 'Carnitas Taco',
@@ -5147,6 +5226,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- FINISHING STATION OUTPUTS - PASTA
     ['macaroni_marinara'] = {
         label = 'Macaroni Marinara',
@@ -5168,6 +5248,7 @@ return {
         weight = 230,
         stack = true,
     },
+
     -- FINISHING STATION OUTPUTS - SANDWICHES
     ['ham_sandwich'] = {
         label = 'Ham Sandwich',
@@ -5184,6 +5265,7 @@ return {
         weight = 190,
         stack = true,
     },
+
     -- FINISHING STATION OUTPUTS - SOUPS & BOWLS
     ['miso_soup'] = {
         label = 'Miso Soup',
@@ -5200,6 +5282,7 @@ return {
         weight = 400,
         stack = true,
     },
+
     -- ============================================================================
     -- BEVERAGE OUTPUTS
     -- ============================================================================
@@ -5233,6 +5316,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- BUBBLE TEA OUTPUTS
     ['classic_milk_tea'] = {
         label = 'Classic Milk Tea',
@@ -5274,6 +5358,7 @@ return {
         weight = 100,
         stack = true,
     },
+
     -- MOCKTAILS & SMOOTHIES
     ['virgin_mojito'] = {
         label = 'Virgin Mojito',
@@ -5285,9 +5370,11 @@ return {
         weight = 200,
         stack = true,
     },
+
     -- ============================================================================
     -- MICROWAVE ITEMS
     -- ============================================================================
+
     -- MICROWAVE INPUTS (Cold/Frozen items to reheat)
     ['pizza_slice_cold'] = {
         label = 'Cold Pizza Slice',
@@ -5339,6 +5426,7 @@ return {
         weight = 100,
         stack = true,
     },
+
     -- MICROWAVE OUTPUTS
     ['pizza_slice'] = {
         label = 'Pizza Slice',
@@ -5380,21 +5468,25 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- ============================================================================
     -- POT SYSTEM ITEMS
     -- ============================================================================
+
     -- BOWL (Required for taking servings)
     ['bowl'] = {
         label = 'Bowl',
         weight = 100,
         stack = true,
     },
+
     -- UNKNOWN STEW (Fallback for unrecognized ingredient combinations)
     ['unknown_stew'] = {
         label = 'Mystery Stew',
         weight = 250,
         stack = false,
     },
+
     -- POT RECIPE INGREDIENTS (Additional)
     ['onion'] = {
         label = 'Onion',
@@ -5516,6 +5608,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- POT RECIPE SERVING OUTPUTS
     -- NOTE: Do NOT add 'consume = 1' - envi-restaurants handles consumption
     ['tomato_soup_serving'] = {
@@ -5588,9 +5681,11 @@ return {
         weight = 350,
         stack = false,
     },
+
     -- ============================================================================
     -- POT SYSTEM INGREDIENTS (Supplier Items)
     -- ============================================================================
+
     ['carrot'] = {
         label = 'Carrot',
         weight = 80,
@@ -5676,9 +5771,11 @@ return {
         weight = 20,
         stack = true,
     },
+
     -- ============================================================================
     -- VEGAN & PLANT-BASED ITEMS
     -- ============================================================================
+
     -- Vegan Meat Alternatives
     ['vegan_beef_patty'] = {
         label = 'Vegan Beef Patty',
@@ -5735,6 +5832,7 @@ return {
         weight = 200,
         stack = true,
     },
+
     -- Vegan Dairy Alternatives
     ['vegan_cheese'] = {
         label = 'Vegan Cheese',
@@ -5776,6 +5874,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- Other Vegan Essentials
     ['nutritional_yeast'] = {
         label = 'Nutritional Yeast',
@@ -5822,6 +5921,7 @@ return {
         weight = 200,
         stack = true,
     },
+
     -- Vegan Cooked Outputs
     -- NOTE: Do NOT add 'consume = 1' - envi-restaurants handles consumption
     ['vegan_burger'] = {
@@ -5874,6 +5974,7 @@ return {
         weight = 300,
         stack = false,
     },
+
     -- Vegan Grill Outputs
     ['vegan_patty'] = {
         label = 'Vegan Patty',
@@ -5905,6 +6006,7 @@ return {
         weight = 180,
         stack = false,
     },
+
     -- ============================================================================
     -- SUSHI & JAPANESE
     -- NOTE: Do NOT add 'consume = 1' to these items - envi-restaurants handles consumption
@@ -5944,6 +6046,7 @@ return {
         weight = 150,
         stack = false,
     },
+
     -- ============================================================================
     -- PIZZA SLICES
     -- NOTE: Do NOT add 'consume = 1' - envi-restaurants handles consumption
@@ -5988,6 +6091,7 @@ return {
         weight = 130,
         stack = false,
     },
+
     -- ============================================================================
     -- DESSERTS
     -- NOTE: Do NOT add 'consume = 1' - envi-restaurants handles consumption
@@ -6002,6 +6106,7 @@ return {
         weight = 150,
         stack = false,
     },
+
     -- ============================================================================
     -- SEAFOOD DISHES
     -- NOTE: Do NOT add 'consume = 1' - envi-restaurants handles consumption
@@ -6026,6 +6131,7 @@ return {
         weight = 350,
         stack = false,
     },
+
     -- ============================================================================
     -- CHICKEN DISHES
     -- ============================================================================
@@ -6054,6 +6160,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- ============================================================================
     -- BBQ DISHES
     -- ============================================================================
@@ -6092,6 +6199,7 @@ return {
         weight = 50,
         stack = true,
     },
+
     -- ============================================================================
     -- BAKERY INGREDIENTS & DISHES
     -- ============================================================================
@@ -6110,6 +6218,7 @@ return {
         weight = 80,
         stack = true,
     },
+
     -- ============================================================================
     -- BREAD DISHES
     -- ============================================================================
@@ -6133,6 +6242,7 @@ return {
         weight = 200,
         stack = true,
     },
+
     -- ============================================================================
     -- VEGETABLE DISHES
     -- ============================================================================
@@ -6166,6 +6276,7 @@ return {
         weight = 100,
         stack = true,
     },
+
     -- ============================================================================
     -- VEGAN DISHES (Additional)
     -- ============================================================================
@@ -6184,6 +6295,7 @@ return {
         weight = 120,
         stack = true,
     },
+
     -- ============================================================================
     -- BAKED DESSERTS
     -- ============================================================================
@@ -6227,6 +6339,7 @@ return {
         weight = 100,
         stack = false,
     },
+
     -- Baked Dessert Ingredients
     ['sugar_glaze'] = {
         label = 'Sugar Glaze',
@@ -6263,6 +6376,7 @@ return {
         weight = 50,
         stack = true,
     },
+
     -- ============================================================================
     -- SUSHI INGREDIENTS
     -- ============================================================================
@@ -6306,6 +6420,7 @@ return {
         weight = 100,
         stack = true,
     },
+
     -- ============================================================================
     -- ADDITIONAL INGREDIENTS
     -- ============================================================================
@@ -6319,6 +6434,7 @@ return {
         weight = 100,
         stack = true,
     },
+
     -- ============================================================================
     -- HYGIENE & PEST CONTROL
     -- ============================================================================
@@ -6332,6 +6448,7 @@ return {
         weight = 150,
         stack = true,
     },
+
     -- ============================================================================
     -- CUSTOM FOOD ITEMS
     -- Created via the Custom Food Creation System
@@ -6548,14 +6665,65 @@ return {
             image = "storekey.png",
         }
     },
-    ["advancedlockpick"] = {
-        label = "Advanced Lockpick",
-        weight = 500,
+    -- [[ evo k9 ]] --
+    ["k9glowstick"] = {
+        label = "Dog Glow Stick",
+        weight = 0,
         stack = true,
         close = true,
-        description = "If you lose your keys a lot this is very useful... Also useful to open your beers",
+        description = "A glow for your k9",
         client = {
-            image = "advancedlockpick.png",
+            image = "k9glowstick.png",
+        }
+    },
+    ["k9weed"] = {
+        label = "K9 Weed",
+        weight = 0.5,
+        stack = true,
+        close = true,
+        description = "Plant weed to train your k9 smell power",
+        client = {
+            image = "k9weed.png",
+        }
+    },
+    ["k9revivekit"] = {
+        label = "Revivekit For K9",
+        weight = 1,
+        stack = false,
+        close = true,
+        description = "Revivekit for your k9 dog",
+        client = {
+            image = "k9revivekit.png",
+        }
+    },
+    ["k9food"] = {
+        label = "K9 Food",
+        weight = 1,
+        stack = true,
+        close = true,
+        description = "Food For Your K9 Dog",
+        client = {
+            image = "k9food.png",
+        }
+    },
+    ["k9drink"] = {
+        label = "K9 Drink",
+        weight = 1,
+        stack = true,
+        close = true,
+        description = "Drink For Your K9 Dog",
+        client = {
+            image = "k9drink.png",
+        }
+    },
+    ["k9flashlight"] = {
+        label = "K9 Flashlight",
+        weight = 1,
+        stack = false,
+        close = true,
+        description = "A flashlight for your K9 dog",
+        client = {
+            image = "k9flashlight.png",
         }
     },
 
