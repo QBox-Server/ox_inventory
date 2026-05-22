@@ -214,7 +214,7 @@ return {
 			label = 'Double Action Revolver',
 			weight = 940,
 			durability = 0.2,
-			ammoname = 'ammo-38'
+			ammoname = 'ammo-44'
 		},
 
 		['WEAPON_EMPLAUNCHER'] = {
@@ -481,6 +481,7 @@ return {
 			weight = 1130,
 			durability = 0.1,
 			ammoname = 'ammo-9',
+			rarity = 'legendary'
 		},
 
 		['WEAPON_PISTOL50'] = {
