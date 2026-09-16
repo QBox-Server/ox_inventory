@@ -127,11 +127,11 @@ return {
             usetime = 2500,
         }
     },
-    ['lockpick'] = {
-        label = 'Lockpick',
-        weight = 160,
-        rarity = 'epic'
-    },
+    -- ['lockpick'] = {
+    --     label = 'Lockpick',
+    --     weight = 160,
+    --     rarity = 'epic'
+    -- },
     ['phone'] = {
         label = 'Phone',
         weight = 190,
@@ -3530,302 +3530,571 @@ return {
 	},
 
     -- [[ p_policejob ]] --
-	['breathalyzer'] = {
-		label = 'Breathalyzer',
-		weight = 150,
-		stack = false,
-		close = true,
-		consume = 0,
-		client = {
-			export = 'p_policejob.useBreathalyzer'
-		}
-	},
-	['police_rappel'] = {
-		label = 'Police Rappel',
-		weight = 100,
-		stack = false,
-		close = true,
-		consume = 0,
-		client = {
-			event = 'p_policejob/client/heli/usePoliceRappel'
-		}
-	},
-	['fingerprint_scanner'] = {
-		label = 'Fingerprint Scanner',
-		weight = 500,
-		stack = false,
-		close = true,
-		client = {
-			export = 'p_policejob.useScanner'
-		}
-	},
-    ['spike_strip'] = {
-		label = 'Spike strip',
-		weight = 50,
-		stack = true,
-		consume = 1,
-		client = {
-			export = 'p_policejob.spike_strip'
-		}
-	},
-	['road_cone'] = {
-		label = 'Road cone',
-		weight = 50,
-		stack = true,
-	},
-	['consign'] = {
-		label = 'Road sign',
-		weight = 50,
-		stack = true,
-	},
-	['barrier'] = {
-		label = 'Road barrier',
-		weight = 50,
-		stack = true,
-	},
-	['roadcone_light'] = {
-		label = 'Road cone light',
-		weight = 50,
-		stack = true,
-	},
-	['headbag'] = {
-		label = 'Head bag',
-		weight = 50,
-		stack = false,
-		close = false
-	},
-	['police_diving_suit'] = {
-		label = 'Police Diving Suit',
-		weight = 2000,
-		consume = 0,
-		stack = false,
-		server = {
-			export = 'p_policejob.police_diving_suit'
-		}
-	},
-	['player_clothes'] = {
-		label = 'Your clothes',
-		weight = 250,
-		consume = 0,
-		stack = false,
-		server = {
-			export = 'p_policejob.player_clothes'
-		}
-	},
-	['fingerprint'] = {
-		label = 'Fingerprint Sample',
-		weight = 5,
-		stack = false,
-		consume = 0,
-	},
-	['bullet'] = {
-		label = 'Bullet Sample',
-		weight = 5,
-		stack = false,
-		consume = 0
-	},
-	['blood'] = {
-		label = 'Blood Sample',
-		weight = 5,
-		stack = false,
-		consume = 0
-	},
-	['tracking_band'] = {
-		label = 'GPS Band',
-		weight = 300,
-		stack = false,
-		close = false,
-		consume = 0
-	},
-	['radio'] = {
-		label = 'Radio',
-		weight = 1000,
-		stack = false,
-		allowArmed = true
-	},
-	['vest_normal'] = {
-		label = 'Bulletproof Vest',
-		weight = 1000,
-		stack = false,
-		consume = 1,
-		client = {
-			export = 'p_policejob.vest_normal'
-		}
-	},
-	['vest_strong'] = {
-		label = 'Strong Bulletproof Vest',
-		weight = 1000,
-		stack = false,
-		consume = 1,
-		client = {
-			export = 'p_policejob.vest_strong'
-		}
-	},
-	['body_cam'] = {
-		label = 'Police Bodycam',
-		weight = 200,
-		consume = 0,
-		stack = false,
-		server = {
-			export = 'p_policejob.body_cam'
-		}
-	},
-	['gps'] = {
-		label = 'GPS',
-		weight = 100,
-		stack = false,
-		consume = 0,
-		allowArmed = true,
-		client = {
-			export = 'p_policejob.gps',
-			remove = function(total)
-				if total < 1 then
-					local activeGPS = exports['p_policejob']:isGpsActive()
-					if activeGPS then
-						exports['p_policejob']:gps()
-					end
-				end
-			end
-		}
-	},
-	['snakecam'] = {
-		label = 'Snake Cam',
-		weight = 50,
-		stack = false,
-		close = true,
-		client = {
-			event = 'p_policejob/client/snakecam/start'
-		}
-	},
-	['vehicle_tracker'] = {
-		label = 'Vehicle GPS Tracker',
-		weight = 100,
-		stack = false,
-		close = true,
-	},
-	['camera'] = {
-		label = 'Camera',
-		stack = false,
-		close = true,
-		consume = 0,
-		weight = 1000,
-		client = {
-			export = 'p_policejob.camera'
-		}
-	},
-	['photo'] = {
-		label = 'Photo',
-		stack = false,
-		close = true,
-		weight = 10,
-		consume = 0,
-		server = {
-			export = 'p_policejob.photo'
-		},
-		buttons = {
-			{
-				label = 'Copy URL',
-				action = function(slot)
-					TriggerServerEvent('p_policejob/server_camera/CopyPhoto', slot)
-				end
-			},
-		},
-	},
-	['handcuffs'] = {
-		label = 'Handcuffs',
-		weight = 100,
-		stack = true,
-		close = false,
-		consume = 0,
-		client = {
-			export = 'p_policejob.handcuffs'
-		}
-	},
-	['cable_ties'] = {
-		label = 'Cable ties',
-		weight = 100,
-		stack = false,
-		close = false,
-		consume = 0
-	},
-	['mouthtape'] = {
-		label = 'Mouth Tape',
-		weight = 100,
-		stack = false,
-		close = false,
-		consume = 0
-	},
-	['police_shield'] = {
-		label = 'Police Shield',
-		weight = 250,
-		stack = false,
-		close = false,
-		consume = 0,
-		client = {
-			event = 'p_policejob/client/objects/togglePoliceShield'
-		}
-	},
-	['evidence_camera'] = {
-		label = 'Evidence Camera',
-		weight = 100,
-		stack = false,
-		close = true,
-		client = {
-			export = 'p_policejob.evidence_camera'
-		}
-	},
-	['megaphone'] = {
-		label = 'Megaphone',
-		weight = 100,
-		stack = false,
-		close = false,
-		consume = 0,
-		client = {
-			export = 'p_policejob.useMegaphone'
-		}
-	},
-	['traffic_ticket'] = {
-		label = 'Traffic Ticket',
-		weight = 50,
-		stack = false,
-		close = false,
-		consume = 0,
-	},
-	['breathalyzer'] = {
-		label = 'Breathalyzer',
-		weight = 150,
-		stack = false,
-		close = true,
-		consume = 0,
-		client = {
-			export = 'p_policejob.useBreathalyzer'
-		}
-	},
-	['cuffs_key'] = {
-		label = 'Handcuffs key',
-	  	weight = 50,
-		stack = false,
-	  	close = false,
-		consume = 0
-	},
-	['wheel_clamp'] = {
-		label = 'Wheel Clamp',
-		weight = 250,
-		stack = false,
-	  	close = false,
-		consume = 0
-	},
-	['car_key'] = {
-		label = 'Car Key',
-		weight = 50,
-		stack = false,
-		close = true,
-		consume = 0,
-		client = {
-			export = 'p_vehiclekeys.useCarKey'
-		}
-	},
-    
+    ['handcuffs'] = {
+        label = 'Handcuffs',
+        weight = 250,
+        stack = false,
+        close = false,
+    },
+    ['cuffs_key'] = {
+        label = 'Handcuff Key',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ['battering_ram'] = {
+        label = 'Battering Ram',
+        weight = 8000,
+        stack = false,
+        close = true,
+    },
+    ['cable_ties'] = {
+        label = 'Cable Ties',
+        weight = 100,
+        stack = false,
+        close = false,
+    },
+    ['mouthtape'] = {
+        label = 'Duct Tape',
+        weight = 100,
+        stack = false,
+        close = false,
+    },
+    ['headbag'] = {
+        label = 'Head Bag',
+        weight = 200,
+        stack = false,
+        close = true,
+    },
+    ['lockpick'] = {
+        label = 'Lockpick',
+        weight = 100,
+        stack = false,
+        close = true,
+    },
+    ['body_cam'] = {
+        label = 'Body Camera',
+        weight = 500,
+        stack = false,
+        close = true,
+    },
+    ['breathalyzer'] = {
+        label = 'Breathalyzer',
+        weight = 200,
+        stack = false,
+        close = true,
+    },
+    ['drug_test_kit'] = {
+        label = 'Drug Test Kit',
+        weight = 200,
+        stack = false,
+        close = true,
+    },
+    ['camera'] = {
+        label = 'Camera',
+        weight = 1000,
+        stack = false,
+        close = true,
+    },
+    ['photo'] = {
+        label = 'Photo',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ['gps'] = {
+        label = 'GPS',
+        weight = 100,
+        stack = false,
+        close = false,
+    },
+    ['megaphone'] = {
+        label = 'Megaphone',
+        weight = 800,
+        stack = false,
+        close = false,
+    },
+    ['fingerprint_scanner'] = {
+        label = 'Fingerprint Scanner',
+        weight = 200,
+        stack = false,
+        close = true,
+    },
+    ['nightvision'] = {
+        label = 'Night Vision Goggles',
+        weight = 500,
+        stack = false,
+        close = false,
+    },
+    ['thermalvision'] = {
+        label = 'Thermal Goggles',
+        weight = 500,
+        stack = false,
+        close = false,
+    },
+    ['rappel_kit'] = {
+        label = 'Rappel Kit',
+        weight = 1000,
+        stack = false,
+        close = true,
+    },
+    ['police_shield'] = {
+        label = 'Police Shield',
+        weight = 2500,
+        stack = false,
+        close = false,
+    },
+    ['tracking_band'] = {
+        label = 'Tracking Band',
+        weight = 250,
+        stack = false,
+        close = true,
+    },
+    ['tracking_vehicle'] = {
+        label = 'Vehicle Tracker',
+        weight = 500,
+        stack = false,
+        close = true,
+    },
+    ['wheel_clamp'] = {
+        label = 'Wheel Clamp',
+        weight = 5000,
+        stack = false,
+        close = true,
+    },
+    ['roadcone'] = {
+        label = 'Road Cone',
+        weight = 800,
+        stack = true,
+        close = true,
+    },
+    ['barrier'] = {
+        label = 'Barrier',
+        weight = 2000,
+        stack = true,
+        close = true,
+    },
+    ['consign'] = {
+        label = 'Road Sign',
+        weight = 1500,
+        stack = true,
+        close = true,
+    },
+    ['spikestrip'] = {
+        label = 'Spike Strip',
+        weight = 3000,
+        stack = true,
+        close = true,
+
+    },
+    ['police_diving_suit'] = {
+        label = 'Police Diving Suit',
+        weight = 2000,
+        stack = false,
+        close = true,
+
+    },
+    ['diving_suit'] = {
+        label = 'Diving Suit',
+        weight = 2000,
+        stack = false,
+        close = true,
+
+    },
+    ['player_clothes'] = {
+        label = 'Civilian Clothes',
+        weight = 100,
+        stack = false,
+        close = true,
+
+    },
+    ['vest_normal'] = {
+        label = 'Bulletproof Vest',
+        weight = 3000,
+        stack = false,
+        close = true,
+
+    },
+    ['vest_strong'] = {
+        label = 'Heavy Bulletproof Vest',
+        weight = 5000,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_kit'] = {
+        label = 'Evidence Kit',
+        weight = 300,
+        stack = true,
+        close = true,
+
+    },
+    ['swab_kit'] = {
+        label = 'Swab Kit',
+        weight = 100,
+        stack = true,
+        close = true,
+
+    },
+    ['fingerprint_kit'] = {
+        label = 'Fingerprint Kit',
+        weight = 200,
+        stack = true,
+        close = true,
+
+    },
+    ['cleaning_kit'] = {
+        label = 'Cleaning Kit',
+        weight = 500,
+        stack = true,
+        close = true,
+
+    },
+    ['broom'] = {
+        label = 'Broom',
+        weight = 1000,
+        stack = true,
+        close = true,
+
+    },
+    ['evidence_reconstructor'] = {
+        label = 'Evidence Reconstructor',
+        weight = 500,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_blood'] = {
+        label = 'Blood Sample',
+        weight = 50,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_casing'] = {
+        label = 'Bullet Casing',
+        weight = 30,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_fingerprint'] = {
+        label = 'Fingerprint',
+        weight = 10,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_drug_residue'] = {
+        label = 'Drug Residue',
+        weight = 50,
+        stack = false,
+        close = true,
+
+    },
+    ['evidence_fragment'] = {
+        label = 'Weapon Fragment',
+        weight = 100,
+        stack = false,
+        close = true,
+
+    },
+	-- ['breathalyzer'] = {
+	-- 	label = 'Breathalyzer',
+	-- 	weight = 150,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		export = 'p_policejob.useBreathalyzer'
+	-- 	}
+	-- },
+	-- ['police_rappel'] = {
+	-- 	label = 'Police Rappel',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		event = 'p_policejob/client/heli/usePoliceRappel'
+	-- 	}
+	-- },
+	-- ['fingerprint_scanner'] = {
+	-- 	label = 'Fingerprint Scanner',
+	-- 	weight = 500,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	client = {
+	-- 		export = 'p_policejob.useScanner'
+	-- 	}
+	-- },
+    -- ['spike_strip'] = {
+	-- 	label = 'Spike strip',
+	-- 	weight = 50,
+	-- 	stack = true,
+	-- 	consume = 1,
+	-- 	client = {
+	-- 		export = 'p_policejob.spike_strip'
+	-- 	}
+	-- },
+	-- ['road_cone'] = {
+	-- 	label = 'Road cone',
+	-- 	weight = 50,
+	-- 	stack = true,
+	-- },
+	-- ['consign'] = {
+	-- 	label = 'Road sign',
+	-- 	weight = 50,
+	-- 	stack = true,
+	-- },
+	-- ['barrier'] = {
+	-- 	label = 'Road barrier',
+	-- 	weight = 50,
+	-- 	stack = true,
+	-- },
+	-- ['roadcone_light'] = {
+	-- 	label = 'Road cone light',
+	-- 	weight = 50,
+	-- 	stack = true,
+	-- },
+	-- ['headbag'] = {
+	-- 	label = 'Head bag',
+	-- 	weight = 50,
+	-- 	stack = false,
+	-- 	close = false
+	-- },
+	-- ['police_diving_suit'] = {
+	-- 	label = 'Police Diving Suit',
+	-- 	weight = 2000,
+	-- 	consume = 0,
+	-- 	stack = false,
+	-- 	server = {
+	-- 		export = 'p_policejob.police_diving_suit'
+	-- 	}
+	-- },
+	-- ['player_clothes'] = {
+	-- 	label = 'Your clothes',
+	-- 	weight = 250,
+	-- 	consume = 0,
+	-- 	stack = false,
+	-- 	server = {
+	-- 		export = 'p_policejob.player_clothes'
+	-- 	}
+	-- },
+	-- ['fingerprint'] = {
+	-- 	label = 'Fingerprint Sample',
+	-- 	weight = 5,
+	-- 	stack = false,
+	-- 	consume = 0,
+	-- },
+	-- ['bullet'] = {
+	-- 	label = 'Bullet Sample',
+	-- 	weight = 5,
+	-- 	stack = false,
+	-- 	consume = 0
+	-- },
+	-- ['blood'] = {
+	-- 	label = 'Blood Sample',
+	-- 	weight = 5,
+	-- 	stack = false,
+	-- 	consume = 0
+	-- },
+	-- ['tracking_band'] = {
+	-- 	label = 'GPS Band',
+	-- 	weight = 300,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0
+	-- },
+	-- ['radio'] = {
+	-- 	label = 'Radio',
+	-- 	weight = 1000,
+	-- 	stack = false,
+	-- 	allowArmed = true
+	-- },
+	-- ['vest_normal'] = {
+	-- 	label = 'Bulletproof Vest',
+	-- 	weight = 1000,
+	-- 	stack = false,
+	-- 	consume = 1,
+	-- 	client = {
+	-- 		export = 'p_policejob.vest_normal'
+	-- 	}
+	-- },
+	-- ['vest_strong'] = {
+	-- 	label = 'Strong Bulletproof Vest',
+	-- 	weight = 1000,
+	-- 	stack = false,
+	-- 	consume = 1,
+	-- 	client = {
+	-- 		export = 'p_policejob.vest_strong'
+	-- 	}
+	-- },
+	-- ['body_cam'] = {
+	-- 	label = 'Police Bodycam',
+	-- 	weight = 200,
+	-- 	consume = 0,
+	-- 	stack = false,
+	-- 	server = {
+	-- 		export = 'p_policejob.body_cam'
+	-- 	}
+	-- },
+	-- ['gps'] = {
+	-- 	label = 'GPS',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	consume = 0,
+	-- 	allowArmed = true,
+	-- 	client = {
+	-- 		export = 'p_policejob.gps',
+	-- 		remove = function(total)
+	-- 			if total < 1 then
+	-- 				local activeGPS = exports['p_policejob']:isGpsActive()
+	-- 				if activeGPS then
+	-- 					exports['p_policejob']:gps()
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	}
+	-- },
+	-- ['snakecam'] = {
+	-- 	label = 'Snake Cam',
+	-- 	weight = 50,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	client = {
+	-- 		event = 'p_policejob/client/snakecam/start'
+	-- 	}
+	-- },
+	-- ['vehicle_tracker'] = {
+	-- 	label = 'Vehicle GPS Tracker',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = true,
+	-- },
+	-- ['camera'] = {
+	-- 	label = 'Camera',
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	consume = 0,
+	-- 	weight = 1000,
+	-- 	client = {
+	-- 		export = 'p_policejob.camera'
+	-- 	}
+	-- },
+	-- ['photo'] = {
+	-- 	label = 'Photo',
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	weight = 10,
+	-- 	consume = 0,
+	-- 	server = {
+	-- 		export = 'p_policejob.photo'
+	-- 	},
+	-- 	buttons = {
+	-- 		{
+	-- 			label = 'Copy URL',
+	-- 			action = function(slot)
+	-- 				TriggerServerEvent('p_policejob/server_camera/CopyPhoto', slot)
+	-- 			end
+	-- 		},
+	-- 	},
+	-- },
+	-- ['handcuffs'] = {
+	-- 	label = 'Handcuffs',
+	-- 	weight = 100,
+	-- 	stack = true,
+	-- 	close = false,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		export = 'p_policejob.handcuffs'
+	-- 	}
+	-- },
+	-- ['cable_ties'] = {
+	-- 	label = 'Cable ties',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0
+	-- },
+	-- ['mouthtape'] = {
+	-- 	label = 'Mouth Tape',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0
+	-- },
+	-- ['police_shield'] = {
+	-- 	label = 'Police Shield',
+	-- 	weight = 250,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		event = 'p_policejob/client/objects/togglePoliceShield'
+	-- 	}
+	-- },
+	-- ['evidence_camera'] = {
+	-- 	label = 'Evidence Camera',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	client = {
+	-- 		export = 'p_policejob.evidence_camera'
+	-- 	}
+	-- },
+	-- ['megaphone'] = {
+	-- 	label = 'Megaphone',
+	-- 	weight = 100,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		export = 'p_policejob.useMegaphone'
+	-- 	}
+	-- },
+	-- ['traffic_ticket'] = {
+	-- 	label = 'Traffic Ticket',
+	-- 	weight = 50,
+	-- 	stack = false,
+	-- 	close = false,
+	-- 	consume = 0,
+	-- },
+	-- ['breathalyzer'] = {
+	-- 	label = 'Breathalyzer',
+	-- 	weight = 150,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		export = 'p_policejob.useBreathalyzer'
+	-- 	}
+	-- },
+	-- ['cuffs_key'] = {
+	-- 	label = 'Handcuffs key',
+	--   	weight = 50,
+	-- 	stack = false,
+	--   	close = false,
+	-- 	consume = 0
+	-- },
+	-- ['wheel_clamp'] = {
+	-- 	label = 'Wheel Clamp',
+	-- 	weight = 250,
+	-- 	stack = false,
+	--   	close = false,
+	-- 	consume = 0
+	-- },
+	-- ['car_key'] = {
+	-- 	label = 'Car Key',
+	-- 	weight = 50,
+	-- 	stack = false,
+	-- 	close = true,
+	-- 	consume = 0,
+	-- 	client = {
+	-- 		export = 'p_vehiclekeys.useCarKey'
+	-- 	}
+	-- },
+
     -- [[ my own addition ]] ==
     ['holster'] = {
         label = "Holster",
@@ -6726,5 +6995,93 @@ return {
             image = "k9flashlight.png",
         }
     },
-
+    -- [[ pscripts vehiclekeys]]
+    ['lockpick'] = {
+        label = 'Lockpick',
+        weight = 160,
+    },
+    ['car_key'] = {
+        label = 'Car Key',
+        weight = 50,
+        stack = false,
+        close = true,
+        consume = 0,
+        client = {
+            export = 'p_vehiclekeys.useCarKey'
+        }
+    },
+    ['unlock_tool'] = {
+        label = 'Unlock Tool',
+        weight = 200,
+        stack = false,
+        close = true,
+    },
+    ['security_chip_1'] = {
+        label = 'Security Chip Tier 1',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ['security_chip_2'] = {
+        label = 'Security Chip Tier 2',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ['security_chip_3'] = {
+        label = 'Security Chip Tier 3',
+        weight = 50,
+        stack = false,
+        close = true,
+    },
+    ['signal_jammer'] = {
+        label = 'Signal Jammer',
+        weight = 400,
+        stack = false,
+        close = false,
+        consume = 0
+    },
+    -- pug-gangs
+    ['gangtablet'] = {
+        label = 'Organization Tablet',
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'Encrypted organization management tablet'
+    },
+    ['gangspray'] = {
+        label = 'Spray Can',
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = 'Used to place a crew spray tag'
+    },
+    ['paintremover'] = {
+        label = 'Paint Remover',
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = 'Used to remove nearby gang spray paint'
+    },
+    ['headbag'] = {
+        label = 'Head Bag',
+        weight = 1000,
+        stack = false,
+        close = true,
+        description = 'Used to blind your enemy.'
+    },
+    ['zipties'] = {
+        label = 'Zip Ties',
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = 'Used to Tie up your enemy'
+    },
+    ['scissors'] = {
+        label = 'Scissors',
+        weight = 1000,
+        stack = true,
+        close = true,
+        description = 'Used to cut zipties'
+    },
 }
