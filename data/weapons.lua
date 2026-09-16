@@ -719,9 +719,13 @@ return {
 		},
 		-- [[ p_policejob ]] --
 		['WEAPON_RADAR'] = {
-			label = 'Police Radar',
-			weight = 250,
-			durability = 0.1,
+			label = 'Radar Gun',
+			weight = 1000,
+		},
+		['WEAPON_FLASHBANG'] = {
+			label = 'Flashbang',
+			weight = 1000,
+			throwable = true,
 		},
 		-- [[ Envi-Flamethrower ]] --
 		['WEAPON_FLAMETHROWER'] = {
